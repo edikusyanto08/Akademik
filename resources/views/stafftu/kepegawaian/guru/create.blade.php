@@ -15,7 +15,6 @@
 			<div  class="card-body">
 
 				@include($form)
-				
 			</div>
 		
 

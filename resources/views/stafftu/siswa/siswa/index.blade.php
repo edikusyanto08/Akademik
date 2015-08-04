@@ -29,7 +29,7 @@
 								<tr>
 									<td>{{$x++}}</td>
 									<td>{{$classRoom->nis}}</td>
-									<td>{{$classRoom->nama}}</td>
+									<td>{{$classRoom->pegawai}}</td>
 									<td>
 										<span>{{$classRoom->taggal_lahir}}</span>
 										<div class="pull-right">

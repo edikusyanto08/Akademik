@@ -18,7 +18,11 @@
 						<thead>
 							<tr>
 								<th class="col-xs-1">No.</th>
-								<th>Label Classroom</th>
+								<th>NIP</th>
+								<th>NUPTK</th>
+								<th>Nama Pegawai</th>
+								<th>Tempat,Tanggal Lahir</th>
+								<th>Status Pegawai</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -26,8 +30,12 @@
 							@foreach ($lists as $classRoom)
 								<tr>
 									<td>{{$x++}}</td>
+									<td>{{$classRoom->nip}}</td>
+									<td>{{$classRoom->nuptk}}</td>
+									<td>{{ucfirst($classRoom->nama)}}</td>
+									<td>{{ucfirst($classRoom->tempat_lahir)}},  {{$classRoom->tanggal_lahir}}</td>
 									<td>
-										<span>{{$classRoom->label}}</span>	
+										{{$classRoom->status_kepegawaian}}
 										<div class="pull-right">
 											  {!! Form::open(['route'=>[$destroy,$classRoom->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
 												  	{!! link_to_route($show,'Detail',$classRoom->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}

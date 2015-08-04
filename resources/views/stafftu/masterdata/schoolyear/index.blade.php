@@ -18,7 +18,7 @@
 						<thead>
 							<tr>
 								<th class="col-xs-1">No.</th>
-								<th>School Year</th>
+								<th>Tahun Ajaran</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -27,7 +27,7 @@
 								<tr>
 									<td>{{$x++}}</td>
 									<td>
-										<span>{{$schoolyear->awal}}/{{$schoolyear->akhir}}</span>
+										<span>{{$schoolyear->label}}</span>
 										<div class="pull-right">
 											  {!! Form::open(['route'=>[$destroy,$schoolyear->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
 												  	{!! link_to_route($show,'Detail',$schoolyear->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}

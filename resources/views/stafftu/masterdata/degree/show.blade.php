@@ -14,7 +14,7 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Label Degree</span>
+							<span>Nama Kelas</span>
 							<small>{{$data->label}}</small>
 						</div>
 					</div>

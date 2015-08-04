@@ -14,7 +14,7 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Label Program</span>
+							<span>Nama Jurusan</span>
 							<small>{{$data->label}}</small>
 						</div>
 					</div>

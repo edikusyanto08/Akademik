@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<div class="card-body">
-				  	@include($form.'.siswa');
+				  	@include($form)
 			</div>
 			<div class="card-actionbar">
 				<div class="card-actionbar-row">

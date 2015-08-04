@@ -18,7 +18,7 @@
 						<thead>
 							<tr>
 								<th class="col-xs-1">No.</th>
-								<th>Label Degree</th>
+								<th>Nama Kelas</th>
 							</tr>
 						</thead>
 						<tbody>

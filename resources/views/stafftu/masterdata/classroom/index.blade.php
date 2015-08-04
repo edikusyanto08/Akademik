@@ -18,7 +18,7 @@
 						<thead>
 							<tr>
 								<th class="col-xs-1">No.</th>
-								<th>Label Classroom</th>
+								<th>Kelas</th>
 							</tr>
 						</thead>
 						<tbody>

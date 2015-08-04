@@ -14,7 +14,7 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Label Disclipline Catagory</span>
+							<span>Kategori Mata Pelajaran</span>
 							<small>{{$data->label}}</small>
 						</div>
 					</div>
@@ -22,8 +22,8 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Describe Disclipline Catagory</span>
-							<small>{{$data->keterangan}}</small>
+							<span>Huruh Kategori</span>
+							<small>{{$data->huruf}}</small>
 						</div>
 					</div>
 				</li>

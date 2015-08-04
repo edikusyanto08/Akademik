@@ -19,7 +19,7 @@
 							<tr>
 								<th class="col-xs-1">No.</th>
 								<th>Label</th>
-								<th>Describe</th>
+								<th>Huruf</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -31,7 +31,7 @@
 										<span>{{$kelas->label}}</span>	
 									</td>
 									<td>
-										<span>{{$kelas->keterangan}}</span>	
+										<span>{{$kelas->huruf}}</span>	
 										<div class="pull-right">
 											  {!! Form::open(['route'=>[$destroy,$kelas->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
 												  	{!! link_to_route($show,'Detail',$kelas->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}

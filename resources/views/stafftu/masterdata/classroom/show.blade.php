@@ -15,7 +15,7 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Label Classroom</span>
+							<span>Ruang Belajar</span>
 							<small>{{$data->label}}</small>
 						</div>
 					</div>

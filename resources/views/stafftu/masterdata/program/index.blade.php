@@ -18,7 +18,7 @@
 						<thead>
 							<tr>
 								<th class="col-xs-1">No.</th>
-								<th>Label Program</th>
+								<th>Nama Jurusan</th>
 							</tr>
 						</thead>
 						<tbody>

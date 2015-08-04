@@ -14,7 +14,7 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Label Disclipline Category</span>
+							<span>Tahun Ajaran</span>
 							<small>{{$data->category->label}} ({{$data->category->keterangan}})</small>
 						</div>
 					</div>
