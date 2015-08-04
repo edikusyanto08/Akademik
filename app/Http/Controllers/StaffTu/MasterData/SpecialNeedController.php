@@ -12,7 +12,7 @@ class SpecialNeedController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.specialneed', new KebutuhanKhusus(), 'Special Need');
+        parent::__construct('stafftu.masterdata.specialneed', new KebutuhanKhusus(), 'Kebutuhan Khusus');
     }
 
     /**

@@ -11,6 +11,7 @@ Route::model('pegawai',Akademik\Pegawai::class);
 Route::model('tugas',Akademik\PegawaiTugas::class);
 Route::model('guru',Akademik\Guru::class);
 Route::model('hobi',Akademik\Hobi::class);
+Route::model('exkul',Akademik\Eskul::class);
 
 
 Route::get('/', function () {
@@ -49,7 +50,8 @@ Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middl
 				'religion'=>'ReligionController',
 				'degree'=>'DegreeController',
 				'schoolyear'=>'SchoolYearController',
-				'specialneed'=>'SpecialNeedController'
+				'specialneed'=>'SpecialNeedController',
+				'exkul'=>'ExkulController',
 				
 		]);
 	});
@@ -105,3 +107,4 @@ Route::group(['prefix'=>'administratif','namespace'=>'Administratif','as'=>'admi
 {
 	Route::get('/',['as'=>'landing']);
 });
+Route::group()

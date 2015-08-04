@@ -20,7 +20,7 @@ class SpecialNeedRequest extends Request
                    return true;
                }
            }
-           return false;
+           return true;
        }
 
        /**
@@ -37,8 +37,8 @@ class SpecialNeedRequest extends Request
        public function messages()
        {
            return [
-               'label.required'=> 'Label Special Need is required',
-               'label.min'=> 'Label Special Need must be at least 3 characters.',
+               'label.required'=> 'Nama Kebutuhan tidak boleh kosong',
+               'label.min'=> 'Nama kebutuhan seharusnya lebih dari 3 karakter',
            ];
        }
 }
