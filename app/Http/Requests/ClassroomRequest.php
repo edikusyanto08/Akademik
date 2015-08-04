@@ -20,7 +20,8 @@ class ClassroomRequest extends Request
                 return true;
             }
         }
-        return false;
+    
+        return true;
     }
 
     /**
@@ -31,7 +32,7 @@ class ClassroomRequest extends Request
     public function rules()
     {
         return [
-            'label'=>'required|min:3'
+            'label'=>'required|min:3'    
         ];
     }
     public function messages()

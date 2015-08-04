@@ -4,10 +4,12 @@ namespace Akademik\Http\Requests;
 
 use Akademik\Http\Requests\Request;
 use Auth;
-use Akademik\RoleUserChecker;
 
-class DegreeRequest extends Request
+class TugasPegawaiRequest extends Request
 {
+
+
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -15,12 +17,15 @@ class DegreeRequest extends Request
      */
     public function authorize()
     {
+
         if (! Auth::guest()) {
             if (Auth::user()->role == 'pegawai' && RoleUserChecker::checkRole(Auth::user()->pegawai->tugas()->lists('role'), 'stafftu')) {
                 return true;
             }
         }
+    
         return true;
+
     }
 
     /**
@@ -30,16 +35,19 @@ class DegreeRequest extends Request
      */
     public function rules()
     {
-        return [
-            'label'=>'required|min:1|max:3'
+        
+            return [
+            'pegawai_id'  =>'required|min:1',
+            'role'        =>'required'
+               
         ];
+    
     }
-    public function messages()
-    {
+
+    public function messages(){
         return [
-            'label.required'=> 'Nama Kelas Tidak Boleh Kosong',
-            'label.min'=> 'Nama kelas harus lebih dari 1 karakter',
-            'label.max'=> ' Nama kelas tidak boleh melebihi 3 karakter',
+            'pegawai_id.required'=> 'ID Pegawai masih Kosong',
+            'role.required'=> 'Role Harus Di Isi',
         ];
     }
 }

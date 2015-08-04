@@ -5,12 +5,13 @@ namespace Akademik\Http\Controllers\StaffTu\Kepegawaian;
 use Akademik\Http\Requests\PegawaiRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\Pegawai;
+use Akademik\User;
 
 class PegawaiController  extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.kepegawaian.pegawai', new Pegawai(), 'Jamil');
+        parent::__construct('stafftu.kepegawaian.pegawai', new Pegawai(), 'Data Pegawai');
     }
 
     /**
@@ -18,10 +19,51 @@ class PegawaiController  extends Controller
      *
      * @return Response
      */
-    public function store(Pegawai $model, PegawaiRequest $r)
+    public function store(User $user, PegawaiRequest $r)
     {
-        if ($model->fill($r->all())->save()) {
-            return $this->routeAndSuccess('store');
+        $user->username = $r->input('username');
+        $user->password = $r->input('password');
+        $user->as = 'pegawai';
+        if($user->save()){
+            $data = $r->only([
+                'user_id',
+                'nama',
+                'gender',
+                'nip',
+                'tempat_lahir',
+                'tanggal_lahir',
+                'status_kepegawaian',
+                'jenis_ptk',
+                'pengawas_bidang_studi',
+                'agama',
+                'nama_ibu_kandung',
+                'status_perkawinan',
+                'npwp',
+                'kewarganegaraan'
+                
+                
+                ]);
+            if ($pegawai = $user->pegawai()->create($data)) {
+                $data = $r->only([
+                    'pegawai_id',
+                    'jalan',
+                    'gang',
+                    'perumahan',
+                    'blok',
+                    'no',
+                    'rt',
+                    'rw',
+                    'kelurahan',
+                    'kecamatan',
+                    'kode_pos'
+                    
+                    ]);
+                if($pegawai->alamat()->create($data)){
+                    return $this->routeAndSuccess('store');    
+                }
+                return $this->routeBackWithError('store');
+            }
+            return $this->routeBackWithError('store');
         }
         return $this->routeBackWithError('store');
     }
@@ -35,8 +77,49 @@ class PegawaiController  extends Controller
      */
     public function update(Pegawai $model, PegawaiRequest $r)
     {
-        if ($model->fill($r->all())->save()) {
-            return $this->routeAndSuccess('update');
+        $user->username = $r->input('username');
+        $user->password = $r->input('password');
+        $user->as = 'pegawai';
+        if($user->save()){
+            $data = $r->only([
+                'user_id',
+                'nama',
+                'gender',
+                'nip',
+                'tempat_lahir',
+                'tanggal_lahir',
+                'status_kepegawaian',
+                'jenis_ptk',
+                'pengawas_bidang_studi',
+                'agama',
+                'nama_ibu_kandung',
+                'status_perkawinan',
+                'npwp',
+                'kewarganegaraan'
+                
+                
+                ]);
+            if ($pegawai = $user->pegawai()->create($data)) {
+                $data = $r->only([
+                    'pegawai_id',
+                    'jalan',
+                    'gang',
+                    'perumahan',
+                    'blok',
+                    'no',
+                    'rt',
+                    'rw',
+                    'kelurahan',
+                    'kecamatan',
+                    'kode_pos'
+                    
+                    ]);
+                if($pegawai->alamat()->create($data)){
+                    return $this->routeAndSuccess('update');    
+                }
+                return $this->routeBackWithError('update');
+            }
+            return $this->routeBackWithError('update');
         }
         return $this->routeBackWithError('update');
     }

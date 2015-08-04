@@ -12,7 +12,7 @@ class DiscliplineCatagoryController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.discliplinecatagory', new KategoriMataPelajaran(), 'Disclipline Catagory');
+        parent::__construct('stafftu.masterdata.discliplinecatagory', new KategoriMataPelajaran(), 'Kategori MataPelajaran');
     }
 
  /**

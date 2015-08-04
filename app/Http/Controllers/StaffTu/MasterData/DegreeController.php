@@ -12,7 +12,7 @@ class DegreeController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.degree', new Kelas(), 'Degree');
+        parent::__construct('stafftu.masterdata.degree', new Kelas(), 'Nama Kelas');
     }
 
      /**

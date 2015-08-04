@@ -20,7 +20,7 @@ class DiscliplineCatagoryRequest extends Request
                 return true;
             }
         }
-        return false;
+        return true;
     }
     /**
      * Get the validation rules that apply to the request.
@@ -31,17 +31,17 @@ class DiscliplineCatagoryRequest extends Request
     {
         return [
             'label'=>'required|min:1|max:1',
-            'keterangan'=>'required|min:5'
+            'huruf'=>'required|min:1'
         ];
     }
     public function messages()
     {
         return [
-            'label.required' => 'Label disclipline catagory is required',
-            'label.min' => 'Label disclipline catagory must be at least 1 character',
-            'label.max' => 'Label disclipline may not be greater than 1 characters.',
-            'keterangan.required' => 'Describe disclipline catagory is required',
-            'keterangan.min' => 'Describe disclipline catagory must be at least 10 character',
+            'label.required' => 'Nama Kategori Harus di Isi',
+            'label.min' => 'nama kategori harusnya lebih dari 1 karakter',
+            'label.max' => 'nama kategori harusnya tidak lebih dari 1 karakter',
+            'huruf.required' => 'huruf di isi',
+            'huruf.min' => 'Bagian Huruf tidak boleh lebih dari 1 karakter',
         ];
     }
 }

@@ -12,7 +12,7 @@ class SchoolYearController extends Controller
 {
      public function __construct()
     {
-        parent::__construct('stafftu.masterdata.schoolyear', new TahunAjaran(), 'School Years');
+        parent::__construct('stafftu.masterdata.schoolyear', new TahunAjaran(), 'Tahun Ajaran');
     }
 
     /**
@@ -25,7 +25,8 @@ class SchoolYearController extends Controller
         if($r->input('awal') > $r->input('akhir')){
             return redirect()->back()->withInput()->withErrors(["Year End can't bigger than Year Start"]);
         }
-        if ($model->fill($r->all())->save()) {
+        $model->label=$r->input('awal').'/'.$r->input('akhir');
+        if ($model->save()) {
             return $this->routeAndSuccess('store');
         }
         return $this->routeBackWithError('store');
@@ -43,7 +44,9 @@ class SchoolYearController extends Controller
         if($r->input('awal') > $r->input('akhir')){
             return redirect()->back()->withInput()->withErrors(["Year End can't bigger than Year Start"]);
         }
-        if ($model->fill($r->all())->save()) {
+        $model->label=$r->input('awal').'/'.$r->input('akhir');
+
+        if ($model->save()) {
             return $this->routeAndSuccess('update');
         }
         return $this->routeBackWithError('update');

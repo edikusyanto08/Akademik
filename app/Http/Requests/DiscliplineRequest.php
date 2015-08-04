@@ -21,7 +21,7 @@ class DiscliplineRequest extends Request
                 return true;
             }
         }
-        return false;
+        return true;
     }
 
     /**
@@ -33,13 +33,22 @@ class DiscliplineRequest extends Request
     {
         return [
              'label'=>'required|min:5',
+             'singkatan'=>'required|min:3',
+             'kategori_mata_pelajaran_id'=>'required',
+             'program_id'=>'required',
+             'kelas_id'=>'required'
+             
         ];
     }
     public function messages()
     {
         return [
-            'label.required' => 'Label disclipline is required',
-            'label.min' => 'Label disclipline must be at least 5 character',
+            'label.required' => 'Nama Mata Pelajaran Harus Di Isi',
+            'label.min' => 'Nama Mata Harus Lebih Dari 5 Karakter',
+            'singkatan.required' => 'Singkatan Harus Di Isi',
+            'kategori_mata_pelajaran_id.required' => 'kategori_mata_pelajaran_id Harus Di Isi',
+            'program_id.required' => 'program_id Harus Di Isi',
+            'kelas_id.required' => 'kelas_id Harus Di Isi'
         ];
     }
 }

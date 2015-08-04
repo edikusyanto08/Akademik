@@ -10,7 +10,7 @@ class ClassRoomController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.classroom', new Ruangan(), 'Classroom');
+        parent::__construct('stafftu.masterdata.classroom', new Ruangan(),'Ruang Belajar');
     }
 
     /**

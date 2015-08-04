@@ -15,8 +15,13 @@ class MataPelajaran extends Model
     {
     	return $this->belongsTo(Guru::class);
     }
-    public function lecture($value='')
+    public function program()
     {
-    	# code...
+    	return $this->belongsTo(Program::class,'program_id','id');
     }
+
+    public function kelas(){
+        return $this->belongsTo(Kelas::class,'kelas_id','id');
+    }
+
 }
