@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class SiswaWali extends Model
 {
-    //
+    protected $guarded = ['siswa_id'];
+
+    public function sisiwa()
+    {
+    	return $this->belongsTo(Siswa::class);
+    }
 }
