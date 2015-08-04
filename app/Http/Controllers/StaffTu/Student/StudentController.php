@@ -25,11 +25,31 @@ class StudentController extends Controller
         $u->password = $r->input('password');
         $u->as = 'siswa';
         if ($user  = $u->save()) {
-            $data = $r->only(['nama','gender','nis','nisn','tempat_lahir','tanggal_lahir','nik','agama','penerima_kps','no_kps','no_skhun']);
+            $data = $r->only(['nama',
+                                'gender',
+                                'nis',
+                                'nisn',
+                                'tempat_lahir',
+                                'tanggal_lahir',
+                                'nik',
+                                'agama',
+                                'penerima_kps',
+                                'no_kps',
+                                'no_skhun'
+                    ]);
             // return $u;
             if($u->siswa()->create($data)){
                 $siswa = $u->siswa->first();
-                $data = $r->only(['jalan','gang','blok','no','rt','rw','kelurahan','kecamatan','kode_pos']);
+                $data = $r->only(['jalan',
+                                'gang',
+                                'blok',
+                                'no',
+                                'rt',
+                                'rw',
+                                'kelurahan',
+                                'kecamatan',
+                                'kode_pos'
+                            ]);
                 if($siswa->alamat()->create($data)){
                    $data = [
                         'nama'=>$r->input('nama_ayah'),
