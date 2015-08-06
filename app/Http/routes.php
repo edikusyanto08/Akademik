@@ -107,4 +107,4 @@ Route::group(['prefix'=>'administratif','namespace'=>'Administratif','as'=>'admi
 {
 	Route::get('/',['as'=>'landing']);
 });
-Route::group()
+// Route::group()
