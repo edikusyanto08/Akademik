@@ -15,7 +15,7 @@ Route::model('exkul',Akademik\Eskul::class);
 
 
 Route::get('/', function () {
-    return redirect()->route('sesi.login.form');
+	return redirect()->route('sesi.login.form');
 });
 /**
  *  bagian login system
@@ -43,17 +43,17 @@ Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middl
 			return redirect()->route('stafftu.masterdata.classroom.index');
 		}]);
 		Route::resources([
-				'classroom'=>'ClassRoomController',
-				'disclipline'=>'DiscliplineController',
-				'discliplinecatagory'=>'DiscliplineCatagoryController',
-				'program'=>'ProgramController',
-				'religion'=>'ReligionController',
-				'degree'=>'DegreeController',
-				'schoolyear'=>'SchoolYearController',
-				'specialneed'=>'SpecialNeedController',
-				'exkul'=>'ExkulController',
-				
-		]);
+			'classroom'=>'ClassRoomController',
+			'disclipline'=>'DiscliplineController',
+			'discliplinecatagory'=>'DiscliplineCatagoryController',
+			'program'=>'ProgramController',
+			'religion'=>'ReligionController',
+			'degree'=>'DegreeController',
+			'schoolyear'=>'SchoolYearController',
+			'specialneed'=>'SpecialNeedController',
+			'exkul'=>'ExkulController',
+			
+			]);
 	});
 	Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
 	{
@@ -62,10 +62,10 @@ Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middl
 			return redirect()->route('stafftu.kepegawaian.pegawai.index');
 		}]);
 		Route::resources([
-				'pegawai'=>'PegawaiController',
-				'tugas'=>'TugasController',
-				'guru'=>'GuruController',
-		]);
+			'pegawai'=>'PegawaiController',
+			'tugas'=>'TugasController',
+			'guru'=>'GuruController',
+			]);
 		
 	});
 	Route::group(['namespace'=>'Student','prefix'=>'siswa'],function ()
@@ -107,4 +107,3 @@ Route::group(['prefix'=>'administratif','namespace'=>'Administratif','as'=>'admi
 {
 	Route::get('/',['as'=>'landing']);
 });
-Route::group()
