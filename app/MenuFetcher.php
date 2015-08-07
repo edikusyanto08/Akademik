@@ -48,6 +48,10 @@ class MenuFetcher
 							['route'=>'pegawai','name'=>'Data Pegawai','icon'=>'fa fa-graduation-cap'],
 							['route'=>'tugas','name'=>'Tugas Pegawai','icon'=>'fa fa-graduation-cap'],
 							['route'=>'guru','name'=>'Guru','icon'=>'fa fa-graduation-cap'],
+							['route'=>'diklat','name'=>'Diklat','icon'=>'fa fa-graduation-cap'],
+							['route'=>'pendidikan','name'=>'Pendidikan','icon'=>'fa fa-graduation-cap'],
+							['route'=>'pekerjaan','name'=>'Pekerjaan','icon'=>'fa fa-graduation-cap'],
+							['route'=>'masa kerja','name'=>'Masa Kerja','icon'=>'fa fa-graduation-cap'],
 						]
 					],
 					[

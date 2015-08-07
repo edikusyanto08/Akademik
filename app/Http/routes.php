@@ -14,6 +14,7 @@ Route::model('hobi',Akademik\Hobi::class);
 Route::model('exkul',Akademik\Eskul::class);
 
 
+
 Route::get('/', function () {
 	return redirect()->route('sesi.login.form');
 });
@@ -52,7 +53,7 @@ Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middl
 			'schoolyear'=>'SchoolYearController',
 			'specialneed'=>'SpecialNeedController',
 			'exkul'=>'ExkulController',
-			
+
 			]);
 	});
 	Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
@@ -65,6 +66,10 @@ Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middl
 			'pegawai'=>'PegawaiController',
 			'tugas'=>'TugasController',
 			'guru'=>'GuruController',
+			'diklat'=>'DiklatController',
+			'pendidikan'=>'PendidikanController',
+			'pekerjaan'=>'PekerjaanController',
+			'masa kerja'=>'MasaKerjaController',
 			]);
 		
 	});

@@ -1,5 +1,7 @@
+
 <div class="col-md-12">
 	<h3 class="text-primary">Alamat Pegawai</h3>
+
 </div>
 
 <div class="col-md-8">
