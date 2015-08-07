@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Akta' => $baseDir . '/database/migrations/2015_08_06_113913_Akta.php',
     'CreateEskulsTable' => $baseDir . '/database/migrations/2015_07_23_033628_create_eskuls_table.php',
     'CreateGuruMataPelajaransTable' => $baseDir . '/database/migrations/2015_07_23_034804_create_guru_mata_pelajarans_table.php',
     'CreateGurusTable' => $baseDir . '/database/migrations/2015_06_13_154741_create_gurus_table.php',
@@ -107,6 +108,7 @@ return array(
     'Hamcrest\\Type\\IsString' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
     'Hamcrest\\Util' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
     'Hamcrest\\Xml\\HasXPath' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+    'Ijazah' => $baseDir . '/database/migrations/2015_08_06_113921_Ijazah.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
@@ -483,6 +485,7 @@ return array(
     'PHP_Token_WHITESPACE' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
+<<<<<<< HEAD
     'PatchAyah' => $baseDir . '/database/migrations/2015_08_06_075836_PatchAyah.php',
     'PatchIbu' => $baseDir . '/database/migrations/2015_08_06_075829_PatchIbu.php',
     'PatchSiswa' => $baseDir . '/database/migrations/2015_08_06_075840_PatchSiswa.php',
@@ -525,6 +528,10 @@ return array(
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Resources/stubs/SessionHandlerInterface.php',
     'SiswaKebutuhanKhusus' => $baseDir . '/database/migrations/2015_06_13_161737_siswa_kebutuhan_khusus.php',
+    'SiswaKesehatan' => $baseDir . '/database/migrations/2015_08_06_113736_SiswaKesehatan.php',
+    'SiswaPendidikan' => $baseDir . '/database/migrations/2015_08_06_113749_SiswaPendidikan.php',
+    'SiswaSelesaiPendidikan' => $baseDir . '/database/migrations/2015_08_06_113830_SiswaSelesaiPendidikan.php',
+    'SiswaStatus' => $baseDir . '/database/migrations/2015_08_06_113804_SiswaStatus.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/Text/Template.php',
 );

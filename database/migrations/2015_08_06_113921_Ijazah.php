@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class PatchIbu extends Migration
+class Ijazah extends Migration
 {
     /**
      * Run the migrations.

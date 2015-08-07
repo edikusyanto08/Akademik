@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class PatchWali extends Migration
+class PatchDataPegawaiPendidikan extends Migration
 {
     /**
      * Run the migrations.
