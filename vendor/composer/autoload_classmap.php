@@ -485,11 +485,6 @@ return array(
     'PHP_Token_WHITESPACE' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
-<<<<<<< HEAD
-    'PatchAyah' => $baseDir . '/database/migrations/2015_08_06_075836_PatchAyah.php',
-    'PatchIbu' => $baseDir . '/database/migrations/2015_08_06_075829_PatchIbu.php',
-    'PatchSiswa' => $baseDir . '/database/migrations/2015_08_06_075840_PatchSiswa.php',
-    'PatchWali' => $baseDir . '/database/migrations/2015_08_06_075821_PatchWali.php',
     'PegawaiKebutuhanKhusus' => $baseDir . '/database/migrations/2015_06_13_161738_pegawai_kebutuhan_khusus.php',
     'SebastianBergmann\\Comparator\\ArrayComparator' => $vendorDir . '/sebastian/comparator/src/ArrayComparator.php',
     'SebastianBergmann\\Comparator\\Comparator' => $vendorDir . '/sebastian/comparator/src/Comparator.php',
