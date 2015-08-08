@@ -5,23 +5,28 @@ use Illuminate\Database\Migrations\Migration;
 
 class Ijazah extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        //
-    }
+  /**
+   * Run the migrations.
+   *
+   * @return void
+   */
+  public function up()
+  {
+      Schema::create('ijazahs', function($table)
+      {
+          $table->increments('id');
+          $table->string('label',30);
+      
+      });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        //
-    }
+  /**
+   * Reverse the migrations.
+   *
+   * @return void
+   */
+  public function down()
+  {
+      Schema::drop('ijazahs');
+  }
 }

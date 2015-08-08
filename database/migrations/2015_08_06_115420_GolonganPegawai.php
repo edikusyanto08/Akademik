@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Golongan extends Migration
+class GolonganPegawai extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,12 @@ class Golongan extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('golongan_pegawai', function($table)
+        {
+            $table->increments('id');
+            $table->string('label',30);
+        
+        });
     }
 
     /**
@@ -22,6 +27,6 @@ class Golongan extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('golongan_pegawi');
     }
 }

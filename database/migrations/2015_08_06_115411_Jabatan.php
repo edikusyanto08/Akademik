@@ -12,7 +12,12 @@ class Jabatan extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('jabatans', function($table)
+        {
+            $table->increments('id');
+            $table->string('label',30);
+        
+        });
     }
 
     /**
@@ -22,6 +27,6 @@ class Jabatan extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('jabatans');
     }
 }

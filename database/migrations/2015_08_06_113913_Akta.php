@@ -12,7 +12,12 @@ class Akta extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('aktas', function($table)
+        {
+            $table->increments('id');
+            $table->string('label',30);
+        
+        });
     }
 
     /**
@@ -22,6 +27,6 @@ class Akta extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('aktas');
     }
 }
