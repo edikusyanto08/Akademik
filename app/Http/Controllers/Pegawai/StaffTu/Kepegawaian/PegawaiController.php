@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\Kepegawaian;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Kepegawaian;
 
 use Akademik\Http\Requests\PegawaiRequest;
 use Akademik\Http\Controllers\Controller;

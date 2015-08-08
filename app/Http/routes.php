@@ -34,81 +34,107 @@ Route::group(['prefix'=>'sesi','namespace'=>'sesi','as'=>'sesi.','middleware'=>'
 Route::get("do",['as'=>'pegawai.do',"middleware"=>"UserAccessControll:pegawai",'uses'=>'sesi\SesiController@pegawaiRole']);
 Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawai",'uses'=>'sesi\SesiController@pegawaiRoleSelect']);
 
-Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middleware'=>'UserAccessControll:pegawai,stafftu'],function ()
-{
-	Route::get('/',['as'=>'landing','uses'=>'Landing@page']);
-	Route::group(['namespace'=>'MasterData','prefix'=>'masterdata'],function ()
+/**
+ * bagian routing unutk pegawai
+ */
+	Route::group(['namespace'=>'Pegawai'],function()
 	{
-		Route::get('/',['as'=>'index','uses'=>function ()
+		/**
+		 * bagian routing untuk Stuff tu
+		 */
+		Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middleware'=>'UserAccessControll:pegawai,stafftu'],function ()
 		{
-			return redirect()->route('stafftu.masterdata.classroom.index');
-		}]);
-		Route::resources([
-			'classroom'=>'ClassRoomController',
-			'disclipline'=>'DiscliplineController',
-			'discliplinecatagory'=>'DiscliplineCatagoryController',
-			'program'=>'ProgramController',
-			'religion'=>'ReligionController',
-			'degree'=>'DegreeController',
-			'schoolyear'=>'SchoolYearController',
-			'specialneed'=>'SpecialNeedController',
-			'exkul'=>'ExkulController',
+			Route::get('/',['as'=>'landing','uses'=>'Landing@page']);
+			Route::group(['namespace'=>'MasterData','prefix'=>'masterdata'],function ()
+			{
+				Route::get('/',['as'=>'index','uses'=>function ()
+				{
+					return redirect()->route('stafftu.masterdata.classroom.index');
+				}]);
+				Route::resources([
+					'classroom'=>'ClassRoomController',
+					'disclipline'=>'DiscliplineController',
+					'discliplinecatagory'=>'DiscliplineCatagoryController',
+					'program'=>'ProgramController',
+					'religion'=>'ReligionController',
+					'degree'=>'DegreeController',
+					'schoolyear'=>'SchoolYearController',
+					'specialneed'=>'SpecialNeedController',
+					'exkul'=>'ExkulController',
 
-			]);
-	});
-	Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
-	{
-		Route::get('/',['as'=>'index','uses'=>function ()
+					]);
+			});
+			Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
+			{
+				Route::get('/',['as'=>'index','uses'=>function ()
+				{
+					return redirect()->route('stafftu.kepegawaian.pegawai.index');
+				}]);
+				Route::resources([
+					'pegawai'=>'PegawaiController',
+					'tugas'=>'TugasController',
+					'guru'=>'GuruController',
+					'diklat'=>'DiklatController',
+					'pendidikan'=>'PendidikanController',
+					'pekerjaan'=>'PekerjaanController',
+					'masakerja'=>'MasaKerjaController',
+					]);
+				
+			});
+			Route::group(['namespace'=>'Student','prefix'=>'siswa'],function ()
+			{
+				Route::get('/',['as'=>'index','uses'=>function ()
+				{
+					return redirect()->route('stafftu.siswa.siswa.index');
+				}]);
+				Route::resource('class','ClassController');
+				Route::resource('siswa','StudentController');
+			});
+
+			Route::group(['namespace'=>'Pengaturan','prefix'=>'pengaturan'],function(){
+				Route::get('/',['as'=>'index','uses'=>function(){
+					return redirect()->route('stafftu.pengaturan.hobi.index');
+
+				}]);
+				Route::resources([
+					'hobi'=>'HobiController',
+					]);
+
+			});
+		});
+		/**
+		 * routing untuk bagian guru
+		 */
+		Route::group(['prefix'=>'guru','namespace'=>'Guru','as'=>'guru.','middleware'=>'UserAccessControll:pegawai,guru'],function ()
 		{
-			return redirect()->route('stafftu.kepegawaian.pegawai.index');
-		}]);
-		Route::resources([
-			'pegawai'=>'PegawaiController',
-			'tugas'=>'TugasController',
-			'guru'=>'GuruController',
-			'diklat'=>'DiklatController',
-			'pendidikan'=>'PendidikanController',
-			'pekerjaan'=>'PekerjaanController',
-			'masa kerja'=>'MasaKerjaController',
-			]);
-		
-	});
-	Route::group(['namespace'=>'Student','prefix'=>'siswa'],function ()
-	{
-		Route::get('/',['as'=>'index','uses'=>function ()
+			Route::get('/',['as'=>'landing']);
+		});
+		/**
+		 * routing untuk bagian walikelas
+		 */
+		Route::group(['prefix'=>'walikelas','namespace'=>'WaliKelas','as'=>'walikelas.','middleware'=>'UserAccessControll:pegawai,walikelas'],function ()
 		{
-			return redirect()->route('stafftu.siswa.siswa.index');
-		}]);
-		Route::resource('class','ClassController');
-		Route::resource('siswa','StudentController');
+			Route::get('/',['as'=>'landing']);
+		});
+		/**
+		 * routing untuk bagian kepala sekolah
+		 */
+		Route::group(['prefix'=>'kepalasekolah','namespace'=>'KepalaSekolah','as'=>'kepalasekolah.','middleware'=>'UserAccessControll:pegawai,kepalasekolah'],function ()
+		{
+			Route::get('/',['as'=>'landing']);
+		});
+		/**
+		 * routing untuk bagian administratif
+		 */
+		Route::group(['prefix'=>'administratif','namespace'=>'Administratif','as'=>'administratif.','middleware'=>'UserAccessControll:pegawai,administratif'],function ()
+		{
+			Route::get('/',['as'=>'landing']);
+		});
 	});
-
-	Route::group(['namespace'=>'Pengaturan','prefix'=>'pengaturan'],function(){
-		Route::get('/',['as'=>'index','uses'=>function(){
-			return redirect()->route('stafftu.pengaturan.hobi.index');
-
-		}]);
-		Route::resources([
-			'hobi'=>'HobiController',
-			]);
-
-	});
-});
-
-Route::group(['prefix'=>'guru','namespace'=>'Guru','as'=>'guru.','middleware'=>'UserAccessControll:pegawai,guru'],function ()
+/**
+ * 	routing untuk siswa
+ */
+Route::group(['namespace'=>'Siswa'],function ()
 {
-	Route::get('/',['as'=>'landing']);
-});
-Route::group(['prefix'=>'walikelas','namespace'=>'WaliKelas','as'=>'walikelas.','middleware'=>'UserAccessControll:pegawai,walikelas'],function ()
-{
-	Route::get('/',['as'=>'landing']);
-});
-
-Route::group(['prefix'=>'kepalasekolah','namespace'=>'KepalaSekolah','as'=>'kepalasekolah.','middleware'=>'UserAccessControll:pegawai,kepalasekolah'],function ()
-{
-	Route::get('/',['as'=>'landing']);
-});
-Route::group(['prefix'=>'administratif','namespace'=>'Administratif','as'=>'administratif.','middleware'=>'UserAccessControll:pegawai,administratif'],function ()
-{
-	Route::get('/',['as'=>'landing']);
+	
 });

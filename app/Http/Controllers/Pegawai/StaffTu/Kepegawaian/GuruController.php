@@ -1,43 +1,51 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\kepegawaian;
 
-use Illuminate\Http\Request;
 
-use Akademik\Http\Requests;
+
+use Akademik\Http\Requests\GuruRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Http\Requests\EskulRequest;
-use Akademik\Eskul;
+use Akademik\Guru;
+use Auth;
 
-class ExkulController extends Controller
+class GuruController extends Controller
 {
 
      public function __construct()
     {
-        parent::__construct('stafftu.masterdata.exkul', new Eskul(),'Ekstra Kurikuler');
-    }
+        parent::__construct('stafftu.kepegawaian.guru', new Guru(), 'Data Guru');
 
+    }
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-   
+    // public function index()
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return Response
      */
-    
+    // public function create()
+    // {
+    //     //
+    // }
+
     /**
      * Store a newly created resource in storage.
      *
      * @return Response
      */
-    public function store( Eskul $model,EskulRequest $r)
+    public function store( Guru $bebas,GuruRequest $g)
     {
-        if ($model->fill($r->all())->save()) {
+
+    if ($bebas->fill($g->all())->save()) {
             return $this->routeAndSuccess('store');
         }
         return $this->routeBackWithError('store');
@@ -49,7 +57,10 @@ class ExkulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    
+    // public function show($id)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -57,7 +68,10 @@ class ExkulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    
+    // public function edit($id)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.
@@ -65,9 +79,10 @@ class ExkulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update( Eskul $model,EskulRequest $r)
+    public function update( Guru $bebas, GuruRequest $g)
     {
-         if ($model->fill($r->all())->save()) {
+        
+        if ($bebas->fill($g->all())->save()) {
             return $this->routeAndSuccess('update');
         }
         return $this->routeBackWithError('update');
@@ -79,9 +94,9 @@ class ExkulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy( Eskul $model)
+    public function destroy(Guru $bebas)
     {
-        if ($model->delete()) {
+        if ($bebas->delete()) {
             return $this->routeAndSuccess('destroy');
         }
         return $this->routeBackWithError('destroy');

@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
 
 use Illuminate\Http\Request;
 use Akademik\Http\Requests\ReligionRequest;

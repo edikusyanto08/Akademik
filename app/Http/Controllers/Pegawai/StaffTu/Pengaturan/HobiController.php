@@ -1,26 +1,27 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\kepegawaian;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Pengaturan;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests;
+use Akademik\Http\Requests\HobiRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Pegawai;
+use Akademik\Hobi;
 
-class PendidikanController extends Controller
+class HobiController extends Controller
 {
+
      public function __construct()
     {
-        parent::__construct('stafftu.kepegawaian.pendidikan', new Pegawai(), 'Pendidikan');
-
+        parent::__construct('stafftu.pengaturan.hobi', new Hobi(),'hobi');
     }
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    
+   
+
     /**
      * Show the form for creating a new resource.
      *
@@ -32,9 +33,12 @@ class PendidikanController extends Controller
      *
      * @return Response
      */
-    public function store()
+    public function store( Hobi $model,  HobiRequest $r)
     {
-        //
+        if ($model->fill($r->all())->save()) {
+            return $this->routeAndSuccess('store');
+        }
+        return $this->routeBackWithError('store');
     }
 
     /**
@@ -51,16 +55,20 @@ class PendidikanController extends Controller
      * @param  int  $id
      * @return Response
      */
-   
+    
+
     /**
      * Update the specified resource in storage.
      *
      * @param  int  $id
      * @return Response
      */
-    public function update()
+    public function update(Hobi $model, HobiRequest $r)
     {
-        //
+        if ($model->fill($r->all())->save()) {
+            return $this->routeAndSuccess('update');
+        }
+        return $this->routeBackWithError('update');
     }
 
     /**
@@ -69,8 +77,11 @@ class PendidikanController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy()
+    public function destroy(Hobi $model)
     {
-        //
+         if ($model->delete()) {
+            return $this->routeAndSuccess('destroy');
+        }
+        return $this->routeBackWithError('destroy');
     }
 }

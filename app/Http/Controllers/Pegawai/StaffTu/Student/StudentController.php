@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\Student;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Student;
 
 use Illuminate\Http\Request;
 use Akademik\Http\Requests\StudentRequest;

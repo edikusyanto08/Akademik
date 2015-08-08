@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\kepegawaian;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\kepegawaian;
 
 use Illuminate\Http\Request;
 
@@ -8,11 +8,11 @@ use Akademik\Http\Requests;
 use Akademik\Http\Controllers\Controller;
 use Akademik\Pegawai;
 
-class DiklatController extends Controller
+class PendidikanController extends Controller
 {
      public function __construct()
     {
-        parent::__construct('stafftu.kepegawaian.diklat', new Pegawai(), 'Diklat');
+        parent::__construct('stafftu.kepegawaian.pendidikan', new Pegawai(), 'Pendidikan');
 
     }
     /**
@@ -20,15 +20,13 @@ class DiklatController extends Controller
      *
      * @return Response
      */
-   
-
+    
     /**
      * Show the form for creating a new resource.
      *
      * @return Response
      */
     
-
     /**
      * Store a newly created resource in storage.
      *
@@ -53,8 +51,7 @@ class DiklatController extends Controller
      * @param  int  $id
      * @return Response
      */
-    
-
+   
     /**
      * Update the specified resource in storage.
      *

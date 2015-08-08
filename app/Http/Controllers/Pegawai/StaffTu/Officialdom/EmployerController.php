@@ -1,30 +1,21 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\Student;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Officialdom;
 
 use Illuminate\Http\Request;
 
 use Akademik\Http\Requests;
 use Akademik\Http\Controllers\Controller;
 
-class ClassController extends Controller
+class EmployerController extends Controller
 {
-  
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @return Response
-     */
+   
     public function store()
     {
         //
     }
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
+
+   
     public function update($id)
     {
         //

@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\StaffTu\Officialdom;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Officialdom;
 
 use Illuminate\Http\Request;
 

@@ -487,7 +487,6 @@ return array(
     'PHP_Token_WHITESPACE' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
-<<<<<<< HEAD
     'PangkatPegawai' => $baseDir . '/database/migrations/2015_08_06_115228_PangkatPegawai.php',
     'PatchDataPegawai' => $baseDir . '/database/migrations/2015_08_06_113407_PatchDataPegawai.php',
     'PatchDataPegawaiDiklat' => $baseDir . '/database/migrations/2015_08_06_113441_PatchDataPegawaiDiklat.php',
@@ -500,8 +499,6 @@ return array(
     'PatchDataSiswaAyah' => $baseDir . '/database/migrations/2015_08_06_113642_PatchDataSiswaAyah.php',
     'PatchDataSiswaIbu' => $baseDir . '/database/migrations/2015_08_06_113648_PatchDataSiswaIbu.php',
     'PatchDataSiswaWali' => $baseDir . '/database/migrations/2015_08_06_113656_PatchDataSiswaWali.php',
-=======
->>>>>>> 1904f295be1203342c4cb769ae03771155b8993f
     'PegawaiKebutuhanKhusus' => $baseDir . '/database/migrations/2015_06_13_161738_pegawai_kebutuhan_khusus.php',
     'SebastianBergmann\\Comparator\\ArrayComparator' => $vendorDir . '/sebastian/comparator/src/ArrayComparator.php',
     'SebastianBergmann\\Comparator\\Comparator' => $vendorDir . '/sebastian/comparator/src/Comparator.php',
