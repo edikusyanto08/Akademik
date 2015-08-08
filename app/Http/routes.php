@@ -12,7 +12,10 @@ Route::model('tugas',Akademik\PegawaiTugas::class);
 Route::model('guru',Akademik\Guru::class);
 Route::model('hobi',Akademik\Hobi::class);
 Route::model('exkul',Akademik\Eskul::class);
-
+Route::model('ijazah',Akademik\Ijazah::class);
+Route::model('akta',Akademik\Akta::class);
+Route::model('golongan',Akademik\GolonganPegawai::class);
+Route::model('pangkat',Akademik\PangkatPegawai::class);
 
 
 Route::get('/', function () {
@@ -98,6 +101,10 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 				}]);
 				Route::resources([
 					'hobi'=>'HobiController',
+					'ijazah'=>'IjazahController',
+					'akta'=>'AktaController',
+					'golongan'=>'GolonganController',
+					'pangkat'=>'PangkatController',
 					]);
 
 			});

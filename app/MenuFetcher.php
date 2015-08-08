@@ -60,6 +60,10 @@ class MenuFetcher
 						'icon'=> 'md md-conf',
 						'inGroup' =>[
 							['route'=>'hobi','name'=>'Hobi','icon'=>'fa fa-graduation-cap'],
+							['route'=>'ijazah','name'=>'Ijazah','icon'=>'fa fa-graduation-cap'],
+							['route'=>'akta','name'=>'Akta','icon'=>'fa fa-graduation-cap'],
+							['route'=>'golongan','name'=>'Golongan','icon'=>'fa fa-graduation-cap'],
+							['route'=>'pangkat','name'=>'Pangkat','icon'=>'fa fa-graduation-cap'],
 						]
 					]
 			]

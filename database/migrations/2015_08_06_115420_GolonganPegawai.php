@@ -12,10 +12,11 @@ class GolonganPegawai extends Migration
      */
     public function up()
     {
-        Schema::create('golongan_pegawai', function($table)
+        Schema::create('golongan_pegawais', function($table)
         {
             $table->increments('id');
             $table->string('label',30);
+            $table->timestamps();
         
         });
     }
@@ -27,6 +28,6 @@ class GolonganPegawai extends Migration
      */
     public function down()
     {
-        Schema::drop('golongan_pegawi');
+        Schema::drop('golongan_pegawais');
     }
 }

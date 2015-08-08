@@ -16,6 +16,7 @@ class Akta extends Migration
         {
             $table->increments('id');
             $table->string('label',30);
+            $table->timestamps();
         
         });
     }
