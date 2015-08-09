@@ -16,10 +16,16 @@ class CreateSiswaAyahsTable extends Migration
             $table->integer('siswa_id')->unsigned()->index();
             $table->foreign('siswa_id')->references('id')->on('siswas')->onUpdate('cascade')->onDelete('cascade');
             $table->string('nama',25);
-            $table->string('tahun_lahir',4);
+            $table->date('tanggal_lahir');
+            $table->string('tempat_lahir');
+            $table->enum('kewarganegaraan',['WNI','WNA']);
             $table->integer('pendidikan_id')->unsigned()->index();
             $table->foreign('pendidikan_id')->references('id')->on('pendidikans')->onUpdate('cascade');
             $table->integer('penghasilan');
+            $table->string('pekerjaan');
+            $table->enum('status',['yatim','piatu','yatim piatu']);
+            $table->string('no_telp');
+            $table->string('alamat');
             $table->timestamps();
         });
     }

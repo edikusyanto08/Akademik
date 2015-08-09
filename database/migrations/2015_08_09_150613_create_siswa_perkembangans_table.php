@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSiswaHobisTable extends Migration
+class CreateSiswaPerkembangansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,15 @@ class CreateSiswaHobisTable extends Migration
      */
     public function up()
     {
-        Schema::create('siswa_hobis', function (Blueprint $table) {
+        Schema::create('siswa_perkembangans', function (Blueprint $table) {
             $table->integer('siswa_id')->unsigned()->index();
             $table->foreign('siswa_id')->references('id')->on('siswas')->onUpdate('cascade')->onDelete('cascade');
-            $table->enum('jenis_hobi',['kesenian','olahraga','organisasi','lain-lain']);
-            $table->integer('hobi_id')->unsigned()->index();
-            $table->foreign('hobi_id')->references('id')->on('hobis')->onUpdate('cascade')->onDelete('cascade');
-            $table->hobi_idtimestamps();
+            $table->string('beasiswa');
+            $table->date('tanggal_pindah');
+            $table->string('alasan_pindah');
+            $table->date('tanggal_lulus');
+            $table->string('no_sttb');
+            $table->timestamps();
         });
     }
 
@@ -29,6 +31,6 @@ class CreateSiswaHobisTable extends Migration
      */
     public function down()
     {
-        Schema::drop('siswa_hobis');
+        Schema::drop('siswa_perkembangans');
     }
 }
