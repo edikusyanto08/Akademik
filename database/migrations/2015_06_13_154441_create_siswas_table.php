@@ -16,7 +16,7 @@ class CreateSiswasTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
-            $table->string('nama',25);false
+            $table->string('nama',25);
             $table->enum('gender',['L','P']);
             $table->string('nis',10);
             $table->string('nisn',10);

@@ -18,7 +18,7 @@ class CreateSiswaHobisTable extends Migration
             $table->enum('jenis_hobi',['kesenian','olahraga','organisasi','lain-lain']);
             $table->integer('hobi_id')->unsigned()->index();
             $table->foreign('hobi_id')->references('id')->on('hobis')->onUpdate('cascade')->onDelete('cascade');
-            $table->hobi_idtimestamps();
+            $table->timestamps();
         });
     }
 
