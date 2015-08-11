@@ -18,7 +18,7 @@ class CreateSiswaKesehatansTable extends Migration
             $table->string('golongan_darah',2);
             $table->string('penyakit');
             $table->string('kebutuhan_khusus_id')->unsigned()->index();
-            $table->foreign('kebutuhan_khusus_id')->references('id')->on('siswas')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('kebutuhan_khusus_id')->references('id')->on('kebutuhan_khususes')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('berat');
             $table->integer('tinggi');
             $table->timestamps();
