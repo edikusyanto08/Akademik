@@ -64,7 +64,6 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'religion'=>'ReligionController',
 					'degree'=>'DegreeController',
 					'schoolyear'=>'SchoolYearController',
-					'specialneed'=>'SpecialNeedController',
 					'exkul'=>'ExkulController',
 
 					]);
@@ -109,6 +108,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'akta'=>'AktaController',
 					'golongan'=>'GolonganController',
 					'pangkat'=>'PangkatController',
+					'specialneed'=>'SpecialNeedController',
 					]);
 
 			});
