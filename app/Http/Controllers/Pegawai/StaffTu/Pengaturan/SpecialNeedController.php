@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Pengaturan;
 
 use Illuminate\Http\Request;
 
@@ -12,7 +12,7 @@ class SpecialNeedController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.specialneed', new KebutuhanKhusus(), 'Kebutuhan Khusus');
+        parent::__construct('stafftu.pengaturan.specialneed', new KebutuhanKhusus(), 'Kebutuhan Khusus');
     }
 
     /**

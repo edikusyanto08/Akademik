@@ -66,7 +66,6 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'schoolyear'=>'SchoolYearController',
 					'specialneed'=>'SpecialNeedController',
 					'ekskulController'=>'EkskulController',
-
 					]);
 			});
 			Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
@@ -109,6 +108,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'akta'=>'AktaController',
 					'golongan'=>'GolonganController',
 					'pangkat'=>'PangkatController',
+					'specialneed'=>'SpecialNeedController',
 					]);
 
 			});

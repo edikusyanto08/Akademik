@@ -24,9 +24,15 @@ class MenuFetcher
 							['route'=>'program','name'=>'Jurusan','icon'=>'fa fa-random'],
 							['route'=>'degree','name'=>'Kelas','icon'=>'fa fa-line-chart'],
 							['route'=>'schoolyear','name'=>'Tahun Angkatan','icon'=>'fa fa-calendar'],
+<<<<<<< HEAD
 							['route'=>'specialneed','name'=>'Kebutuhan Khusus','icon'=>'fa fa-asterisk'],
 							['route'=>'ekskul','name'=>'Ekskul','icon'=>'fa fa-asterisk'],
 							['route'=>'specialneed','name'=>'','icon'=>'fa fa-asterisk'],
+=======
+							
+							['route'=>'exkul','name'=>'Exkul','icon'=>'fa fa-asterisk'],
+							
+>>>>>>> 0fd6aa749bd7c15b1bd35dc59b17078a0d031a01
 						]
 					],
 					[
@@ -66,6 +72,7 @@ class MenuFetcher
 							['route'=>'akta','name'=>'Akta','icon'=>'fa fa-graduation-cap'],
 							['route'=>'golongan','name'=>'Golongan','icon'=>'fa fa-graduation-cap'],
 							['route'=>'pangkat','name'=>'Pangkat','icon'=>'fa fa-graduation-cap'],
+							['route'=>'specialneed','name'=>'Kebutuhan Khusus','icon'=>'fa fa-asterisk'],
 						]
 					]
 			]
