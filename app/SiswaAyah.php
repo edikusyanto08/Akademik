@@ -8,7 +8,7 @@ class SiswaAyah extends Model
 {
     protected $guarded = ['siswa_id'];
 
-    public function siswa()
+    public function sisiwa()
     {
     	return $this->belongsTo(Siswa::class);
     }

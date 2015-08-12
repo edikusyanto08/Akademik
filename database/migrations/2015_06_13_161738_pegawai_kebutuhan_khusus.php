@@ -17,7 +17,7 @@ class PegawaiKebutuhanKhusus extends Migration
             $table->integer('pegawai_id')->unsigned()->index();
             $table->foreign('pegawai_id')->references('id')->on('pegawais')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('kebutuhan_khusus_id')->unsigned()->index();
-            $table->foreign('kebutuhan_khusus_id')->references('id')->on('kebutuhan_khususes')->onUpdate('cascade')->onDelete('restrict');
+            $table->foreign('kebutuhan_khusus_id')->references('id')->on('kebutuhan_khususes')->onUpdate('cascade');
             $table->timestamps();
         });
     }

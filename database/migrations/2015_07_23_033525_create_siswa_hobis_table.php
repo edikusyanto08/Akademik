@@ -15,6 +15,7 @@ class CreateSiswaHobisTable extends Migration
         Schema::create('siswa_hobis', function (Blueprint $table) {
             $table->integer('siswa_id')->unsigned()->index();
             $table->foreign('siswa_id')->references('id')->on('siswas')->onUpdate('cascade')->onDelete('cascade');
+            $table->enum('jenis_hobi',['kesenian','olahraga','organisasi','lain-lain']);
             $table->integer('hobi_id')->unsigned()->index();
             $table->foreign('hobi_id')->references('id')->on('hobis')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
