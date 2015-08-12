@@ -16,7 +16,7 @@ class CreateSiswaEskulsTable extends Migration
             $table->integer('siswa_id')->unsigned()->index();
             $table->foreign('siswa_id')->references('id')->on('siswas')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('eskul_id')->unsigned()->index();
-            $table->foreign('eskul_id')->references('id')->on('eskuls')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('eskul_id')->references('id')->on('ekskuls')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

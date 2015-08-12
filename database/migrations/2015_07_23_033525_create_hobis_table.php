@@ -15,6 +15,7 @@ class CreateHobisTable extends Migration
         Schema::create('hobis', function (Blueprint $table) {
             $table->increments('id');
             $table->string('label',25);
+            $table->enum('jenis_hobi',['kesenian','olahraga','organisasi','lain-lain']);
             $table->timestamps();
         });
     }
