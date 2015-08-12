@@ -4,7 +4,7 @@ namespace Akademik;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Eskul extends Model
+class Ekskul extends Model
 {
     protected $guarded=['id'];
 

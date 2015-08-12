@@ -4,7 +4,7 @@ namespace Akademik;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SiswaEskul extends Model
+class SiswaEkskul extends Model
 {
     protected $guarded = ['id'];
 
@@ -14,5 +14,9 @@ class SiswaEskul extends Model
     }
     public function eskul(){
     	return $this->belongsTo(Eskul::class,'eskul_id','id');
+    }
+    public function ekskul()
+    {
+    	return $this->belongsTo(ekskul::class);
     }
 }
