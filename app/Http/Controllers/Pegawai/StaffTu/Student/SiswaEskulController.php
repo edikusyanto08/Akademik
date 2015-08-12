@@ -1,27 +1,26 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Student;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests\ExkulRequest;
+use Akademik\Http\Requests\SiswaEskulRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Eskul;
+use Akademik\SiswaEskul;
 
-class ExkulController extends Controller
+class SiswaEskulController extends Controller
 {
 
      public function __construct()
     {
-        parent::__construct('stafftu.masterdata.exkul', new Eskul(),'Ekstra Kurikuler');
+        parent::__construct('stafftu.siswa.siswaeskul', new SiswaEskul(), 'Ekstra KuriKuler');
     }
-
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-   
+    
 
     /**
      * Show the form for creating a new resource.
@@ -34,12 +33,13 @@ class ExkulController extends Controller
      *
      * @return Response
      */
-    public function store( Eskul $model,ExkulRequest $r)
+    public function store(SiswaEskul $model,SiswaEskulRequest $r)
     {
         if ($model->fill($r->all())->save()) {
+
             return $this->routeAndSuccess('store');
         }
-        return $this->routeBackWithError('store');
+        return $this->routebackWithError('store');
     }
 
     /**
@@ -57,19 +57,19 @@ class ExkulController extends Controller
      * @return Response
      */
     
-
     /**
      * Update the specified resource in storage.
      *
      * @param  int  $id
      * @return Response
      */
-    public function update( Eskul $model,ExkulRequest $r)
+    public function update(SiswaEskul $model,SiswaEskulRequest $r)
     {
-         if ($model->fill($r->all())->save()) {
+        if ($model->fill($r->all())->save()) {
+            
             return $this->routeAndSuccess('update');
         }
-        return $this->routeBackWithError('update');
+        return $this->routebackWithError('update');
     }
 
     /**
@@ -78,11 +78,11 @@ class ExkulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy( Eskul $model)
+    public function destroy(SiswaEskul $model)
     {
         if ($model->delete()) {
-            return $this->routeAndSuccess('destroy');
+             return $this->routeAndSuccess('delete');
         }
-        return $this->routeBackWithError('destroy');
+        return $this->routebackWithError('delete');
     }
 }

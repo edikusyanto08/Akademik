@@ -1,27 +1,24 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Kepegawaian;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests\ExkulRequest;
+use Akademik\Http\Requests\KebutuhanKhususPegawaiRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Eskul;
+use Akademik\PegawaiKebutuhanKhusus;
 
-class ExkulController extends Controller
+class KebutuhanKhususPegawaiController extends Controller
 {
-
-     public function __construct()
-    {
-        parent::__construct('stafftu.masterdata.exkul', new Eskul(),'Ekstra Kurikuler');
+    public function __construct(){
+        parent::__construct('stafftu.kepegawaian.kebutuhankhususpegawai', new PegawaiKebutuhanKhusus(), 'Kebutuhan Khusus Pegawai');
     }
-
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-   
+    
 
     /**
      * Show the form for creating a new resource.
@@ -34,12 +31,12 @@ class ExkulController extends Controller
      *
      * @return Response
      */
-    public function store( Eskul $model,ExkulRequest $r)
+    public function store(KebutuhanKhusus $model,KebutuhanKhususPegawaiRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('store');
         }
-        return $this->routeBackWithError('store');
+        return $this->routebackWithError('store');
     }
 
     /**
@@ -57,19 +54,15 @@ class ExkulController extends Controller
      * @return Response
      */
     
-
     /**
      * Update the specified resource in storage.
      *
      * @param  int  $id
      * @return Response
      */
-    public function update( Eskul $model,ExkulRequest $r)
+    public function update()
     {
-         if ($model->fill($r->all())->save()) {
-            return $this->routeAndSuccess('update');
-        }
-        return $this->routeBackWithError('update');
+        //
     }
 
     /**
@@ -78,11 +71,8 @@ class ExkulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy( Eskul $model)
+    public function destroy()
     {
-        if ($model->delete()) {
-            return $this->routeAndSuccess('destroy');
-        }
-        return $this->routeBackWithError('destroy');
+        //
     }
 }

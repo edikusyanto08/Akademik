@@ -16,6 +16,8 @@ Route::model('ijazah',Akademik\Ijazah::class);
 Route::model('akta',Akademik\Akta::class);
 Route::model('golongan',Akademik\GolonganPegawai::class);
 Route::model('pangkat',Akademik\PangkatPegawai::class);
+Route::model('siswaeskul',Akademik\SiswaEskul::class);
+Route::model('pegawaikebutuhankhusus',Akademik\SiswaEskul::class);
 
 
 Route::get('/', function () {
@@ -77,6 +79,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'pegawai'=>'PegawaiController',
 					'tugas'=>'TugasController',
 					'guru'=>'GuruController',
+					'pegawaikebutuhankhusus'=>'KebutuhanKhususPegawaiController',
 					'diklat'=>'DiklatController',
 					'pendidikan'=>'PendidikanController',
 					'pekerjaan'=>'PekerjaanController',
@@ -92,6 +95,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 				}]);
 				Route::resource('class','ClassController');
 				Route::resource('siswa','StudentController');
+				Route::resource('siswaeskul','SiswaEskulController');
 			});
 
 			Route::group(['namespace'=>'Pengaturan','prefix'=>'pengaturan'],function(){
