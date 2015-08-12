@@ -8,7 +8,7 @@ use Akademik\Http\Requests\ExkulRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\Eskul;
 
-class ExkulController extends Controller
+class EkskulController extends Controller
 {
 
      public function __construct()

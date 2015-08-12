@@ -11,7 +11,7 @@ Route::model('pegawai',Akademik\Pegawai::class);
 Route::model('tugas',Akademik\PegawaiTugas::class);
 Route::model('guru',Akademik\Guru::class);
 Route::model('hobi',Akademik\Hobi::class);
-Route::model('exkul',Akademik\Eskul::class);
+Route::model('ekskul',Akademik\Eskul::class);
 Route::model('ijazah',Akademik\Ijazah::class);
 Route::model('akta',Akademik\Akta::class);
 Route::model('golongan',Akademik\GolonganPegawai::class);
@@ -65,7 +65,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'degree'=>'DegreeController',
 					'schoolyear'=>'SchoolYearController',
 					'specialneed'=>'SpecialNeedController',
-					'exkul'=>'ExkulController',
+					'ekskulController'=>'EkskulController',
 
 					]);
 			});
