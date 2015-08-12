@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEkskulTable extends Migration
+class CreateEkskulsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateEkskulTable extends Migration
      */
     public function up()
     {
-        Schema::create('ekskul', function (Blueprint $table) {
+        Schema::create('ekskuls', function (Blueprint $table) {
             $table->increments('id');
             $table->string('label',25);
             $table->timestamps();
@@ -26,6 +26,6 @@ class CreateEkskulTable extends Migration
      */
     public function down()
     {
-        Schema::drop('ekskul');
+        Schema::drop('ekskuls');
     }
 }

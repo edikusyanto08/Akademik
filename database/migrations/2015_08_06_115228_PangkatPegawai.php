@@ -12,7 +12,7 @@ class PangkatPegawai extends Migration
      */
     public function up()
     {
-        Schema::create('pangkat_pegawais', function($table)
+        Schema::create('pangkat_pegawai', function($table)
         {
             $table->increments('id');
             $table->string('label',30);
@@ -27,6 +27,6 @@ class PangkatPegawai extends Migration
      */
     public function down()
     {
-        Schema::drop('pangkat_pegawis');
+        Schema::drop('pangkat_pegawai');
     }
 }

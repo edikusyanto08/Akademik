@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Akta' => $baseDir . '/database/migrations/2015_08_06_113913_Akta.php',
-    'CreateEkskulTable' => $baseDir . '/database/migrations/2015_07_23_033628_create_ekskuls_table.php',
+    'CreateEkskulsTable' => $baseDir . '/database/migrations/2015_07_23_033628_create_ekskuls_table.php',
     'CreateGuruMataPelajaransTable' => $baseDir . '/database/migrations/2015_07_23_034804_create_guru_mata_pelajarans_table.php',
     'CreateGurusTable' => $baseDir . '/database/migrations/2015_06_13_154741_create_gurus_table.php',
     'CreateHobisTable' => $baseDir . '/database/migrations/2015_07_23_033525_create_hobis_table.php',

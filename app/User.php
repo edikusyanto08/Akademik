@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik;
+namespace App;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -32,16 +32,4 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
-    public static function getLogin($username, $password)
-    {
-         return self::where('username',$username)->where('password',$password)->first();
-    }
-    public function pegawai()
-    {
-        return $this->hasOne(Pegawai::class);
-    }
-    public function siswa()
-    {
-        return $this->hasOne(Siswa::class);
-    }
 }

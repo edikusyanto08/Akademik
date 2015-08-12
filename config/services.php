@@ -24,14 +24,14 @@ return [
     ],
 
     'ses' => [
-        'key' => '',
+        'key'    => '',
         'secret' => '',
         'region' => 'us-east-1',
     ],
 
     'stripe' => [
-        'model'  => Akademik\User::class,
-        'key' => '',
+        'model'  => App\User::class,
+        'key'    => '',
         'secret' => '',
     ],
 
