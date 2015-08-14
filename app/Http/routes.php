@@ -11,7 +11,7 @@ Route::model('pegawai',Akademik\Pegawai::class);
 Route::model('tugas',Akademik\PegawaiTugas::class);
 Route::model('guru',Akademik\Guru::class);
 Route::model('hobi',Akademik\Hobi::class);
-Route::model('exkul',Akademik\Eskul::class);
+Route::model('ekskul',Akademik\Ekskul::class);
 Route::model('ijazah',Akademik\Ijazah::class);
 Route::model('akta',Akademik\Akta::class);
 Route::model('golongan',Akademik\GolonganPegawai::class);
@@ -45,7 +45,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 		/**
 		 * bagian routing untuk Stuff tu
 		 */
-		Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middleware'=>'UserAccessControll:pegawai,stafftu'],function ()
+		Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','middleware'=>'UserAccessControll:pegawai,stafftu'],function ()
 		{
 			Route::get('/',['as'=>'landing','uses'=>'Landing@page']);
 			Route::group(['namespace'=>'MasterData','prefix'=>'masterdata'],function ()
@@ -62,8 +62,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'religion'=>'ReligionController',
 					'degree'=>'DegreeController',
 					'schoolyear'=>'SchoolYearController',
-					'specialneed'=>'SpecialNeedController',
-					'exkul'=>'ExkulController',
+					'ekskul'=>'ekskulController',
 
 					]);
 			});
@@ -90,7 +89,6 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 				{
 					return redirect()->route('stafftu.siswa.siswa.index');
 				}]);
-				Route::resource('class','ClassController');
 				Route::resource('siswa','StudentController');
 			});
 
@@ -101,6 +99,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 				}]);
 				Route::resources([
 					'hobi'=>'HobiController',
+					'specialneed'=>'SpecialNeedController',
 					'ijazah'=>'IjazahController',
 					'akta'=>'AktaController',
 					'golongan'=>'GolonganController',

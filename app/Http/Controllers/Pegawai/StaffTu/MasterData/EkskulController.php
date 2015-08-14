@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 
 use Akademik\Http\Requests\ExkulRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Eskul;
+use Akademik\Ekskul;
 
 class EkskulController extends Controller
 {
 
      public function __construct()
     {
-        parent::__construct('stafftu.masterdata.exkul', new Eskul(),'Ekstra Kurikuler');
+        parent::__construct('stafftu.masterdata.exkul', new Ekskul(),'Ekstra Kurikuler');
     }
 
     /**
@@ -34,7 +34,7 @@ class EkskulController extends Controller
      *
      * @return Response
      */
-    public function store( Eskul $model,ExkulRequest $r)
+    public function store( Ekskul $model,ExkulRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('store');
@@ -64,7 +64,7 @@ class EkskulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update( Eskul $model,ExkulRequest $r)
+    public function update( Ekskul $model,ExkulRequest $r)
     {
          if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('update');
@@ -78,7 +78,7 @@ class EkskulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy( Eskul $model)
+    public function destroy( Ekskul $model)
     {
         if ($model->delete()) {
             return $this->routeAndSuccess('destroy');

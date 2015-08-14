@@ -8,7 +8,7 @@ class Ekskul extends Model
 {
     protected $guarded=['id'];
 
-    public function siswaeskul(){
+    public function siswa(){
     	return $this->hasOne(SiswaEskul::class);
     }
 }

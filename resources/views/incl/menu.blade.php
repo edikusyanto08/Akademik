@@ -49,7 +49,7 @@
 						</a>
 					</li>
 				@endif
-			@endforeach
+			@endforeach 
 		</ul><!--end .main-menu -->
 		<!-- END MAIN MENU -->
 
