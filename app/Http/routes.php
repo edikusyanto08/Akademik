@@ -47,7 +47,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 		 */
 		Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','middleware'=>'UserAccessControll:pegawai,stafftu'],function ()
 		{
-			Route::get('/',['as'=>'landing','uses'=>'Landing@page']);
+			Route::get('/',['as'=>'stafftu.landing','uses'=>'Landing@page']);
 			Route::group(['namespace'=>'MasterData','prefix'=>'masterdata'],function ()
 			{
 				Route::get('/',['as'=>'index','uses'=>function ()
@@ -62,7 +62,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					'religion'=>'ReligionController',
 					'degree'=>'DegreeController',
 					'schoolyear'=>'SchoolYearController',
-					'ekskul'=>'ekskulController',
+					'ekskul'=>'EkskulController',
 
 					]);
 			});

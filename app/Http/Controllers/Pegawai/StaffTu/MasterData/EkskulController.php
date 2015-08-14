@@ -13,7 +13,7 @@ class EkskulController extends Controller
 
      public function __construct()
     {
-        parent::__construct('stafftu.masterdata.exkul', new Ekskul(),'Ekstra Kurikuler');
+        parent::__construct('stafftu.masterdata.ekskul', new Ekskul(),'Ekstra Kurikuler');
     }
 
     /**
