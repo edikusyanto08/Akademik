@@ -101,7 +101,7 @@ return array(
     'Akademik\\PegawaiTugas' => $baseDir . '/app/PegawaiTugas.php',
     'Akademik\\Pekerjaan' => $baseDir . '/app/Pekerjaan.php',
     'Akademik\\Pendidikan' => $baseDir . '/app/Pendidikan.php',
-    'Akademik\\Penghasilan' => $baseDir . '/app/Penghasilan.php',
+    'Akademik\\Penghasilan' => $baseDir . '/app/penghasilan.php',
     'Akademik\\Program' => $baseDir . '/app/Program.php',
     'Akademik\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'Akademik\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
