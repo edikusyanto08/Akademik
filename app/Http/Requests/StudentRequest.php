@@ -34,7 +34,10 @@ class StudentRequest extends Request
                         'tanggal_lahir'=>'required',
                         'nik'=>'required',
                         'agama'=>'required',    
-                        'no_skhun'=>'required',    
+                          
+                        'urutan_saudara'=>'required',    
+                            
+                           
                         'jalan'=>'required',
                         'gang'=>'required',
                         'blok'=>'required',
@@ -70,7 +73,8 @@ class StudentRequest extends Request
                         'tanggal_lahir.required'=>'Kolom tanngal lahir siswa tidak boleh kosong',
                         'nik.required'=>'Kolom NIK siswa tidak boleh kosong',
                         'agama.required'=>'Kolom Agama siswa tidak boleh kosong',
-                        'no_skhun.required'=>'Kolom nomor SKHUN siswa tidak boleh kosong',
+                        
+                        'urutan_saudara.required'=>'Kolom anak ke- tidak boleh kosong',
                         'jalan.required'=>'Kolom Jalan tidak boleh kosong',
                         'gang.required'=>'Kolom Gang tidak boleh kosong',
                         'blok.required'=>'Kolom Blok tidak boleh kosong',

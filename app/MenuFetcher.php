@@ -33,7 +33,7 @@ class MenuFetcher
 						'icon'=> 'md md-accessibility',
 						'inGroup' =>[
 							['route'=>'siswa','name'=>'Data Induk Siswa','icon'=>'fa fa-graduation-cap'],
-							['route'=>'siswa','name'=>'siswa','icon'=>'fa fa-graduation-cap'],
+							['route'=>'siswahobi','name'=>'Hobi Siswa','icon'=>'fa fa-graduation-cap'],
 							['route'=>'siswa','name'=>'siswa','icon'=>'fa fa-graduation-cap'],
 							['route'=>'siswa','name'=>'siswa','icon'=>'fa fa-graduation-cap'],
 						]

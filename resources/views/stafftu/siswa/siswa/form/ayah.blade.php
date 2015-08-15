@@ -9,8 +9,8 @@
 </div>
 <div class="col-xs-3">
 	<div class="form-group floating-label">
-		{!!Form::text('tahun_lahir_ayah',null,['class'=>'form-control', 'id'=>'tahun_lahir_ayah'])!!}
-		{!!Form::label('tahun_lahir_ayah','Tahun Lahir ')!!}
+		{!!Form::text('tanggal_lahir_ayah',null,['class'=>'form-control txt-datepicker', 'id'=>'tanggal_lahir_ayah'])!!}
+		{!!Form::label('tanggal_lahir_ayah','Tanggal Lahir')!!}
 	</div>
 </div>
 <div class="col-xs-9">
@@ -19,7 +19,7 @@
 		{!!Form::label('pendidikan_terakhir_ayah','Pendidikan')!!}
 	</div>
 </div>
-<div class="col-xs-8">
+<div class="col-xs-4">
 	<div class="form-group floating-label">
 		{!!Form::select('pekerjaan_ayah',$pekerjaan->lists(),null,['class'=>'form-control', 'id'=>'pekerjaan_ayah'])!!}
 		{!!Form::label('pekerjaan_ayah','Pekerjaan')!!}
@@ -27,7 +27,25 @@
 </div>
 <div class="col-xs-4">
 	<div class="form-group floating-label">
+		{!!Form::text('tempat_lahir',null,['class'=>'form-control ', 'id'=>'tempat_lahir'])!!}
+		{!!Form::label('tempat_lahir','Tempat Lahir')!!}
+	</div>
+</div>
+<div class="col-xs-4">
+	<div class="form-group floating-label">
 		{!!Form::select('penghasilan_ayah',$penghasilan->lists(),null,['class'=>'form-control', 'id'=>'penghasilan_ayah'])!!}
 		{!!Form::label('penghasilan_ayah','Penghasilan ')!!}
+	</div>
+</div>
+<div class="col-xs-6">
+	<div class="form-group floating-label">
+		{!!Form::text('no_telp',null,['class'=>'form-control ', 'id'=>'no_telp','data-inputmask'=>"'mask': '999-999-999-999'"])!!}
+		{!!Form::label('no_telp','Nomor Telepon')!!}
+	</div>
+</div>
+<div class="col-xs-6">
+	<div class="form-group floating-label">
+		{!!Form::text('alamat',null,['class'=>'form-control ', 'id'=>'alamat'])!!}
+		{!!Form::label('alamat','Alamat')!!}
 	</div>
 </div>

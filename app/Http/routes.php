@@ -86,6 +86,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 						return redirect()->route('stafftu.siswa.siswa.index');
 					}]);
 					Route::resource('siswa','StudentController');
+					Route::resource('siswahobi','SiswaHobiController');
 				});
 
 				Route::group(['namespace'=>'Pengaturan','prefix'=>'pengaturan'],function(){

@@ -33,9 +33,17 @@ class StudentController extends Controller
                                 'tanggal_lahir',
                                 'nik',
                                 'agama',
-                                'penerima_kps',
-                                'no_kps',
-                                'no_skhun'
+                                'kewarganegaraan',
+                                'urutan_saudara',
+                                'jumlah_saudara_kandung',
+                                'jumlah_saudara_tiri',
+                                'jumlah_saudara_angkat',
+                                'status',
+                                'bahasa_dirumah'
+
+                               
+                                
+                                
                     ]);
             // return $u;
             if($u->siswa()->create($data)){

@@ -40,18 +40,6 @@
 		</div>
 		<div class="col-xs-6">
 			<div class="form-group floating-label">
-				{!!Form::text('nis',null,['class'=>'form-control', 'id'=>'nis', 'data-inputmask'=>"'mask': '9999'"])!!}
-				{!!Form::label('nis','NIS')!!}
-			</div>
-		</div>
-		<div class="col-xs-6">
-			<div class="form-group floating-label">
-				{!!Form::text('nisn',null,['class'=>'form-control', 'id'=>'nisn', 'data-inputmask'=>"'mask': '99-9999-9999'"])!!}
-				{!!Form::label('nisn','NISN')!!}
-			</div>
-		</div>
-		<div class="col-xs-6">
-			<div class="form-group floating-label">
 				{!!Form::text('tempat_lahir',null,['class'=>'form-control', 'id'=>'tempat_lahir'])!!}
 				{!!Form::label('tempat_lahir','Tempat Lahir')!!}
 			</div>
@@ -64,10 +52,29 @@
 		</div>
 		<div class="col-xs-4">
 			<div class="form-group floating-label">
+				{!!Form::text('nis',null,['class'=>'form-control', 'id'=>'nis', 'data-inputmask'=>"'mask': '9999'"])!!}
+				{!!Form::label('nis','NIS')!!}
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="form-group floating-label">
+				{!!Form::text('nisn',null,['class'=>'form-control', 'id'=>'nisn', 'data-inputmask'=>"'mask': '99-9999-9999'"])!!}
+				{!!Form::label('nisn','NISN')!!}
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="form-group floating-label">
 				{!!Form::text('nik',null,['class'=>'form-control txt-input-mask', 'id'=>'nik', 'data-inputmask'=>"'mask': '9999-9999-9999-9999'"])!!}
 				{!!Form::label('nik','NIK')!!}
 			</div>
 		</div>
+		<div class="col-xs-4">
+			<div class="form-group floating-label">
+				{!!Form::select('status',['orang tua masih lengkap'=>'orang tua masih lengkap','yatim'=>'yatim','piatu'=>'piatu','yatim piatu'=>'yatim piatu'],null,['class'=>'form-control', 'id'=>'status'])!!}
+				{!!Form::label('status','Status')!!}
+			</div>
+		</div>
+		
 		<div class="col-xs-4">
 			<div class="form-group floating-label">
 				{!!Form::select('agama',$agama->lists(),null,['class'=>'form-control', 'id'=>'agama'])!!}
@@ -76,28 +83,45 @@
 		</div>
 		<div class="col-xs-4">
 			<div class="form-group floating-label">
-				{!!Form::select('kebutuhan_khusus',$kebutuhanKhusus->lists('label','id'),null,['class'=>'form-control', 'id'=>'kebutuhan_khusus'])!!}
-				{!!Form::label('kebutuhan_khusus','Kebutuhan Khusus')!!}
+				{!!Form::select('kewarganegaraan',['WNI'=>'WNI','WNA'=>'WNA'],null,['class'=>'form-control', 'id'=>'kewarganegaraan'])!!}
+				{!!Form::label('kewarganegaraan','Kewarganegaraan')!!}
 			</div>
 		</div>
-		<div class="col-xs-4">
+		<div class="col-xs-6">
 			<div class="form-group floating-label">
-				{!!Form::select('penerima_kps',['ya'=>'Ya','tidak'=>'Bukan'],null,['class'=>'form-control', 'id'=>'penerima_kps'])!!}
-				{!!Form::label('penerima_kps','Penerima KPS')!!}
+				{!!Form::text('urutan_saudara',null,['class'=>'form-control', 'id'=>'urutan_saudara'])!!}
+				{!!Form::label('urutan_saudara','Anak Ke')!!}
 			</div>
 		</div>
-		<div class="col-xs-8">
+		<div class="col-xs-6">
 			<div class="form-group floating-label">
-				{!!Form::text('no_kps',null,['class'=>'form-control', 'id'=>'no_kps'])!!}
-				{!!Form::label('no_kps','Nomor KPS')!!}
+				{!!Form::text('jumlah_saudara_kandung',null,['class'=>'form-control', 'id'=>'jumlah_saudara_kandung'])!!}
+				{!!Form::label('jumlah_saudara_kandung','Jumlah Saudara Kandung')!!}
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group floating-label">
+				{!!Form::text('jumlah_saudara_tiri',null,['class'=>'form-control', 'id'=>'jumlah_saudara_tiri'])!!}
+				{!!Form::label('jumlah_saudara_tiri','Jumlah Saudara Tiri')!!}
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group floating-label">
+				{!!Form::text('jumlah_saudara_angkat',null,['class'=>'form-control', 'id'=>'jumlah_saudara_angkat'])!!}
+				{!!Form::label('jumlah_saudara_angkat','Jumlah Saudara Angkat')!!}
 			</div>
 		</div>
 		<div class="col-xs-12">
 			<div class="form-group floating-label">
-				{!!Form::text('no_skhun',null,['class'=>'form-control', 'id'=>'no_skhun','data-inputmask'=>"'mask': '9-99-99-99-999-999-9'"])!!}
-				{!!Form::label('no_skhun','Nomor SKHUN')!!}
+				{!!Form::text('bahasa_dirumah',null,['class'=>'form-control', 'id'=>'bahasa_dirumah'])!!}
+				{!!Form::label('bahasa_dirumah','Bahasa Dirumah')!!}
 			</div>
 		</div>
+
+
+		
+		
+		
 		@include($form.'.alamat')
 	</div>
 	<div class="col-md-6">

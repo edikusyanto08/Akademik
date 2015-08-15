@@ -40,10 +40,7 @@
 			{!!Form::select('kebutuhan_khusus',$kebutuhanKhusus->lists('label','id'),null,['class'=>'form-control', 'id'=>'kebutuhan_khusus'])!!}
 			{!!Form::label('kebutuhan_khusus','Kebutuhan Khusus')!!}
 		</div>
-		<div class="form-group floating-label">
-			{!!Form::select('penerima_kps',['ya'=>'Ya','tidak'=>'Bukan'],null,['class'=>'form-control', 'id'=>'penerima_kps'])!!}
-			{!!Form::label('penerima_kps','Penerima KPS')!!}
-		</div>
+		
 		<div class="form-group floating-label">
 			{!!Form::text('no_kps',null,['class'=>'form-control', 'id'=>'no_kps'])!!}
 			{!!Form::label('no_kps','Nomor KPS')!!}
