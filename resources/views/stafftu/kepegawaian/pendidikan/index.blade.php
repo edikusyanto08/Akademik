@@ -26,18 +26,19 @@
 						</thead>
 						<tbody>
 							<?php $x=1; ?>
-							@foreach ($lists as $classRoom)
+							@foreach ($lists as $pendidikan)
 								<tr>
 									<td>{{$x++}}</td>
-									<td></td>
-									<td></td>
+									<td>{{$pendidikan->pegawai->nama}}</td>
+									<td>{{$pendidikan->jurusans->label}}</td>
+									<td>{{$pendidikan->nama_instansi_pendidikan}}</td>
 									
 									<td>
 										<span></span>	
 										<div class="pull-right">
-											  {!! Form::open(['route'=>[$destroy,$classRoom], 'method'=>'DELETE','class'=>'no-margin']) !!}
-												  	{!! link_to_route($show,'Detail',$classRoom,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
-												  	{!! link_to_route($edit,'Edit',$classRoom,['class'=>'btn btn-info btn-raised btn-sm']) !!}
+											  {!! Form::open(['route'=>[$destroy,$pendidikan], 'method'=>'DELETE','class'=>'no-margin']) !!}
+												  	{!! link_to_route($show,'Detail',$pendidikan,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
+												  	{!! link_to_route($edit,'Edit',$pendidikan,['class'=>'btn btn-info btn-raised btn-sm']) !!}
 												  	{!! Form::button('Delete',['class'=>'btn btn-danger btn-raised btn-sm','type'=>'submit']) !!}
 											  {!! Form::close() !!}
 										</div>

@@ -4,15 +4,15 @@ namespace Akademik\Http\Controllers\Pegawai\StaffTu\kepegawaian;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests;
+use Akademik\Http\Requests\PegawaiDiklatRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Pegawai;
+use Akademik\PegawaiDiklat;
 
 class DiklatController extends Controller
 {
      public function __construct()
     {
-        parent::__construct('stafftu.kepegawaian.diklat', new Pegawai(), 'Diklat');
+        parent::__construct('stafftu.kepegawaian.diklat', new PegawaiDiklat(), 'Diklat');
 
     }
     /**
@@ -34,9 +34,12 @@ class DiklatController extends Controller
      *
      * @return Response
      */
-    public function store()
+    public function store(PegawaiDiklat $model,PegawaiDiklatRequest $r)
     {
-        //
+         if ($model->fill($r->all())->save()) {
+            return $this->routeAndSuccess('store');
+        }
+        return $this->routeBackWithError('store');
     }
 
     /**
@@ -61,9 +64,12 @@ class DiklatController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update()
+    public function update(PegawaiDiklat $model,PegawaiDiklatRequest $r)
     {
-        //
+         if ($model->fill($r->all())->save()) {
+            return $this->routeAndSuccess('update');
+        }
+        return $this->routeBackWithError('update');
     }
 
     /**
@@ -72,8 +78,11 @@ class DiklatController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy()
+    public function destroy(PegawaiDiklat $model)
     {
-        //
+         if ($model->delete()) {
+            return $this->routeAndSuccess('destroy');
+        }
+        return $this->routeBackWithError('destroy');
     }
 }

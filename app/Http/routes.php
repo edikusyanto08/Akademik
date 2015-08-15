@@ -15,6 +15,8 @@ Route::model('ijazah',Akademik\Ijazah::class);
 Route::model('akta',Akademik\Akta::class);
 Route::model('golongan',Akademik\GolonganPegawai::class);
 Route::model('pangkat',Akademik\PangkatPegawai::class);
+Route::model('pendidikan',Akademik\PegawaiPendidikan::class);
+Route::model('diklat',Akademik\PegawaiDiklat::class);
 
 
 Route::get('/', function () {
