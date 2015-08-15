@@ -8,7 +8,7 @@ use Akademik\Http\Requests\SpecialNeedRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\KebutuhanKhusus;
 
-class SpecialNeedController extends Controller
+class KebutuhanKhususController extends Controller
 {
     public function __construct()
     {

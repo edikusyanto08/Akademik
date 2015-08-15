@@ -60,7 +60,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					Route::resources([
 						'ruangan'=>'RuanganController',
 						'matapelajaran'=>'MataPelajaranController',
-						'mapelkategori'=>'MapelKategoriController',
+						'mapelkategori'=>'MataPelajaranKategoriController',
 						'jurusan'=>'JurusanController',
 						'kelas'=>'KelasController',
 						'tahunajaran'=>'TahunAjaranController',
@@ -101,7 +101,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					}]);
 					Route::resources([
 						'hobi'=>'HobiController',
-						'kebutuhankhusus'=>'kebutuhankhususController',
+						'kebutuhankhusus'=>'KebutuhanKhususController',
 						'ijazah'=>'IjazahController',
 						'akta'=>'AktaController',
 						'golongan'=>'GolonganController',

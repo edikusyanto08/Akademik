@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use Akademik\Http\Requests;
 use Akademik\Http\Controllers\Controller;
 use Akademik\KategoriMataPelajaran;
-use Akademik\Http\Requests\DiscliplineCatagoryRequest;
+use Akademik\Http\Requests\MataPelajaranKategoriRequest;
 
-class DiscliplineCatagoryController extends Controller
+class MataPelajaranKategoriController extends Controller
 {
     public function __construct()
     {
@@ -20,7 +20,7 @@ class DiscliplineCatagoryController extends Controller
   *
   * @return Response
   */
- public function store(KategoriMataPelajaran $model, DiscliplineCatagoryRequest $r)
+ public function store(KategoriMataPelajaran $model, MataPelajaranKategoriRequest $r)
  {
      if ($model->fill($r->all())->save()) {
          return $this->routeAndSuccess('store');
@@ -35,7 +35,7 @@ class DiscliplineCatagoryController extends Controller
   *
   * @return Response
   */
- public function update(KategoriMataPelajaran $model, DiscliplineCatagoryRequest $r)
+ public function update(KategoriMataPelajaran $model, MataPelajaranKategoriRequest $r)
  {
      if ($model->fill($r->all())->save()) {
          return $this->routeAndSuccess('update');
