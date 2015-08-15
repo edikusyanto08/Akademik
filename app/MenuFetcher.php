@@ -18,12 +18,12 @@ class MenuFetcher
 						'name'=>'Data Akademik',
 						'icon'=> 'fa fa-puzzle-piece',
 						'inGroup' =>[
-							['route'=>'classroom','name'=>'Ruang Belajar','icon'=>'md md-view-module'],
-							['route'=>'disclipline','name'=>'Mata Pelajaran','icon'=>'md md-book'],
-							['route'=>'discliplinecatagory','name'=>'Kategori Mata Pelajaran','icon'=>'fa fa-bookmark'],
-							['route'=>'program','name'=>'Jurusan','icon'=>'fa fa-random'],
-							['route'=>'degree','name'=>'Kelas','icon'=>'fa fa-line-chart'],
-							['route'=>'schoolyear','name'=>'Tahun Angkatan','icon'=>'fa fa-calendar'],
+							['route'=>'ruangan','name'=>'Ruang Belajar','icon'=>'md md-view-module'],
+							['route'=>'matapelajaran','name'=>'Mata Pelajaran','icon'=>'md md-book'],
+							['route'=>'mapelkategori','name'=>'Kategori Mata Pelajaran','icon'=>'fa fa-bookmark'],
+							['route'=>'jurusan','name'=>'Jurusan','icon'=>'fa fa-random'],
+							['route'=>'kelas','name'=>'Kelas','icon'=>'fa fa-line-chart'],
+							['route'=>'tahunajaran','name'=>'Tahun Angkatan','icon'=>'fa fa-calendar'],
 							['route'=>'ekskul','name'=>'Ekstra kulikuler','icon'=>'fa fa-asterisk'],
 						]
 					],
@@ -62,7 +62,7 @@ class MenuFetcher
 							['route'=>'akta','name'=>'Akta','icon'=>'fa fa-graduation-cap'],
 							['route'=>'golongan','name'=>'Golongan','icon'=>'fa fa-graduation-cap'],
 							['route'=>'pangkat','name'=>'Pangkat','icon'=>'fa fa-graduation-cap'],
-							['route'=>'specialneed','name'=>'Kebutuhan Khusus','icon'=>'fa fa-asterisk'],
+							['route'=>'kebutuhankhusus','name'=>'Kebutuhan Khusus','icon'=>'fa fa-asterisk'],
 						]
 					]
 			]
