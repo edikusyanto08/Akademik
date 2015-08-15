@@ -7,21 +7,21 @@ use Illuminate\Database\Eloquent\Model;
 class MataPelajaran extends Model
 {
     protected $guarded = ['id'];
-    public function category()
+    public function kategori_mata_pelajaran()
     {
-    	return $this->belongsTo(KategoriMataPelajaran::class,'kategori_mata_pelajaran_id','id');
+    	return $this->belongsTo(KategoriMataPelajaran::class);
     }
-    public function taught()
+    public function guru()
     {
     	return $this->belongsTo(Guru::class);
     }
-    public function program()
+    public function jurusan()
     {
-    	return $this->belongsTo(Program::class,'program_id','id');
+    	return $this->belongsTo(Jurusan::class);
     }
 
     public function kelas(){
-        return $this->belongsTo(Kelas::class,'kelas_id','id');
+        return $this->belongsTo(Kelas::class);
     }
 
 }

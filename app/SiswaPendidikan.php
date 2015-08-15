@@ -11,9 +11,9 @@ class SiswaPendidikan extends Model
 	{
 		return $this->belongsTo(Siswa::class);
 	}
-	public function program()
+	public function jurusan()
 	{
-		return $this->belongsTo(Program::class);
+		return $this->belongsTo(Jurusan::class);
 	}
 	public function kelas()
 	{

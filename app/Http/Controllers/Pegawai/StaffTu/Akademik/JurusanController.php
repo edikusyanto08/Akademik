@@ -12,7 +12,7 @@ class JurusanController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.Jurusan', new Jurusan(), 'Jurusan');
+        parent::__construct('stafftu.akademik.jurusan', new Jurusan(), 'Jurusan');
     }
 
     /**

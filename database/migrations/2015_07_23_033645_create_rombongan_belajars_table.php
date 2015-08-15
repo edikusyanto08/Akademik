@@ -14,8 +14,8 @@ class CreateRombonganBelajarsTable extends Migration
     {
         Schema::create('rombongan_belajars', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('program_id')->unsigned()->index();
-            $table->foreign('program_id')->references('id')->on('programs')->onUpdate('cascade')->onDelete('restrict');
+            $table->integer('jurusan_id')->unsigned()->index();
+            $table->foreign('jurusan_id')->references('id')->on('jurusans')->onUpdate('cascade')->onDelete('restrict');
             $table->integer('tahun_ajaran_id')->unsigned()->index();
             $table->foreign('tahun_ajaran_id')->references('id')->on('tahun_ajarans')->onUpdate('cascade')->onDelete('restrict');
             $table->integer('kelas_id')->unsigned()->index();

@@ -12,7 +12,7 @@ class KategoriController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.mapelkategori', new KategoriMataPelajaran(), 'Kategori MataPelajaran');
+        parent::__construct('stafftu.akademik.mapel.kategori', new KategoriMataPelajaran(), 'Kategori MataPelajaran');
     }
 
  /**

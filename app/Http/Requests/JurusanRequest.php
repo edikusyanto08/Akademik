@@ -5,7 +5,7 @@ namespace Akademik\Http\Requests;
 use Akademik\Http\Requests\Request;
 use Auth;
 use RoleUserChecker;
-class ProgramRequest extends Request
+class JurusanRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -37,8 +37,8 @@ class ProgramRequest extends Request
     public function messages()
     {
         return [
-            'label.required'=> 'Nama Jurusan dibutuhkan',
-            'label.min'=> 'Label Program must be at least 3 characters.',
+            'label.required'=> 'Nama jurusan dibutuhkan',
+            'label.min'=> 'Nama jurusan harus lebih dari 3 karakter',
         ];
     }
 }

@@ -17,7 +17,7 @@
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
 							<span>Kategori Mata Pelajaran</span>
-							<small>{{$data->category->label}}</small>
+							<small>{{$data->kategori_mata_pelajaran->label}}</small>
 						</div>
 					</div>
 				</li>
@@ -37,14 +37,6 @@
 						</div>
 					</div>
 				</li>
-				<li class="tile">
-					<div class="tile-content ink-reaction">
-						<div class="tile-text">
-							<span>Date Created</span>
-							<small>{{$data->created_at}}</small>
-						</div>
-					</div>
-				</li>
 			</ul>
 		</div>
 
@@ -54,8 +46,8 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Program</span>
-							<small>{{$data->program->label}}</small>
+							<span>Jurusan</span>
+							<small>{{$data->jurusan->label}}</small>
 						</div>
 					</div>
 				</li>

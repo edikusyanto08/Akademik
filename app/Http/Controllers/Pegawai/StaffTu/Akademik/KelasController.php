@@ -12,7 +12,7 @@ class KelasController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.degree', new Kelas(), 'Nama Kelas');
+        parent::__construct('stafftu.akademik.kelas', new Kelas(), 'Kelas');
     }
 
      /**

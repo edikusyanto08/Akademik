@@ -4,7 +4,7 @@
 <div class="col-md-12">
 	<div class="col-xs-12 col-md-4">
 		<div class="form-group floating-label">
-			{!!Form::select('kategori_mata_pelajaran_id',$kategoriMapel->lists('label','id'),null,['class'=>'form-control', 'id'=>'kategori_mata_pelajaran_id'])!!}
+			{!!Form::select('kategori_mata_pelajaran_id',$kategoriMapel->listing(),null,['class'=>'form-control', 'id'=>'kategori_mata_pelajaran_id'])!!}
 			{!!Form::label('kategori_mata_pelajaran_id','Kategori Mata Pelajaran')!!}
 		</div>
 	</div>
@@ -22,8 +22,8 @@
 	</div>
 	<div class="col-xs-6">
 		<div class="form-group floating-label">
-			{!!Form::select('program_id',$jurusan->lists('label','id'),null,['class'=>'form-control', 'id'=>'program_id'])!!}
-			{!!Form::label('program_id','Program')!!}
+			{!!Form::select('jurusan_id',$jurusan->lists('label','id'),null,['class'=>'form-control', 'id'=>'jurusan_id'])!!}
+			{!!Form::label('jurusan_id','jurusan')!!}
 		</div>
 	</div>
 	<div class="col-xs-6">

@@ -96,7 +96,7 @@ class MenuFetcher
 				}else{
 					echo "<li>";
 					$link = route($role.'.'.$prefix.'.'.$list['route'].'.index');
-					echo "<a href='$link' ><span class='title'><span class='{$list['icon']}'></span>{$list['name']}</span></a>";
+					echo "<a href='$link' ><span class='title'><span class='{$list['icon']}'></span> {$list['name']}</span></a>";
 					echo "</li>";
 				}
 			}else{

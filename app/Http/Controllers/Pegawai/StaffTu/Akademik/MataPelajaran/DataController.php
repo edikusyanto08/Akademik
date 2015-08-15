@@ -12,7 +12,7 @@ class DataController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.matapelajaran', new MataPelajaran(), 'Mata Pelajaran');
+        parent::__construct('stafftu.akademik.mapel.data', new MataPelajaran(), 'Mata Pelajaran');
     }
 
     /**

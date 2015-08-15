@@ -18,8 +18,8 @@ class CreateMataPelajaransTable extends Migration
             $table->string('singkatan',25);
             $table->integer('kategori_mata_pelajaran_id')->unsigned()->index();
             $table->foreign('kategori_mata_pelajaran_id')->references('id')->on('kategori_mata_pelajarans')->onUpdate('cascade')->onDelete('restrict');
-            $table->integer('program_id')->unsigned()->index();
-            $table->foreign('program_id')->references('id')->on('programs')->onUpdate('cascade')->onDelete('restrict');
+            $table->integer('jurusan_id')->unsigned()->index();
+            $table->foreign('jurusan_id')->references('id')->on('jurusans')->onUpdate('cascade')->onDelete('restrict');
             $table->integer('kelas_id')->unsigned()->index();
             $table->foreign('kelas_id')->references('id')->on('kelases')->onUpdate('cascade')->onDelete('restrict'); 
             $table->timestamps();

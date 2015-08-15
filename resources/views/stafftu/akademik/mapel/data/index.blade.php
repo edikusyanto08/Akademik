@@ -1,3 +1,4 @@
+
 @extends('main')
 @section('content')
 	<div class="row">
@@ -19,21 +20,25 @@
 							<tr>
 								<th class="col-xs-1">No.</th>
 								<th>Nama</th>
-								<th>Kategori Mata Pelajaran</th>
+								<th>Kelas</th>
+								<th>Jurusan</th>
+								<th>Kategori</th>
 							</tr>
 						</thead>
 						<tbody>
 							<?php $x=1; ?>
-							@foreach ($lists as $disclipline)
+							@foreach ($lists as $data)
 								<tr>
 									<td>{{$x++}}</td>
-									<td>{{$disclipline->label}}</td>
+									<td>{{$data->label}}</td>
+									<td>{{$data->kelas->label}}</td>
+									<td>{{$data->jurusan->label}}</td>
 									<td>
-										<span>{{$disclipline->category->label}}</span>	
+										<span>{{$data->kategori_mata_pelajaran->label}} ({{$data->kategori_mata_pelajaran->huruf}})</span>	
 										<div class="pull-right">
-											  {!! Form::open(['route'=>[$destroy,$disclipline->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
-												  	{!! link_to_route($show,'Detail',$disclipline->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
-												  	{!! link_to_route($edit,'Edit',$disclipline->id,['class'=>'btn btn-info btn-raised btn-sm']) !!}
+											  {!! Form::open(['route'=>[$destroy,$data->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
+												  	{!! link_to_route($show,'Detail',$data->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
+												  	{!! link_to_route($edit,'Edit',$data->id,['class'=>'btn btn-info btn-raised btn-sm']) !!}
 												  	{!! Form::button('Delete',['class'=>'btn btn-danger btn-raised btn-sm','type'=>'submit']) !!}
 											  {!! Form::close() !!}
 										</div>

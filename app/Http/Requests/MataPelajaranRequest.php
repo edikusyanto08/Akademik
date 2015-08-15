@@ -35,7 +35,7 @@ class MataPelajaranRequest extends Request
              'label'=>'required|min:5',
              'singkatan'=>'required|min:3',
              'kategori_mata_pelajaran_id'=>'required',
-             'program_id'=>'required',
+             'jurusan_id'=>'required',
              'kelas_id'=>'required'
              
         ];
@@ -43,12 +43,12 @@ class MataPelajaranRequest extends Request
     public function messages()
     {
         return [
-            'label.required' => 'Nama Mata Pelajaran Harus Di Isi',
-            'label.min' => 'Nama Mata Harus Lebih Dari 5 Karakter',
-            'singkatan.required' => 'Singkatan Harus Di Isi',
-            'kategori_mata_pelajaran_id.required' => 'kategori_mata_pelajaran_id Harus Di Isi',
-            'program_id.required' => 'program_id Harus Di Isi',
-            'kelas_id.required' => 'kelas_id Harus Di Isi'
+            'label.required' => 'Nama mata pelajaran harus di isi',
+            'label.min' => 'Nama mata pelajaran harus lebih dari 5 karakter',
+            'singkatan.required' => 'Singkatan harus di isi',
+            'kategori_mata_pelajaran_id.required' => 'Kategori mata pelajaran harus di isi',
+            'jurusan_id.required' => 'Jurusan harus di isi',
+            'kelas_id.required' => 'kelas harus di isi'
         ];
     }
 }

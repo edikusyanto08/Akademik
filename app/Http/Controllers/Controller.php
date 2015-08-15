@@ -117,7 +117,7 @@ abstract class Controller extends BaseController
      */
     public function create()
     {
-        $namaForm = "Add <b>{$this->moduleName}</b>";
+        $namaForm = "Tambah <b>{$this->moduleName}</b>";
         $form = $this->prefix.'.form';
         return $this->view($this->nameFix('create'), compact('namaForm', 'form'))->with($this->nameFix());
     }

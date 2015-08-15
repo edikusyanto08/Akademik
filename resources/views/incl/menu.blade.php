@@ -19,43 +19,6 @@
 		<ul id="main-menu" class="gui-controls">
 			<?php $role = Session::get('EmployerRole')  ?>
 			{!!$menu->make($menu,$role)!!}
-			{{--
-
-			@foreach ($menu->lists($role) as $menu)
-
-				@if (isset($menu['inGroup'])) 
-					<li class="gui-folder {{in_array($menu['route'],explode('.',Route::currentRouteName()))? 'active expand':''}}" >
-						
-						<a> 
-							<div class="gui-icon"><i class="{{$menu['icon']}}"></i></div>
-							<span class="title">{{$menu['name']}}</span>
-						</a>
-						<ul>
-						@foreach ($menu['inGroup'] as $group )
-							<li>
-								<a href="{{ route("$role.".$menu['route'].'.'.$group['route'].'.index') }}" >
-									<span class="title">
-										<span class="{{$group['icon']}}"></span>
-										{{$group['name']}}
-									</span>
-								</a>
-							</li>
-						@endforeach
-						</ul>
-							
-					</li>
-				@else
-					<li  {{ in_array($menu['route'],explode('.',Route::currentRouteName()))? 'class="active"':'' }}>
-						<a href="{{ route($role.'.'.$menu['route']) }}"> 
-							<div class="gui-icon"><i class="{{$menu['icon']}}"></i></div>
-							<span class="title">{{$menu['name']}}</span>
-						</a>
-					</li>
-				@endif
-			@endforeach 
-		</ul><!--end .main-menu -->
-		<!-- END MAIN MENU -->
-		--}}
 		<div class="menubar-foot-panel">
 			<small class="no-linebreak hidden-folded">
 				<span class="opacity-75">Copyright &copy; {{date('Y')}}</span> <strong>@TriasBrata</strong>
