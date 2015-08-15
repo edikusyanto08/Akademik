@@ -26,4 +26,11 @@ class Pegawai extends Model
     public function menjadi_guru(){
     	return $this->hasOne(Guru::class);
     }
+
+    public function pegawai_pendidikan(){
+        return $this->hasOne(PegawaiPendidikan::class);
+    }
+    public function diklat(){
+        return $this->hasOne(PegawaiDiklat::class);
+    }
 }

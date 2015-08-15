@@ -4,15 +4,15 @@ namespace Akademik\Http\Controllers\Pegawai\StaffTu\kepegawaian;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests;
+use Akademik\Http\Requests\PegawaiPendidikanRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Pegawai;
+use Akademik\PegawaiPendidikan;
 
 class PendidikanController extends Controller
 {
      public function __construct()
     {
-        parent::__construct('stafftu.kepegawaian.pendidikan', new Pegawai(), 'Pendidikan');
+        parent::__construct('stafftu.kepegawaian.pendidikan', new PegawaiPendidikan(), 'Pendidikan');
 
     }
     /**
@@ -32,9 +32,13 @@ class PendidikanController extends Controller
      *
      * @return Response
      */
-    public function store()
+    public function store(PegawaiPendidikan $model,PegawaiPendidikanRequest $r)
     {
-        //
+        if ($model->fill($r->all())->save()) {
+            return $this->routeAndSuccess('store');
+        }
+        return $this->routeBackWithError('store');
+
     }
 
     /**
@@ -58,9 +62,12 @@ class PendidikanController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update()
+    public function update(PegawaiPendidikan $model,PegawaiPendidikanRequest $r)
     {
-        //
+         if ($model->fill($r->all())->save()) {
+            return $this->routeAndSuccess('update');
+        }
+        return $this->routeBackWithError('update');
     }
 
     /**
@@ -69,8 +76,11 @@ class PendidikanController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy()
+    public function destroy(PegawaiPendidikan $model)
     {
-        //
+        if ($model->delete()) {
+            return $this->routeAndSuccess('destroy');
+        }
+        return $this->routebackWithError('destroy');
     }
 }

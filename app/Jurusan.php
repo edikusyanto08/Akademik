@@ -12,4 +12,8 @@ class Jurusan extends Model
     public function mataPelajaran(){
     	return $this->hasMany(MataPelajaran::class);
     }
+
+    public function pendidikan(){
+    	return $this->hasMany(PegawaiPendidikan::class);
+    }
 }
