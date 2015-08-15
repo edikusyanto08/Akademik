@@ -35,7 +35,6 @@ Route::group(['prefix'=>'sesi','namespace'=>'sesi','as'=>'sesi.','middleware'=>'
 });
 Route::get("do",['as'=>'pegawai.do',"middleware"=>"UserAccessControll:pegawai",'uses'=>'sesi\SesiController@pegawaiRole']);
 Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawai",'uses'=>'sesi\SesiController@pegawaiRoleSelect']);
-
 /**
  * bagian routing unutk pegawai
  */
@@ -44,16 +43,11 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 		/**
 		 * bagian routing untuk Stuff tu
 		 */
-		Route::group([
-				'prefix'=>'stafftu',
-				'namespace'=>'StaffTu',
-				'as'=>'stafftu.',
-				'middleware'=>'UserAccessControll:pegawai,stafftu'],
-			function (){
+		Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','middleware'=>'UserAccessControll:pegawai,stafftu'],function (){
 				Route::get('/',['as'=>'landing','uses'=>'Landing@page']);
 				Route::group(['namespace'=>'Akademik','prefix'=>'akademik'],function ()
 				{
-					Route::get('/',['as'=>'index','uses'=>function ()
+					Route::get('/',['as'=>'stafftu.akademik.index','uses'=>function ()
 					{
 						return redirect()->route('stafftu.akademik.ruangan.index');
 					}]);
@@ -70,7 +64,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 				});
 				Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
 				{
-					Route::get('/',['as'=>'index','uses'=>function ()
+					Route::get('/',['as'=>'stafftu.kepegawaian.index','uses'=>function ()
 					{
 						return redirect()->route('stafftu.kepegawaian.pegawai.index');
 					}]);
@@ -85,9 +79,9 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 						]);
 					
 				});
-				Route::group(['namespace'=>'Student','prefix'=>'siswa'],function ()
+				Route::group(['namespace'=>'Siswa','prefix'=>'siswa'],function ()
 				{
-					Route::get('/',['as'=>'index','uses'=>function ()
+					Route::get('/',['as'=>'stafftu.siswa.index','uses'=>function ()
 					{
 						return redirect()->route('stafftu.siswa.siswa.index');
 					}]);
@@ -95,7 +89,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 				});
 
 				Route::group(['namespace'=>'Pengaturan','prefix'=>'pengaturan'],function(){
-					Route::get('/',['as'=>'index','uses'=>function(){
+					Route::get('/',['as'=>'stafftu.pengaturan.index','uses'=>function(){
 						return redirect()->route('stafftu.pengaturan.hobi.index');
 
 					}]);
