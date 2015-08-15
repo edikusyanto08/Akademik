@@ -1,16 +1,18 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
 
-use Akademik\Http\Requests\ClassroomRequest;
+use Illuminate\Http\Request;
+use Akademik\Http\Requests;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Ruangan;
+use Akademik\MataPelajaran;
+use Akademik\Http\Requests\MataPelajaranRequest;
 
-class ClassRoomController extends Controller
+class MataPelajaranController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.classroom', new Ruangan(),'Ruang Belajar');
+        parent::__construct('stafftu.akademik.MataPelajaran', new MataPelajaran(), 'Mata Pelajaran');
     }
 
     /**
@@ -18,7 +20,7 @@ class ClassRoomController extends Controller
      *
      * @return Response
      */
-    public function store(Ruangan $model, ClassroomRequest $r)
+    public function store(MataPelajaran $model, MataPelajaranRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('store');
@@ -33,7 +35,7 @@ class ClassRoomController extends Controller
      *
      * @return Response
      */
-    public function update(Ruangan $model, ClassroomRequest $r)
+    public function update(MataPelajaran $model, MataPelajaranRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('update');
@@ -48,7 +50,7 @@ class ClassRoomController extends Controller
      *
      * @return Response
      */
-    public function destroy(Ruangan $model)
+    public function destroy(MataPelajaran $model)
     {
         if ($model->delete()) {
             return $this->routeAndSuccess('destroy');

@@ -1,18 +1,18 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
 
 use Illuminate\Http\Request;
 use Akademik\Http\Requests;
 use Akademik\Http\Controllers\Controller;
-use Akademik\Http\Requests\ProgramRequest;
-use Akademik\Program;
+use Akademik\Http\Requests\JurusanRequest;
+use Akademik\Jurusan;
 
-class ProgramController extends Controller
+class JurusanController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.program', new Program(), 'Jurusan');
+        parent::__construct('stafftu.akademik.Jurusan', new Jurusan(), 'Jurusan');
     }
 
     /**
@@ -20,7 +20,7 @@ class ProgramController extends Controller
      *
      * @return Response
      */
-    public function store(Program $model, ProgramRequest $r)
+    public function store(Jurusan $model, JurusanRequest $r)
     {
         $data = $r->all();
         if ($model->fill($data)->save()) {
@@ -36,7 +36,7 @@ class ProgramController extends Controller
      *
      * @return Response
      */
-    public function update(Program $model, ProgramRequest $r)
+    public function update(Jurusan $model, JurusanRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('update');
@@ -51,7 +51,7 @@ class ProgramController extends Controller
      *
      * @return Response
      */
-    public function destroy(Program $model)
+    public function destroy(Jurusan $model)
     {
         if ($model->delete()) {
             return $this->routeAndSuccess('destroy');

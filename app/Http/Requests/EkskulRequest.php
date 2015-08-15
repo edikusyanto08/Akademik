@@ -5,7 +5,7 @@ namespace Akademik\Http\Requests;
 use Akademik\Http\Requests\Request;
 use Auth;
 
-class EskulRequexst extends Request
+class EkskulRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.

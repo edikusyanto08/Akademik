@@ -6,7 +6,7 @@ use Akademik\Http\Requests\Request;
 use Auth;
 use Akademik\RoleUserChecker;
 
-class DegreeRequest extends Request
+class KelasRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.

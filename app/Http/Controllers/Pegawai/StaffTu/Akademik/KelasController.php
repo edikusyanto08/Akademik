@@ -1,18 +1,18 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
 
 use Illuminate\Http\Request;
 use Akademik\Http\Requests;
-use Akademik\Http\Requests\DegreeRequest;
+use Akademik\Http\Requests\KelasRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\Kelas;
 
-class DegreeController extends Controller
+class KelasController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.degree', new Kelas(), 'Nama Kelas');
+        parent::__construct('stafftu.akademik.degree', new Kelas(), 'Nama Kelas');
     }
 
      /**
@@ -20,7 +20,7 @@ class DegreeController extends Controller
       *
       * @return Response
       */
-     public function store(Kelas $model, DegreeRequest $r)
+     public function store(Kelas $model, KelasRequest $r)
      {
          if ($model->fill($r->all())->save()) {
              return $this->routeAndSuccess('store');
@@ -35,7 +35,7 @@ class DegreeController extends Controller
       *
       * @return Response
       */
-     public function update(Kelas $model, DegreeRequest $r)
+     public function update(Kelas $model, KelasRequest $r)
      {
          if ($model->fill($r->all())->save()) {
              return $this->routeAndSuccess('update');

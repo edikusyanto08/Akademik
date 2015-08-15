@@ -1,18 +1,16 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
 
-use Illuminate\Http\Request;
-use Akademik\Http\Requests;
+use Akademik\Http\Requests\RuanganRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\MataPelajaran;
-use Akademik\Http\Requests\DiscliplineRequest;
+use Akademik\Ruangan;
 
-class DiscliplineController extends Controller
+class RuanganController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.disclipline', new MataPelajaran(), 'Mata Pelajaran');
+        parent::__construct('stafftu.akademik.classroom', new Ruangan(),'Ruang Belajar');
     }
 
     /**
@@ -20,7 +18,7 @@ class DiscliplineController extends Controller
      *
      * @return Response
      */
-    public function store(MataPelajaran $model, DiscliplineRequest $r)
+    public function store(Ruangan $model, RuanganRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('store');
@@ -35,7 +33,7 @@ class DiscliplineController extends Controller
      *
      * @return Response
      */
-    public function update(MataPelajaran $model, DiscliplineRequest $r)
+    public function update(Ruangan $model, RuanganRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('update');
@@ -50,7 +48,7 @@ class DiscliplineController extends Controller
      *
      * @return Response
      */
-    public function destroy(MataPelajaran $model)
+    public function destroy(Ruangan $model)
     {
         if ($model->delete()) {
             return $this->routeAndSuccess('destroy');

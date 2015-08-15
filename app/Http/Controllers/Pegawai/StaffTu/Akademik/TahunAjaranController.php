@@ -1,18 +1,18 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests\SchoolRequest;
+use Akademik\Http\Requests\TahunAjaranRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\TahunAjaran;
 
-class SchoolYearController extends Controller
+class TahunAjaranController extends Controller
 {
      public function __construct()
     {
-        parent::__construct('stafftu.masterdata.schoolyear', new TahunAjaran(), 'Tahun Ajaran');
+        parent::__construct('stafftu.akademik.tahunajaran', new TahunAjaran(), 'Tahun Ajaran');
     }
 
     /**
@@ -20,7 +20,7 @@ class SchoolYearController extends Controller
      *
      * @return Response
      */
-    public function store(TahunAjaran $model, SchoolRequest $r)
+    public function store(TahunAjaran $model, TahunAjaranRequest $r)
     {
         if($r->input('awal') > $r->input('akhir')){
             return redirect()->back()->withInput()->withErrors(["Year End can't bigger than Year Start"]);
@@ -39,7 +39,7 @@ class SchoolYearController extends Controller
      *
      * @return Response
      */
-    public function update(TahunAjaran $model, SchoolRequest $r)
+    public function update(TahunAjaran $model, TahunAjaranRequest $r)
     {
         if($r->input('awal') > $r->input('akhir')){
             return redirect()->back()->withInput()->withErrors(["Year End can't bigger than Year Start"]);

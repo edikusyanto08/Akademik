@@ -1,10 +1,10 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademmik;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests\ExkulRequest;
+use Akademik\Http\Requests\EkskulRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\Ekskul;
 
@@ -13,7 +13,7 @@ class EkskulController extends Controller
 
      public function __construct()
     {
-        parent::__construct('stafftu.masterdata.ekskul', new Ekskul(),'Ekstra Kurikuler');
+        parent::__construct('stafftu.akademmik.ekskul', new Ekskul(),'Ekstra Kurikuler');
     }
 
     /**

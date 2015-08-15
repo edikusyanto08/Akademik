@@ -4,9 +4,10 @@ namespace Akademik\Http\Requests;
 
 use Akademik\Http\Requests\Request;
 use Auth;
-use Akademik\RoleUserChecker;
+use RoleUserChecker;
 
-class ClassroomRequest extends Request
+
+class MataPelajaranRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -20,7 +21,6 @@ class ClassroomRequest extends Request
                 return true;
             }
         }
-    
         return true;
     }
 
@@ -32,14 +32,23 @@ class ClassroomRequest extends Request
     public function rules()
     {
         return [
-            'label'=>'required|min:3'    
+             'label'=>'required|min:5',
+             'singkatan'=>'required|min:3',
+             'kategori_mata_pelajaran_id'=>'required',
+             'program_id'=>'required',
+             'kelas_id'=>'required'
+             
         ];
     }
     public function messages()
     {
         return [
-            'label.required'=> 'Label Classroom is required',
-            'label.min'=> 'Label Classroom must be at least 3 characters.',
+            'label.required' => 'Nama Mata Pelajaran Harus Di Isi',
+            'label.min' => 'Nama Mata Harus Lebih Dari 5 Karakter',
+            'singkatan.required' => 'Singkatan Harus Di Isi',
+            'kategori_mata_pelajaran_id.required' => 'kategori_mata_pelajaran_id Harus Di Isi',
+            'program_id.required' => 'program_id Harus Di Isi',
+            'kelas_id.required' => 'kelas_id Harus Di Isi'
         ];
     }
 }

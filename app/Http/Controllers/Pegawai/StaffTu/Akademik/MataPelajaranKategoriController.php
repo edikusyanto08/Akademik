@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\MasterData;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
 
 use Illuminate\Http\Request;
 use Akademik\Http\Requests;
@@ -12,7 +12,7 @@ class DiscliplineCatagoryController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.masterdata.discliplinecatagory', new KategoriMataPelajaran(), 'Kategori MataPelajaran');
+        parent::__construct('stafftu.akademik.discliplinecatagory', new KategoriMataPelajaran(), 'Kategori MataPelajaran');
     }
 
  /**

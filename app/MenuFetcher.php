@@ -14,7 +14,7 @@ class MenuFetcher
 		$menu = [
 			'stafftu'=>[
 					[
-						'route'=>'masterdata',
+						'route'=>'akademik',
 						'name'=>'Data Akademik',
 						'icon'=> 'fa fa-puzzle-piece',
 						'inGroup' =>[
