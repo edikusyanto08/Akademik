@@ -18,6 +18,9 @@
 		<!-- BEGIN MAIN MENU -->
 		<ul id="main-menu" class="gui-controls">
 			<?php $role = Session::get('EmployerRole')  ?>
+			{!!$menu->make($menu,$role)!!}
+			{{--
+
 			@foreach ($menu->lists($role) as $menu)
 
 				@if (isset($menu['inGroup'])) 
@@ -52,7 +55,7 @@
 			@endforeach 
 		</ul><!--end .main-menu -->
 		<!-- END MAIN MENU -->
-
+		--}}
 		<div class="menubar-foot-panel">
 			<small class="no-linebreak hidden-folded">
 				<span class="opacity-75">Copyright &copy; {{date('Y')}}</span> <strong>@TriasBrata</strong>

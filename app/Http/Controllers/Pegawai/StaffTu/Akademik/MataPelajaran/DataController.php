@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik\MataPelajaran;
 
 use Illuminate\Http\Request;
 use Akademik\Http\Requests;
@@ -8,11 +8,11 @@ use Akademik\Http\Controllers\Controller;
 use Akademik\MataPelajaran;
 use Akademik\Http\Requests\MataPelajaranRequest;
 
-class MataPelajaranController extends Controller
+class DataController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.MataPelajaran', new MataPelajaran(), 'Mata Pelajaran');
+        parent::__construct('stafftu.akademik.matapelajaran', new MataPelajaran(), 'Mata Pelajaran');
     }
 
     /**

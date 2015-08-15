@@ -44,7 +44,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 		 * bagian routing untuk Stuff tu
 		 */
 		Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','middleware'=>'UserAccessControll:pegawai,stafftu'],function (){
-				Route::get('/',['as'=>'landing','uses'=>'Landing@page']);
+				Route::get('/',['as'=>'stafftu.landing','uses'=>'Landing@page']);
 				Route::group(['namespace'=>'Akademik','prefix'=>'akademik'],function ()
 				{
 					Route::get('/',['as'=>'stafftu.akademik.index','uses'=>function ()
@@ -53,14 +53,19 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 					}]);
 					Route::resources([
 						'ruangan'=>'RuanganController',
-						'matapelajaran'=>'MataPelajaranController',
-						'mapelkategori'=>'MataPelajaranKategoriController',
 						'jurusan'=>'JurusanController',
 						'kelas'=>'KelasController',
 						'tahunajaran'=>'TahunAjaranController',
 						'ekskul'=>'EkskulController',
-
+					]);
+					Route::group(['namespace'=>'MataPelajaran','prefix'=>'mapel'],function ()
+					{
+						Route::resources([
+							'data'=>'DataController',
+							'kategori'=>'KategoriController',
+							'guru'=>'GuruController',
 						]);
+					});
 				});
 				Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
 				{

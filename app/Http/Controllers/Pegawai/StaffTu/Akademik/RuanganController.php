@@ -10,7 +10,7 @@ class RuanganController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.classroom', new Ruangan(),'Ruang Belajar');
+        parent::__construct('stafftu.akademik.ruangan', new Ruangan(),'Ruang Belajar');
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik\MataPelajaran;
 
 use Illuminate\Http\Request;
 use Akademik\Http\Requests;
@@ -8,11 +8,11 @@ use Akademik\Http\Controllers\Controller;
 use Akademik\KategoriMataPelajaran;
 use Akademik\Http\Requests\MataPelajaranKategoriRequest;
 
-class MataPelajaranKategoriController extends Controller
+class KategoriController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.discliplinecatagory', new KategoriMataPelajaran(), 'Kategori MataPelajaran');
+        parent::__construct('stafftu.akademik.mapelkategori', new KategoriMataPelajaran(), 'Kategori MataPelajaran');
     }
 
  /**

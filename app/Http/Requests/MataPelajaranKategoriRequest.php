@@ -30,18 +30,18 @@ class MataPelajaranKategoriRequest extends Request
     public function rules()
     {
         return [
-            'label'=>'required|min:1|max:1',
-            'huruf'=>'required|min:1'
+            'label'=>'required|min:1',
+            'huruf'=>'required|min:1|max:1',
         ];
     }
     public function messages()
     {
         return [
-            'label.required' => 'Nama Kategori Harus di Isi',
-            'label.min' => 'nama kategori harusnya lebih dari 1 karakter',
-            'label.max' => 'nama kategori harusnya tidak lebih dari 1 karakter',
-            'huruf.required' => 'huruf di isi',
-            'huruf.min' => 'Bagian Huruf tidak boleh lebih dari 1 karakter',
+            'label.required' => 'Nama kategori harus di Isi',
+            'label.min' => 'Nama kategori harusnya lebih dari 1 karakter',
+            'huruf.required' => 'Bagian huruf harus di isi',
+            'huruf.max' => 'Bagian huruf harusnya tidak lebih dari 1 karakter',
+            'huruf.min' => 'Bagian huruf tidak boleh lebih dari 1 karakter',
         ];
     }
 }

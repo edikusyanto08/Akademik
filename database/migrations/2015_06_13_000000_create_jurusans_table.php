@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProgramsTable extends Migration
+class CreateJurusansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateProgramsTable extends Migration
      */
     public function up()
     {
-        Schema::create('programs', function (Blueprint $table) {
+        Schema::create('jurusans', function (Blueprint $table) {
             $table->increments('id');
             $table->string('label',15);
             $table->timestamps();
@@ -26,6 +26,6 @@ class CreateProgramsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('programs');
+        Schema::drop('jurusans');
     }
 }

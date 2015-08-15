@@ -32,7 +32,7 @@ class RuanganRequest extends Request
     public function rules()
     {
         return [
-            'label'=>'required|min:3'    
+            'label'=>'required|min:1'    
         ];
     }
     public function messages()
