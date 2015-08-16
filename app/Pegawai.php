@@ -33,4 +33,15 @@ class Pegawai extends Model
     public function diklat(){
         return $this->hasOne(PegawaiDiklat::class);
     }
+
+    public function riwayat_kerja(){
+        return $this->hasOne(PegawaiMasaKerja::class);
+    }
+    public function pegawai_mengajar(){
+        return $this->hasMany(PegawaiMengajar::class);
+    }
+
+    public function kerja(){
+        return $this->hasMany(PegawaiPekerjaan::class);
+    }
 }

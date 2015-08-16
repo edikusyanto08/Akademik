@@ -1,20 +1,18 @@
 <?php
 
-namespace Akademik\Http\Controllers\Pegawai\StaffTu\kepegawaian;
+namespace Akademik\Http\Controllers\Pegawai\StaffTu\Pengaturan;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests\PegawaiMasaKerjaRequest;
+use Akademik\Http\Requests\JabatanRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\PegawaiMasaKerja;
+use Akademik\Jabatan;
 
-class MasaKerjaController extends Controller
+class JabatanController extends Controller
 {
-
-     public function __construct()
+    public function __construct()
     {
-        parent::__construct('stafftu.kepegawaian.masakerja', new PegawaiMasaKerja(), 'Masa kerja');
-
+        parent::__construct('stafftu.pengaturan.jabatan', new Jabatan(),'Jabatan');
     }
     /**
      * Display a listing of the resource.
@@ -22,19 +20,21 @@ class MasaKerjaController extends Controller
      * @return Response
      */
    
+
     /**
-     * Show the form for creating a new is_resource(var)rce.
+     * Show the form for creating a new resource.
      *
      * @return Response
      */
-   
+    
 
     /**
      * Store a newly created resource in storage.
      *
+     * @param  Request  $request
      * @return Response
      */
-    public function store(PegawaiMasaKerja $model,PegawaiMasaKerjaRequest $r)
+    public function store(Jabatan $model,JabatanRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('store');
@@ -48,8 +48,7 @@ class MasaKerjaController extends Controller
      * @param  int  $id
      * @return Response
      */
-   
-
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -61,10 +60,11 @@ class MasaKerjaController extends Controller
     /**
      * Update the specified resource in storage.
      *
+     * @param  Request  $request
      * @param  int  $id
      * @return Response
      */
-    public function update(PegawaiMasaKerja $model,PegawaiMasaKerjaRequest $r)
+    public function update(Jabatan $model,JabatanRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('update');
@@ -78,7 +78,7 @@ class MasaKerjaController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy(PegawaiMasaKerja $model)
+    public function destroy(Jabatan $model)
     {
         if ($model->delete()) {
             return $this->routeAndSuccess('delete');

@@ -54,6 +54,7 @@ class MenuFetcher
 							['route'=>'pendidikan','name'=>'Pendidikan','icon'=>'fa fa-graduation-cap'],
 							['route'=>'pekerjaan','name'=>'Pekerjaan','icon'=>'fa fa-graduation-cap'],
 							['route'=>'masakerja','name'=>'Masa Kerja','icon'=>'fa fa-graduation-cap'],
+							['route'=>'pegawaimengajar','name'=>'Keahlian Mengajar','icon'=>'fa fa-graduation-cap'],
 						]
 					],
 					[
@@ -67,6 +68,7 @@ class MenuFetcher
 							['route'=>'golongan','name'=>'Golongan','icon'=>'fa fa-graduation-cap'],
 							['route'=>'pangkat','name'=>'Pangkat','icon'=>'fa fa-graduation-cap'],
 							['route'=>'kebutuhankhusus','name'=>'Kebutuhan Khusus','icon'=>'fa fa-asterisk'],
+							['route'=>'jabatan','name'=>'Jabatan','icon'=>'fa fa-asterisk'],
 						]
 					]
 			]

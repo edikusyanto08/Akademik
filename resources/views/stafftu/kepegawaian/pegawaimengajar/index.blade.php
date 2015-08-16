@@ -20,25 +20,26 @@
 								<th class="col-xs-1">No.</th>
 								
 								<th>Nama Pegawai</th>
-								<th>Jabatan</th>
-								<th>Golongan</th>
+								<th>Nama Mata Pelajaran</th>
+								<th>Jumlah Jam</th>
+								
 							</tr>
 						</thead>
 						<tbody>
 							<?php $x=1; ?>
-							@foreach ($lists as $kerja)
+							@foreach ($lists as $mengajar)
 								<tr>
 									<td>{{$x++}}</td>
-									<td>{{$kerja->pegawai->nama}}</td>
-									<td>{{$kerja->jabatan->label}}</td>
-									<td>{{$kerja->golongan->label}}</td>
+									<td>{{$mengajar->pegawai->nama}}</td>
+									<td>{{$mengajar->mata_pelajaran->label}}</td>
+									<td>{{$mengajar->jumlah_jam}}</td>
 									
 									<td>
 										<span></span>	
 										<div class="pull-right">
-											  {!! Form::open(['route'=>[$destroy,$kerja], 'method'=>'DELETE','class'=>'no-margin']) !!}
-												  	{!! link_to_route($show,'Detail',$kerja,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
-												  	{!! link_to_route($edit,'Edit',$kerja,['class'=>'btn btn-info btn-raised btn-sm']) !!}
+											  {!! Form::open(['route'=>[$destroy,$mengajar], 'method'=>'DELETE','class'=>'no-margin']) !!}
+												  	{!! link_to_route($show,'Detail',$mengajar,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
+												  	{!! link_to_route($edit,'Edit',$mengajar,['class'=>'btn btn-info btn-raised btn-sm']) !!}
 												  	{!! Form::button('Delete',['class'=>'btn btn-danger btn-raised btn-sm','type'=>'submit']) !!}
 											  {!! Form::close() !!}
 										</div>

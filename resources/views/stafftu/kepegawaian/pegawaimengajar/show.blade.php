@@ -36,12 +36,24 @@
 					<li class="tile">
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
-								<span>Jumlah Tahun SK Terakhir</span>
-								<small>{{$data->jumlah_tahun_sk_terakhir}}</small>
+								<span>Mata Pelajaran</span>
+								<small>{{$data->mata_pelajaran->label}}</small>
 
 							</div>
 						</div>
 					</li>
+
+					<li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
+								<span>Jumlah Jam</span>
+								<small>{{$data->jumlah_jam}}</small>
+
+							</div>
+						</div>
+					</li>
+
+					
 					<li class="tile">
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
@@ -53,57 +65,9 @@
 					</li>
 
 					
-
-
-					
-					
-					
 				</ul>
 
 
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<div  class="card-body">
-				<ul class="list divider-full-bleed">
-					<li class="tile">
-						<div class="tile-content ink-reaction">
-							<div class="tile-text">
-								<span>Jumlah Bulan SK Terakhir</span>
-								<small>{{$data->jumlah_bulan_sk_terakhir}}</small>
-
-							</div>
-						</div>
-					</li>
-					<li class="tile">
-						<div class="tile-content ink-reaction">
-							<div class="tile-text">
-								<span>Jumlah Tahun SK Terakhir</span>
-								<small>{{$data->jumlah_tahun_mk_terakhir}}</small>
-
-							</div>
-						</div>
-					</li>
-					<li class="tile">
-						<div class="tile-content ink-reaction">
-							<div class="tile-text">
-								<span>Jumlah Bulan SK Terakhir</span>
-								<small>{{$data->jumlah_bulan_mk_terakhir}}</small>
-
-							</div>
-						</div>
-					</li>
-					<li class="tile">
-						<div class="tile-content ink-reaction">
-							<div class="tile-text">
-								<span>Data Created_at</span>
-								<small>{{$data->created_at}}</small>
-
-							</div>
-						</div>
-					</li>
-
-				</ul>
 			</div>
 		</div>
 

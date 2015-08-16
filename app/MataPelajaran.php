@@ -24,4 +24,8 @@ class MataPelajaran extends Model
         return $this->belongsTo(Kelas::class);
     }
 
+    public function pegawai_mengajar(){
+        return $this->hasMany(PegawaiMengajar::class);
+    }
+
 }

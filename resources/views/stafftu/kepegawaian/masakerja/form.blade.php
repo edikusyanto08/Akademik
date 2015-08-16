@@ -1,4 +1,4 @@
-
+@inject('pegawai',\Akademik\Pegawai)
 
 <div class="row">
 	
@@ -12,14 +12,20 @@
 			</div>
 			<div class="col-md-12">
 				<div class="form-group floating-label">
-					{!!Form::text('jml_tahun',null,['class'=>'form-control', 'id'=>'jml_tahun'])!!}
-					{!!Form::label('jml_tahun','Jumlah Tahun')!!}
+					{!!Form::select('pegawai_id',$pegawai->lists('nama','id'),null,['class'=>'form-control', 'id'=>'pegawai_id'])!!}
+					{!!Form::label('pegawai_id','Id Pegawai')!!}
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="form-group floating-label">
-					{!!Form::text('jml_bln',null,['class'=>'form-control', 'id'=>'jml_bln'])!!}
-					{!!Form::label('jml_bln','Jumlah Bulan')!!}
+					{!!Form::text('jumlah_tahun_sk_terakhir',null,['class'=>'form-control', 'id'=>'jumlah_tahun_sk_terakhir'])!!}
+					{!!Form::label('jumlah_tahun_sk_terakhir','Jumlah Tahun')!!}
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="form-group floating-label">
+					{!!Form::text('jumlah_bulan_sk_terakhir',null,['class'=>'form-control', 'id'=>'jumlah_bulan_sk_terakhir'])!!}
+					{!!Form::label('jumlah_bulan_sk_terakhir','Jumlah Bulan')!!}
 				</div>
 			</div>
 
@@ -32,14 +38,14 @@
 			</div>
 			<div class="col-md-12">
 				<div class="form-group floating-label">
-					{!!Form::text('keseluruhan_jml_thn',null,['class'=>'form-control', 'id'=>'keseluruhan_jml_thn'])!!}
-					{!!Form::label('keseluruhan_jml_thn','Jumlah Tahun')!!}
+					{!!Form::text('jumlah_tahun_mk_terakhir',null,['class'=>'form-control', 'id'=>'jumlah_tahun_mk_terakhir'])!!}
+					{!!Form::label('jumlah_tahun_mk_terakhir','Jumlah Tahun')!!}
 				</div>
 			</div>
 			<div class="col-md-12">
 				<div class="form-group floating-label">
-					{!!Form::text('keseluruhan_jml_bln',null,['class'=>'form-control', 'id'=>'keseluruhan_jml_bln'])!!}
-					{!!Form::label('keseluruhan_jml_bln','Jumlah Bulan')!!}
+					{!!Form::text('jumlah_bulan_mk_terakhir',null,['class'=>'form-control', 'id'=>'jumlah_bulan_mk_terakhir'])!!}
+					{!!Form::label('jumlah_bulan_mk_terakhir','Jumlah Bulan')!!}
 				</div>
 			</div>
 		</div>

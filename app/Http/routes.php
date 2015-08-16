@@ -18,6 +18,11 @@ Route::model('pangkat',Akademik\PangkatPegawai::class);
 Route::model('pendidikan',Akademik\PegawaiPendidikan::class);
 Route::model('diklat',Akademik\PegawaiDiklat::class);
 Route::model('data',Akademik\MataPelajaran::class);
+Route::model('masakerja',Akademik\PegawaiMasaKerja::class);
+Route::model('pegawaimengajar',Akademik\PegawaiMengajar::class);
+Route::model('pangkat',Akademik\PangkatPegawai::class);
+Route::model('jabatan',Akademik\Jabatan::class);
+Route::model('pekerjaan',Akademik\PegawaiPekerjaan::class);
 
 
 Route::get('/', function () {
@@ -84,6 +89,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 						'pendidikan'=>'PendidikanController',
 						'pekerjaan'=>'PekerjaanController',
 						'masakerja'=>'MasaKerjaController',
+						'pegawaimengajar'=>'PegawaiMengajarController',
 						]);
 					
 				});
@@ -109,6 +115,7 @@ Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawa
 						'akta'=>'AktaController',
 						'golongan'=>'GolonganController',
 						'pangkat'=>'PangkatController',
+						'jabatan'=>'JabatanController',
 					]);
 				});
 			}

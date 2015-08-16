@@ -18,17 +18,25 @@
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
 								<span>ID</span>
-								<small></small>
+								<small>{{$data->id}}</small>
 
 							</div>
 						</div>
 					</li>
+					<li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
+								<span>Nama Pegawai</span>
+								<small>{{$data->pegawai->nama}}</small>
 
+							</div>
+						</div>
+					</li>
 					<li class="tile">
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
 								<span>Status</span>
-								<small></small>
+								<small>{{$data->status}}</small>
 
 							</div>
 						</div>
@@ -37,17 +45,36 @@
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
 								<span>Pangkat</span>
-								<small></small>
+								<small>{{$data->pangkat->label}}</small>
+
+							</div>
+						</div>
+					</li>
+					<li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
+								<span>Data Created_at</span>
+								<small>{{$data->created_at}}</small>
 
 							</div>
 						</div>
 					</li>
 
-					<li class="tile">
+					
+				</ul>
+
+
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div  class="card-body">
+				<ul class="list divider-full-bleed">
+				<li class="tile">
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
 								<span>Golongan</span>
-								<small></small>
+								<small>{{$data->golongan->label}}</small>
 
 							</div>
 						</div>
@@ -57,7 +84,7 @@
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
 								<span>Jabatan</span>
-								<small></small>
+								<small>{{$data->jabatan->label}}</small>
 
 							</div>
 						</div>
@@ -67,7 +94,7 @@
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
 								<span>TMT Awal</span>
-								<small></small>
+								<small>{{$data->tmt_awal}}</small>
 
 							</div>
 						</div>
@@ -78,14 +105,21 @@
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
 								<span>TMT Akhir</span>
-								<small></small>
+								<small>{{$data->tmt_akhir}}</small>
+
+							</div>
+						</div>
+					</li>
+					<li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
+								<span>Data Created_at</span>
+								<small>{{$data->created_at}}</small>
 
 							</div>
 						</div>
 					</li>
 				</ul>
-
-
 			</div>
 		</div>
 
