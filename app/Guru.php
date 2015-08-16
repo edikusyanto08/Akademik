@@ -10,7 +10,19 @@ class Guru extends Model
 	
 	protected $guarded=['id'];
 
-    public function sebagai_pegawai(){
-    	return $this->belongsTo(Pegawai::class,"pegawai_id","id");
+    public function pegawai(){
+    	return $this->belongsTo(Pegawai::class);
+    }
+    public function mengajar()
+    {
+        return $this->hasMany(GuruMataPelajaran::class);
+    }
+    public function listWithPegawainame()
+    {
+    	$lists = [];
+    	foreach ($this->all() as $list) {
+    		$lists[$list->id] = "{$list->pegawai->nama} ({$list->pegawai->nim})";
+    	}
+    	return $lists;
     }
 }

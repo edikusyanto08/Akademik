@@ -19,7 +19,8 @@
 							<tr>
 								<th class="col-xs-1">No.</th>
 								
-								<th>ID Guru</th>
+								<th>NIP</th>
+								<th>NUPTK</th>
 								<th>Pegawai</th>
 							</tr>
 						</thead>
@@ -28,10 +29,9 @@
 							@foreach ($lists as $classRoom)
 								<tr>
 									<td>{{$x++}}</td>
-									<td>{{$classRoom->id}}</td>
-									<td>{{$classRoom->sebagai_pegawai->nama}}</td>
-									
-									<td>
+									<td>{{$classRoom->pegawai->nip}}</td>
+									<td>{{$classRoom->pegawai->nuptk}}</td>
+									<td>{{$classRoom->pegawai->nama}}
 										<span>{{$classRoom->label}}</span>	
 										<div class="pull-right">
 											  {!! Form::open(['route'=>[$destroy,$classRoom->id], 'method'=>'DELETE','class'=>'no-margin']) !!}

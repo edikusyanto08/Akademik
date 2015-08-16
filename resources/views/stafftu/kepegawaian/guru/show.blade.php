@@ -17,7 +17,7 @@
 					<li class="tile">
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
-								<span>ID</span>
+								<span>ID Guru</span>
 								<small>{{$data->id}}</small>
 
 							</div>
@@ -27,8 +27,33 @@
 					<li class="tile">
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
+								<span>NIP Pegawai</span>
+								<small>{{$data->pegawai->nip}}</small>
+
+							</div>
+						</div>
+					</li><li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
+								<span>NUPTK Pegawai</span>
+								<small>{{$data->pegawai->nuptk}}</small>
+
+							</div>
+						</div>
+					</li><li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
 								<span>Nama Pegawai</span>
-								<small>{{$data->sebagai_pegawai->nama}}</small>
+								<small>{{$data->pegawai->nama}}</small>
+
+							</div>
+						</div>
+					</li>
+					<li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
+								<span>Nama Pegawai</span>
+								<small>{{$data->created_at}}</small>
 
 							</div>
 						</div>

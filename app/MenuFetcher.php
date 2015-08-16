@@ -23,7 +23,7 @@ class MenuFetcher
 							['route'=>'mapel','name'=>'Mata Pelajaran','inGroup'=>[
 								['route'=>'kategori','name'=>'Kategori Mata Pelajaran','icon'=>'fa fa-bookmark'],	
 								['route'=>'data','name'=>'Data Mata Pelajaran','icon'=>'md md-book'],
-								['route'=>'guru','name'=>'Guru Mata Pelajaran','icon'=>'md md-book']
+								['route'=>'guru_mapel','name'=>'Guru Mata Pelajaran','icon'=>'md md-book']
 							]],
 							['route'=>'jurusan','name'=>'Jurusan','icon'=>'fa fa-random'],
 							['route'=>'kelas','name'=>'Kelas','icon'=>'fa fa-line-chart'],

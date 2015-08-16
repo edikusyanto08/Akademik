@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class MataPelajaran extends Model
 {
     protected $guarded = ['id'];
-    public function kategori_mata_pelajaran()
+    public function kategori()
     {
-    	return $this->belongsTo(KategoriMataPelajaran::class);
+    	return $this->belongsTo(KategoriMataPelajaran::class,'kategori_mata_pelajaran_id','id');
     }
     public function guru()
     {
@@ -26,6 +26,18 @@ class MataPelajaran extends Model
 
     public function pegawai_mengajar(){
         return $this->hasMany(PegawaiMengajar::class);
+    }
+    public function pengajar()
+    {
+        return $this->hasMany(GuruMataPelajaran::class);
+    }
+    public function listAllAttribute()
+    {
+        $lists = [];
+        foreach ($this->all() as $list) {
+            $lists["Jurusan {$list->jurusan->label} Kelas-{$list->kelas->label}"][$list->id] = "{$list->label} ({$list->kategori->label} - {$list->kategori->huruf})";
+        }
+        return $lists;
     }
 
 }

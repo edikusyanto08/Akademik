@@ -17,7 +17,7 @@
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
 							<span>Kategori Mata Pelajaran</span>
-							<small>{{$data->kategori_mata_pelajaran->label}}</small>
+							<small>{{$data->kategori->label}}</small>
 						</div>
 					</div>
 				</li>

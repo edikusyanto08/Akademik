@@ -7,6 +7,7 @@ namespace Akademik\Http\Controllers\Pegawai\StaffTu\kepegawaian;
 use Akademik\Http\Requests\GuruRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\Guru;
+use Akademik\PegawaiTugas;
 use Auth;
 
 class GuruController extends Controller
@@ -42,11 +43,16 @@ class GuruController extends Controller
      *
      * @return Response
      */
-    public function store( Guru $bebas,GuruRequest $g)
+    public function store(Guru $ModelGuru,GuruRequest $g, PegawaiTugas $tugas)
     {
-
-    if ($bebas->fill($g->all())->save()) {
-            return $this->routeAndSuccess('store');
+        $data = [
+            'pegawai_id' => $g->input('pegawai_id'),
+            'role' =>  'Guru'
+        ];
+        if ($tugas->fill($data)->save()){
+            if ($ModelGuru->fill($g->all())->save()) {
+                    return $this->routeAndSuccess('store');
+            }
         }
         return $this->routeBackWithError('store');
     }
@@ -79,10 +85,10 @@ class GuruController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update( Guru $bebas, GuruRequest $g)
+    public function update( Guru $ModelGuru, GuruRequest $g)
     {
         
-        if ($bebas->fill($g->all())->save()) {
+        if ($ModelGuru->fill($g->all())->save()) {
             return $this->routeAndSuccess('update');
         }
         return $this->routeBackWithError('update');
@@ -94,10 +100,12 @@ class GuruController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy(Guru $bebas)
+    public function destroy(Guru $ModelGuru)
     {
-        if ($bebas->delete()) {
-            return $this->routeAndSuccess('destroy');
+        if($ModelGuru->pegawai()->where('role','Guru')->delete()){
+            if ($ModelGuru->delete()) {
+                return $this->routeAndSuccess('destroy');
+            }
         }
         return $this->routeBackWithError('destroy');
     }
