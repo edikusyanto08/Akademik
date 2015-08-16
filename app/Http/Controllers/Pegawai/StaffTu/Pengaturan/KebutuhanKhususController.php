@@ -12,7 +12,7 @@ class KebutuhanKhususController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.pengaturan.specialneed', new KebutuhanKhusus(), 'Kebutuhan Khusus');
+        parent::__construct('stafftu.pengaturan.kebutuhankhusus', new KebutuhanKhusus(), 'Kebutuhan Khusus');
     }
 
     /**
