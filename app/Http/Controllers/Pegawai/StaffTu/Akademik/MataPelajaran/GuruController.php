@@ -5,22 +5,24 @@ namespace Akademik\Http\Controllers\Pegawai\StaffTu\Akademik\MataPelajaran;
 use Illuminate\Http\Request;
 use Akademik\Http\Requests;
 use Akademik\Http\Controllers\Controller;
-use Akademik\GuruMataPelajaran;
 use Akademik\Http\Requests\GuruMataPelajaranRequest;
+use Akademik\GuruMataPelajaran as Guru ;
+
 
 class GuruController extends Controller
 {
     public function __construct()
     {
         parent::__construct('stafftu.akademik.mapel.guru_mapel', new GuruMataPelajaran(), 'Kategori MataPelajaran');
-    }
+   }
 
  /**
   * Store a newly created resource in storage.
   *
   * @return Response
   */
- public function store(GuruMataPelajaran $model, GuruMataPelajaranRequest $r)
+
+ public function store(Guru $model, GuruMataPelajaranRequest $r)
  {
      if ($model->fill($r->all())->save()) {
          return $this->routeAndSuccess('store');
@@ -35,7 +37,8 @@ class GuruController extends Controller
   *
   * @return Response
   */
- public function update(GuruMataPelajaran $model, GuruMataPelajaranRequest $r)
+
+ public function update(Guru $model, GuruMataPelajaranRequest $r)
  {
      if ($model->fill($r->all())->save()) {
          return $this->routeAndSuccess('update');
@@ -50,7 +53,8 @@ class GuruController extends Controller
   *
   * @return Response
   */
- public function destroy(GuruMataPelajaran $model)
+
+ public function destroy(Guru $model)
  {
      if ($model->delete()) {
          return $this->routeAndSuccess('destroy');

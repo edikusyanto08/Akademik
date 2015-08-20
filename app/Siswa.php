@@ -35,4 +35,8 @@ class Siswa extends Model
     {
     	return $this->hasOne(SiswaHobi::class);
     }
+
+    public function perkembangan(){
+        return $this->hasOne(SiswaPerkembangan::class);
+    }
 }

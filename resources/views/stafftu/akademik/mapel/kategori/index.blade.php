@@ -2,17 +2,18 @@
 @section('content')
 	<div class="row">
 		<div class="col-md-12">
-			<div class="card card-underline">
+			<div class="card card-underline ">
 				<div class="card-head">
 					<header>
 						{!! $namaForm !!}
 					</header>
 					<div class="tools">
 						<div class="btn-group">
-							<a href="{{ route($create) }}" class="btn btn-icon-toggle btn-refresh"><i class="md md-add"></i></a>
+							<a href="{{ route($create) }}" class="btn btn-icon-toggle btn-refresh "><i class="md md-add"></i></a>
 						</div>
 					</div>
 				</div>
+				
 				<div class="card-body">
 					<table class="table no-margin datatable">
 						<thead>
@@ -35,8 +36,8 @@
 										<div class="pull-right">
 											  {!! Form::open(['route'=>[$destroy,$kelas->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
 												  	{!! link_to_route($show,'Detail',$kelas->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
-												  	{!! link_to_route($edit,'Edit',$kelas->id,['class'=>'btn btn-info btn-raised btn-sm']) !!}
-												  	{!! Form::button('Delete',['class'=>'btn btn-danger btn-raised btn-sm','type'=>'submit']) !!}
+												  	{!! link_to_route($edit,'Edit',$kelas->id,['class'=>'btn btn-info btn-raised btn-sm ink-reaction']) !!}
+												  	{!! Form::button('Delete',['class'=>'btn btn-danger btn-raised btn-sm ','type'=>'submit']) !!}
 											  {!! Form::close() !!}
 										</div>
 									</td>
