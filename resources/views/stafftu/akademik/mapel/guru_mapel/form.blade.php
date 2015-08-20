@@ -8,7 +8,7 @@
 </div>
 <div class="col-md-6 col-xs-12">
 	<div class="form-group floating-label">
-		{!!Form::select('guru_id',$guru->listWithPegawainame(),null,['class'=>'form-control', 'id'=>'guru_id'])!!}
+		{!!Form::select('guru_id',$guru->listWithPegawaiName(),null,['class'=>'form-control', 'id'=>'guru_id'])!!}
 		{!!Form::label('guru_id','Guru Pengajar')!!}
 	</div>
 </div>
