@@ -17,11 +17,11 @@ class Guru extends Model
     {
         return $this->hasMany(GuruMataPelajaran::class);
     }
-    public function listWithPegawainame()
+    public function listWithPegawaiName()
     {
     	$lists = [];
     	foreach ($this->all() as $list) {
-    		$lists[$list->id] = "{$list->pegawai->nama} ({$list->pegawai->nim})";
+    		$lists[$list->id] = "{$list->pegawai->nama} ({$list->pegawai->nip})";
     	}
     	return $lists;
     }

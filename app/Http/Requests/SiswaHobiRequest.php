@@ -3,6 +3,7 @@
 namespace Akademik\Http\Requests;
 
 use Akademik\Http\Requests\Request;
+use Auth;
 
 class SiswaHobiRequest extends Request
 {
@@ -13,7 +14,12 @@ class SiswaHobiRequest extends Request
      */
     public function authorize()
     {
-        return false;
+        if (! Auth::guest()) {
+            if (Auth::user()->role == 'pegawai' && RoleUserChecker::checkRole(Auth::user()->pegawai->tugas()->lists('role'), 'stafftu')) {
+                return true;
+            }
+        }
+        return true;
     }
 
     /**

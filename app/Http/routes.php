@@ -80,7 +80,6 @@ Route::group(['namespace'=>'Pegawai'],function()
 							'kategori'=>'KategoriController',
 							'guru_mapel'=>'GuruController',
 						]);
-					});
 				});
 			});
 			Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()
@@ -128,8 +127,7 @@ Route::group(['namespace'=>'Pegawai'],function()
 					'jabatan'=>'JabatanController',
 					]);
 			});
-		}
-		);
+		});
 		/**
 		 * routing untuk bagian guru
 		 */

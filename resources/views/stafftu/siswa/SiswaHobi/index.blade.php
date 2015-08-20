@@ -28,8 +28,8 @@
 							@foreach ($lists as $classRoom)
 								<tr>
 									<td>{{$x++}}</td>
-									<td>{{$classRoom->sisiwa->nama}}</td>
-									<td>{{$classRoom->eskul->label}}</td>
+									<td>{{$classRoom->siswa->nama}}</td>
+									<td>{{$classRoom->hobi->label}}</td>
 									<td>
 										<span>{{$classRoom->taggal_lahir}}</span>
 										<div class="pull-right">

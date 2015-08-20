@@ -4,7 +4,7 @@ namespace Akademik\Http\Controllers\Pegawai\StaffTu\Siswa;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests;
+use Akademik\Http\Requests\SiswaHobiRequest;
 use Akademik\Http\Controllers\Controller;
 use Akademik\SiswaHobi;
 
@@ -32,9 +32,12 @@ class SiswaHobiController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store()
+    public function store(SiswaHobi $model, SiswaHobiRequest $r)
     {
-        //
+        if ($model->fill($r->all())->save()) {
+            return $this->routeAndSuccess('store');
+        }
+        return $this->routebackWithError('store');
     }
 
     /**

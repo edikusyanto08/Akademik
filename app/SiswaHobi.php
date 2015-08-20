@@ -6,10 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class SiswaHobi extends Model
 {
-    protected $guarded = ['siswa_id'];
+    protected $guarded = ['id'];
 
-    public function sisiwa()
+    public function siswa()
     {
     	return $this->belongsTo(Siswa::class);
+    }
+
+    public function hobi(){
+    	return $this->belongsTo(Hobi::class);
     }
 }

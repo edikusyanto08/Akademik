@@ -34,7 +34,7 @@ class EkskulController extends Controller
      *
      * @return Response
      */
-    public function store( Ekskul $model,ExkulRequest $r)
+    public function store( Ekskul $model,EkskulRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('store');
@@ -64,7 +64,7 @@ class EkskulController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update( Ekskul $model,ExkulRequest $r)
+    public function update( Ekskul $model,EkskulRequest $r)
     {
          if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('update');

@@ -16,7 +16,7 @@
 			<div class="col-md-12">
 				<div class="form-group floating-label">
 					{!!Form::text('nama',null,['class'=>'form-control', 'id'=>'nama'])!!}
-					{!!Form::label('nama','Nama')!!}
+					{!!Form::label('nama','Nama Diklat')!!}
 				</div>
 			</div>
 			<div class="col-md-12">

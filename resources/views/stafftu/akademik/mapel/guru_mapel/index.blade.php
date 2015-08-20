@@ -29,7 +29,7 @@
 							@foreach ($lists as $list)
 								<tr>
 									<td>{{$x++}}</td>
-									<td>{{$list->guru->pegawai->nip}} / {{$list->guru->pegawai->nuptk}}</td>
+									<td>{{$list->guru->pegawai->nip}} / {{$list->guru->pegawai->jenis_ptk}}</td>
 									<td>{{$list->guru->pegawai->nama}}</td>
 									<td>{{$list->mata_pelajaran->label}}</td>
 									<td>
