@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jabatan extends Model
 {
-    protected $guarded=['id'];
+	protected $guarded=['id'];
 
-    public function pegawai_pekerjaan(){
-    		return $this->hasOne(PegawaiPekerjaan::class);
-    }
+	public function pegawai_pekerjaan(){
+		return $this->hasOne(PegawaiPekerjaan::class);
+	}
 }

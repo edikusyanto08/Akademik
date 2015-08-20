@@ -29,6 +29,7 @@ class MenuFetcher
 							['route'=>'kelas','name'=>'Kelas','icon'=>'fa fa-line-chart'],
 							['route'=>'tahunajaran','name'=>'Tahun Angkatan','icon'=>'fa fa-calendar'],
 							['route'=>'ekskul','name'=>'Ekstra kulikuler','icon'=>'fa fa-asterisk'],
+							['route'=>'rombel','name'=>'Rombongan Belajar','icon'=>'fa fa-asterisk'],
 						]
 					],
 					[
@@ -38,8 +39,8 @@ class MenuFetcher
 						'inGroup' =>[
 							['route'=>'siswa','name'=>'Data Induk Siswa','icon'=>'fa fa-graduation-cap'],
 							['route'=>'siswahobi','name'=>'Hobi Siswa','icon'=>'fa fa-graduation-cap'],
-							['route'=>'siswa','name'=>'siswa','icon'=>'fa fa-graduation-cap'],
-							['route'=>'siswa','name'=>'siswa','icon'=>'fa fa-graduation-cap'],
+							['route'=>'siswaperkembangan','name'=>'Perkembangan Siswa','icon'=>'fa fa-graduation-cap'],
+							['route'=>'siswarombel','name'=>'Penempatan Siswa','icon'=>'fa fa-graduation-cap'],
 						]
 					],
 					[

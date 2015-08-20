@@ -12,4 +12,8 @@ class SiswaRombonganBelajar extends Model
     {
     	return $this->belongsTo(Siswa::class);
     }
+
+    public function rombel(){
+    	return $this->belongsToMany(RombonganBelajar::class);
+    }
 }
