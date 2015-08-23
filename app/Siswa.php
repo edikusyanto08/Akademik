@@ -29,7 +29,7 @@ class Siswa extends Model
     }
     public function eskul()
     {
-    	return $this->hasOne(SiswaEskul::class);
+    	return $this->hasOne(SiswaEkskul::class);
     }
     public function hobi()
     {
@@ -38,5 +38,8 @@ class Siswa extends Model
 
     public function perkembangan(){
         return $this->hasOne(SiswaPerkembangan::class);
+    }
+    public function paskapendidikan(){
+        return $this->hasOne(SiswaPaskaPendidikan::class);
     }
 }

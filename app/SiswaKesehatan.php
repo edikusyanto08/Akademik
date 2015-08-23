@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class SiswaKesehatan extends Model
 {
-   	protected $guarded = ['siswa_id'];
+   	protected $guarded = ['id'];
 	public function siswa()
 	{
 		return $this->belongsTo(Siswa::class);

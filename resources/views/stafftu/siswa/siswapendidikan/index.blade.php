@@ -19,23 +19,24 @@
 							<tr>
 								<th class="col-xs-1">No.</th>
 								<th>Nama Siswa</th>
-								<th>Nama Ekstra KuriKuler</th>
+								<th>Jurusan</th>
+								<th>Tanggal Sttb</th>
 								
 							</tr>
 						</thead>
 						<tbody>
 							<?php $x=1; ?>
-							@foreach ($lists as $eskul)
+							@foreach ($lists as $pendidikan)
 								<tr>
 									<td>{{$x++}}</td>
-									<td>{{$eskul->siswa->nama}}</td>
-									<td>{{$eskul->ekskul->label}}</td>
+									<td>{{$pendidikan->siswa->nama}}</td>
+									<td>{{$pendidikan->jurusan->label}}</td>
 									<td>
-										<span></span>
+										<span>{{$pendidikan->tanggal_sttb}}</span>
 										<div class="pull-right">
-											  {!! Form::open(['route'=>[$destroy,$eskul->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
-												  	{!! link_to_route($show,'Detail',$eskul->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
-												  	{!! link_to_route($edit,'Edit',$eskul->id,['class'=>'btn btn-info btn-raised btn-sm']) !!}
+											  {!! Form::open(['route'=>[$destroy,$pendidikan->id], 'method'=>'DELETE','class'=>'no-margin']) !!}
+												  	{!! link_to_route($show,'Detail',$pendidikan->id,['class'=>'btn btn-warning btn-raised btn-sm']) !!}
+												  	{!! link_to_route($edit,'Edit',$pendidikan->id,['class'=>'btn btn-info btn-raised btn-sm']) !!}
 												  	{!! Form::button('Delete',['class'=>'btn btn-danger btn-raised btn-sm','type'=>'submit']) !!}
 											  {!! Form::close() !!}
 										</div>

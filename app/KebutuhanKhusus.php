@@ -8,6 +8,9 @@ class KebutuhanKhusus extends Model
 {
     protected $guarded = ['id'];
 
-
+    public function kehehatan()
+    {
+    	return $this->hasMany(SiswaKesehatan::class);
+    }
     
 }

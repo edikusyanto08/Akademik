@@ -4,7 +4,7 @@ namespace Akademik;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SiswaHobi extends Model
+class SiswaEkskul extends Model
 {
     protected $guarded = ['id'];
 
@@ -12,12 +12,8 @@ class SiswaHobi extends Model
     {
     	return $this->belongsTo(Siswa::class);
     }
-
-    public function hobi()
+    public function ekskul()
     {
-
-    	return $this->belongsTo(Hobi::class);
+    	return $this->belongsTo(Ekskul::class,'eskul_id','id');
     }
-
-    
 }

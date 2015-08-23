@@ -41,6 +41,10 @@ class MenuFetcher
 							['route'=>'siswahobi','name'=>'Hobi Siswa','icon'=>'fa fa-graduation-cap'],
 							['route'=>'siswaperkembangan','name'=>'Perkembangan Siswa','icon'=>'fa fa-graduation-cap'],
 							['route'=>'siswarombel','name'=>'Penempatan Siswa','icon'=>'fa fa-graduation-cap'],
+							['route'=>'siswakesehatan','name'=>'Kesehatan Siswa','icon'=>'fa fa-graduation-cap'],
+							['route'=>'siswaeskul','name'=>'Ekstra Kurikuler Siswa','icon'=>'fa fa-graduation-cap'],
+							['route'=>'siswapaskapendidikan','name'=>'Paska Pendidikan Siswa','icon'=>'fa fa-graduation-cap'],
+							['route'=>'siswapendidikan','name'=>'Pendidikan Siswa','icon'=>'fa fa-graduation-cap'],
 						]
 					],
 					[

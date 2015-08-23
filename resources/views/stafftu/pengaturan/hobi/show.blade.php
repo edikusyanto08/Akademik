@@ -26,6 +26,14 @@
 					<li class="tile">
 						<div class="tile-content ink-reaction">
 							<div class="tile-text">
+								<span>Jenis Hobi</span>
+								<small>{{$data->jenis_hobi}}</small>
+							</div>
+						</div>
+					</li>
+					<li class="tile">
+						<div class="tile-content ink-reaction">
+							<div class="tile-text">
 								<span> Data Created at</span>
 								<small>{{$data->created_at}}</small>
 							</div>

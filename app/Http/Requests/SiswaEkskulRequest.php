@@ -5,7 +5,7 @@ namespace Akademik\Http\Requests;
 use Akademik\Http\Requests\Request;
 use Auth;
 
-class SiswaHobiRequest extends Request
+class SiswaEkskulRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,7 +14,7 @@ class SiswaHobiRequest extends Request
      */
     public function authorize()
     {
-        if (! Auth::guest()) {
+       if (! Auth::guest()) {
             if (Auth::user()->role == 'pegawai' && RoleUserChecker::checkRole(Auth::user()->pegawai->tugas()->lists('role'), 'stafftu')) {
                 return true;
             }
@@ -30,7 +30,8 @@ class SiswaHobiRequest extends Request
     public function rules()
     {
         return [
-            
+            'siswa_id'=>'required',
+            'eskul_id'=>'required'
         ];
     }
 }
