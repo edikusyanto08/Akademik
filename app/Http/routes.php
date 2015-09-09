@@ -55,7 +55,7 @@ Route::group(['prefix'=>'sesi','namespace'=>'sesi','as'=>'sesi.','middleware'=>'
 });
 Route::get("do",['as'=>'pegawai.do',"middleware"=>"UserAccessControll:pegawai",'uses'=>'sesi\SesiController@pegawaiRole']);
 Route::post("do",['as'=>'pegawai.do.go',"middleware"=>"UserAccessControll:pegawai",'uses'=>'sesi\SesiController@pegawaiRoleSelect']);
-Route::post('data_chain',['as'=>'data.chain','uses'=>'HelperController@data_chain']);
+Route::post('ajax_rombel_request',['as'=>'ajax.rombel.request','uses'=>'Pegawai\StaffTu\Siswa\SiswaRombelController@ajaxRequest']);
 /**
  * bagian routing unutk pegawai
  */

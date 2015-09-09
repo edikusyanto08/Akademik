@@ -4,8 +4,28 @@
 		"selected_items":
 		[
 			[
+				"form",
+				"form_rombel	(index.blade.php)"
+			],
+			[
+				"cs",
+				"console.	console.log()"
+			],
+			[
+				"ajax",
+				"ajax_rombel	(index.blade.php)"
+			],
+			[
+				"col",
+				"colspan	Attr"
+			],
+			[
 				"siswa",
-				"siswarombel	(routes.php)"
+				"siswarombel"
+			],
+			[
+				"uc",
+				"ucwords"
 			],
 			[
 				"Romb",
@@ -108,14 +128,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/routes.php",
-			"settings":
-			{
-				"buffer_size": 6234,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/Http/Middleware/VerifyCsrfToken.php",
 			"settings":
 			{
@@ -127,55 +139,39 @@
 			"file": "app/Http/Controllers/HelperController.php",
 			"settings":
 			{
-				"buffer_size": 629,
+				"buffer_size": 1947,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/GuruMataPelajaran.php",
+			"file": "resources/views/stafftu/siswa/siswarombel/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 327,
+				"buffer_size": 1363,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php",
+			"file": "resources/assets/js/ajax_rombel.js",
 			"settings":
 			{
-				"buffer_size": 2067,
+				"buffer_size": 363,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php",
+			"file": "app/Http/routes.php",
 			"settings":
 			{
-				"buffer_size": 1398,
+				"buffer_size": 6753,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/KategoriController.php",
+			"file": "resources/assets/js/core/demo/Demo.js",
 			"settings":
 			{
-				"buffer_size": 1467,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/MenuFetcher.php",
-			"settings":
-			{
-				"buffer_size": 4456,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/stafftu/akademik/mapel/guru_mapel/index.blade.php",
-			"settings":
-			{
-				"buffer_size": 1709,
+				"buffer_size": 7392,
 				"line_ending": "Unix"
 			}
 		}
@@ -188,23 +184,27 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "inde",
+		"last_filter": "instal",
 		"selected_items":
 		[
 			[
-				"inde",
-				"Indentation: Reindent Lines"
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
+				"javas",
+				"Set Syntax: JavaScript"
 			],
 			[
-				"instal",
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -224,7 +224,7 @@
 				"Preferences: Settings - User"
 			]
 		],
-		"width": 871.0
+		"width": 728.0
 	},
 	"console":
 	{
@@ -246,31 +246,44 @@
 	"expanded_folders":
 	[
 		"/home/yudhana/Work/Akademik",
-		"/home/yudhana/Work/Akademik/app",
-		"/home/yudhana/Work/Akademik/app/Exceptions",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers",
 		"/home/yudhana/Work/Akademik/resources",
-		"/home/yudhana/Work/Akademik/resources/views",
-		"/home/yudhana/Work/Akademik/resources/views/stafftu",
-		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik",
-		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel"
+		"/home/yudhana/Work/Akademik/resources/assets",
+		"/home/yudhana/Work/Akademik/resources/assets/js",
+		"/home/yudhana/Work/Akademik/resources/assets/js/core",
+		"/home/yudhana/Work/Akademik/resources/assets/js/core/demo",
+		"/home/yudhana/Work/Akademik/tests"
 	],
 	"file_history":
 	[
-		"/home/yudhana/Work/Akademik/app/RombonganBelajar.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/siswa/siswarombel/index.blade.php",
+		"/home/yudhana/Work/Akademik/public/js/all.js",
+		"/home/yudhana/Work/Akademik/gulpfile.js",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_09_08_013712_UpdateRB.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/siswa/siswa/form/ayah.blade.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/kepegawaian/guru/create.blade.php",
+		"/home/yudhana/Work/Akademik/app/Http/routes.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/guru_mapel/index.blade.php",
+		"/home/yudhana/Work/Akademik/app/MenuFetcher.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/KategoriController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php",
+		"/home/yudhana/Work/Akademik/app/GuruMataPelajaran.php",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_09_08_013111_UpdateSRB.php",
 		"/home/yudhana/Work/Akademik/database/migrations/2015_07_23_033645_create_rombongan_belajars_table.php",
+		"/home/yudhana/Work/Akademik/resources/assets/js/core/source/App.js",
+		"/home/yudhana/Work/Akademik/resources/views/incl/header.blade.php",
+		"/home/yudhana/Work/Akademik/resources/views/base.blade.php",
+		"/home/yudhana/Work/Akademik/app/RombonganBelajar.php",
+		"/home/yudhana/Work/Akademik/app/SiswaRombonganBelajar.php",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_07_23_033653_create_siswa_rombongan_belajars_table.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/HelperController.php",
 		"/home/yudhana/Work/Akademik/app/Guru.php",
 		"/home/yudhana/Work/Akademik/database/migrations/2015_08_16_171712_create_semesters_table.php",
 		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/data/index.blade.php",
 		"/home/yudhana/Work/Akademik/app/MataPelajaran.php",
 		"/home/yudhana/Work/Akademik/storage/framework/views/79c5087c4393ee44f8df6c32005726e0",
-		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php",
 		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/data/show.blade.php",
-		"/home/yudhana/Work/Akademik/app/GuruMataPelajaran.php",
 		"/home/yudhana/Work/Akademik/route.list",
-		"/home/yudhana/Work/Akademik/app/Http/routes.php",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/JurusanController.php",
 		"/home/yudhana/Work/Akademik/composer.json",
 		"/home/yudhana/Work/Akademik/config/app.php",
@@ -290,7 +303,6 @@
 		"/home/yudhana/Work/Akademik/database/migrations/2015_08_15_200902_PerbaruanJurusan.php",
 		"/home/yudhana/Downloads/l5_akademik.sql",
 		"/home/yudhana/Work/Akademik/resources/views/incl/menu.blade.php",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/KategoriController.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/DataController.php",
 		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/jurusan/form.blade.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Controller.php",
@@ -299,7 +311,6 @@
 		"/home/yudhana/Work/Akademik/storage/framework/views/c9e04c4415e8dfc0b676c7de1f21f078",
 		"/home/yudhana/Work/Akademik/database/migrations/2015_06_13_154804_create_mata_pelajarans_table.php",
 		"/home/yudhana/Work/Akademik/app/Http/Requests/MataPelajaranRequest.php",
-		"/home/yudhana/Work/Akademik/app/MenuFetcher.php",
 		"/home/yudhana/Work/Akademik/app/SiswaPendidikan.php",
 		"/home/yudhana/Work/Akademik/app/Jurusan.php",
 		"/home/yudhana/Work/Akademik/resources/views/stafftu/kepegawaian/diklat/form.blade.php",
@@ -370,6 +381,25 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"disabled",
+			"td",
+			"[]",
+			"$data",
+			"!= false",
+			"' => $list->",
+			" => $list->",
+			" => $list->tahun_ajaran_id =>",
+			"[",
+			"$d['combobox'][",
+			"();\n",
+			"data",
+			"tahun_ajaran",
+			"tahun_ajaran_id",
+			"semster",
+			"_ajaran",
+			"ruangan",
+			"tahun",
+			"lists",
 			"jurusan",
 			"tahun",
 			"MataPelajaranKategoriRequest",
@@ -498,99 +528,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/routes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2430,
-								2430
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1060.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/Http/Middleware/VerifyCsrfToken.php",
 					"semi_transient": false,
 					"settings":
@@ -602,8 +544,8 @@
 						"selection":
 						[
 							[
-								315,
-								315
+								269,
+								269
 							]
 						],
 						"settings":
@@ -611,359 +553,16 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/HelperController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 629,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								620,
-								620
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/GuruMataPelajaran.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2067,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1338,
-								1338
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
-							],
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1398,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								467,
-								467
-							],
-							[
-								558,
-								558
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -979,16 +578,21 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -999,30 +603,14 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1032,20 +620,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/KategoriController.php",
+					"buffer": 1,
+					"file": "app/Http/Controllers/HelperController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1467,
+						"buffer_size": 1947,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								470,
-								470
+								176,
+								176
 							]
 						],
 						"settings":
@@ -1053,6 +641,16 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1068,31 +666,6 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1107,193 +680,386 @@
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/stafftu/siswa/siswarombel/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								307
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/assets/js/ajax_rombel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript Ultimate/JavaScript (DOM).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "resources/assets/js/core/demo/Demo.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/JavaScript Ultimate/JavaScript (DOM).tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/MenuFetcher.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4456,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "resources/views/stafftu/akademik/mapel/guru_mapel/index.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1709,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
-							],
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 247.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1348,6 +1114,54 @@
 		"selected_items":
 		[
 			[
+				"app/http/routes.php",
+				"app/Http/routes.php"
+			],
+			[
+				"rombel",
+				"resources/assets/js/ajax_rombel.js"
+			],
+			[
+				"update",
+				"database/migrations/2015_09_08_013712_UpdateRB.php"
+			],
+			[
+				"ayah.php",
+				"resources/views/stafftu/siswa/siswa/form/ayah.blade.php"
+			],
+			[
+				"route",
+				"app/Http/routes.php"
+			],
+			[
+				"/create.php",
+				"resources/views/stafftu/kepegawaian/guru/create.blade.php"
+			],
+			[
+				"siswarombel/",
+				"resources/views/stafftu/siswa/siswarombel/index.blade.php"
+			],
+			[
+				"header",
+				"resources/views/incl/header.blade.php"
+			],
+			[
+				"updaterb",
+				"database/migrations/2015_09_08_013712_UpdateRB.php"
+			],
+			[
+				"create_ro",
+				"database/migrations/2015_07_23_033645_create_rombongan_belajars_table.php"
+			],
+			[
+				"updatesrb",
+				"database/migrations/2015_09_08_013111_UpdateSRB.php"
+			],
+			[
+				"siswa_romb",
+				"database/migrations/2015_07_23_033653_create_siswa_rombongan_belajars_table.php"
+			],
+			[
 				"create_rom",
 				"database/migrations/2015_07_23_033645_create_rombongan_belajars_table.php"
 			],
@@ -1358,10 +1172,6 @@
 			[
 				"app/guru.php",
 				"app/Guru.php"
-			],
-			[
-				"app/http/routes.php",
-				"app/Http/routes.php"
 			],
 			[
 				"create_semes",
@@ -1378,10 +1188,6 @@
 			[
 				"gurucontroller",
 				"app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php"
-			],
-			[
-				"route",
-				"app/Http/routes.php"
 			],
 			[
 				"mapel/guru/inde",

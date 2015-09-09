@@ -8714,42 +8714,45 @@ $('[data-toggle="popover"]').popover({container:'body'});};window.materialadmin.
 	window.materialadmin.AppVendor = new AppVendor;
 }(this.materialadmin, jQuery)); // pass in (namespace, jQuery):
 
+var dtable;
 $(document).ready(function  () {
 	$('select.form-control').select2();
 	enableDatePicker();
-	enableInputMask();
-	
+	enableInputMask();	
 	setTimeout(function  () {
 		getMessage();
 	},300)
-	dataTable();
+	fndataTableCaller();
 	
 })
-function dataTable () {
+function fndataTableCaller () {
 	if (!$.isFunction($.fn.dataTable)) {
 		return;
 	}
-	$('.datatable').DataTable({
-		"dom": 'lCfrtip',
-		"order": [],
-		"colVis": {
-			"buttonText": "Columns",
-			"overlayFade": 0,
-			"align": "right"
-		},
-		"language": {
-			"lengthMenu": '_MENU_ entries per page',
-			"search": '<i class="fa fa-search"></i>',
-			"paginate": {
-				"previous": '<i class="fa fa-angle-left"></i>',
-				"next": '<i class="fa fa-angle-right"></i>'
+	if(!  $.fn.DataTable.fnIsDataTable($('.datatable')))
+	{
+		window.dtable = $('.datatable').dataTable({
+			"dom": 'lCfrtip',
+			"order": [],
+			"colVis": {
+				"buttonText": "Columns",
+				"overlayFade": 0,
+				"align": "right"
+			},
+			"language": {
+				"lengthMenu": '_MENU_ entries per page',
+				"search": '<i class="fa fa-search"></i>',
+				"paginate": {
+					"previous": '<i class="fa fa-angle-left"></i>',
+					"next": '<i class="fa fa-angle-right"></i>'
+				}
 			}
-		}
-	});
-
-	$('.datatable tbody').on('click', 'tr', function() {
-		$(this).toggleClass('selected');
-	});
+		});
+		
+		$('.datatable tbody').on('click', 'tr', function() {
+			$(this).toggleClass('selected');
+		});
+	}
 }
 function getMessage () {
 	$('#message').children().each(function  (index,e) {
