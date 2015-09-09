@@ -9,6 +9,10 @@ class Ekskul extends Model
     protected $guarded=['id'];
 
     public function siswa(){
-    	return $this->hasOne(SiswaEskul::class);
+    	return $this->hasOne(SiswaEkskul::class);
+    }
+
+    public function siswaekskul(){
+    	return $this->hasMany(SiswaEkskul::class);
     }
 }

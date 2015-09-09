@@ -13,6 +13,7 @@ class CreateSiswaPendidikansTable extends Migration
     public function up()
     {
         Schema::create('siswa_pendidikans', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('siswa_id')->unsigned()->index();
             $table->foreign('siswa_id')->references('id')->on('siswas')->onUpdate('cascade')->onDelete('cascade');
             $table->string('lulusan_dari');

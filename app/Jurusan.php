@@ -19,4 +19,7 @@ class Jurusan extends Model
     public function rombel(){
     	return $this->hasMany(RombonganBelajar::class);
     }
+    public function pendidikan_siswa(){
+        return $this->hasMany(SiswaPendidikan::class);
+    }
 }

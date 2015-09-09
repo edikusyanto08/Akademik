@@ -15,8 +15,16 @@
 				<li class="tile">
 					<div class="tile-content ink-reaction">
 						<div class="tile-text">
-							<span>Label Classroom</span>
-							<small>{{$data->label}}</small>
+							<span>Nama Siswa</span>
+							<small>{{$data->siswa->nama}}</small>
+						</div>
+					</div>
+				</li>
+				<li class="tile">
+					<div class="tile-content ink-reaction">
+						<div class="tile-text">
+							<span>Ekstra Kurikuler</span>
+							<small>{{$data->ekskul->label}}</small>
 						</div>
 					</div>
 				</li>

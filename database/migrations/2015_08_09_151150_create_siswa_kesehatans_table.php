@@ -13,6 +13,7 @@ class CreateSiswaKesehatansTable extends Migration
     public function up()
     {
         Schema::create('siswa_kesehatans', function (Blueprint $table) {
+            $table->integer('id')->unsigned()->index();;
             $table->integer('siswa_id')->unsigned()->index();
             $table->foreign('siswa_id')->references('id')->on('siswas')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('kebutuhan_khusus_id')->unsigned()->index();

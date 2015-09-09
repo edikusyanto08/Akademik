@@ -27,7 +27,7 @@
 							@foreach ($lists as $eskul)
 								<tr>
 									<td>{{$x++}}</td>
-									<td>{{$eskul->label}}</td>
+									
 									<td>
 										<span>{{$eskul->label}}</span>	
 										<div class="pull-right">

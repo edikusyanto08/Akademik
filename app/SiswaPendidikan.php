@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class SiswaPendidikan extends Model
 {
-	protected $guarded = ['siswa_id'];
+	protected $guarded = ['id'];
 	public function siswa()
 	{
 		return $this->belongsTo(Siswa::class);
@@ -19,4 +19,6 @@ class SiswaPendidikan extends Model
 	{
 		return $this->belongsTo(Kelas::class);
 	}
+
+	
 }

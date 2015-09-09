@@ -30,6 +30,7 @@
 									<td>{{$x++}}</td>
 									<td>{{$hobi->label}}</td>
 									
+									
 									<td>
 										
 										<div class="pull-right">

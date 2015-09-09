@@ -4,40 +4,40 @@ namespace Akademik\Http\Controllers\Pegawai\StaffTu\Siswa;
 
 use Illuminate\Http\Request;
 
-use Akademik\Http\Requests\SiswaHobiRequest;
+use Akademik\Http\Requests\SiswaKesehatanRequest;
 use Akademik\Http\Controllers\Controller;
-use Akademik\SiswaHobi;
+use Akademik\SiswaKesehatan;
 
-class SiswaHobiController extends Controller
+class SiswaKesehatanController extends Controller
 {
     public function __construct(){
-        parent:: __construct('stafftu.siswa.siswahobi',new SiswaHobi(),'Hobi Siswa');
+        parent:: __construct('stafftu.siswa.siswakesehatan',new SiswaKesehatan(),'Kesehatan Siswa');
     }
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    
-
+   
     /**
      * Show the form for creating a new resource.
      *
      * @return Response
      */
-    
+   
+
     /**
      * Store a newly created resource in storage.
      *
      * @param  Request  $request
      * @return Response
      */
-    public function store(SiswaHobi $model, SiswaHobiRequest $r)
+    public function store(SiswaKesehatan $model,SiswaKesehatanRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('store');
         }
-        return $this->routebackWithError('store');
+        return $this->routbackWithError('store');
     }
 
     /**
@@ -54,6 +54,7 @@ class SiswaHobiController extends Controller
      * @return Response
      */
    
+
     /**
      * Update the specified resource in storage.
      *
@@ -61,12 +62,12 @@ class SiswaHobiController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(SiswaHobi $model,SiswaHobiRequest $r)
+    public function update(SiswaKesehatan $model,SiswaKesehatanRequest $r)
     {
         if ($model->fill($r->all())->save()) {
             return $this->routeAndSuccess('update');
         }
-        return $this->routebackWithError('update');
+        return $this->routbackWithError('update');
     }
 
     /**
@@ -75,12 +76,11 @@ class SiswaHobiController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy(SiswaHobi $model)
+    public function destroy(SiswaKesehatan $model)
     {
         if ($model->delete()) {
-        return $this->routeAndSuccess('delete');
-            
+            return $this->routeAndSuccess('delete');
         }
-    return $this->routebackWithError('delete');
+        return $this->routebackWithError('delete');
     }
 }
