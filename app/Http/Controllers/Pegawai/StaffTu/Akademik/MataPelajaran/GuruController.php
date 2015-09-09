@@ -13,7 +13,7 @@ class GuruController extends Controller
 {
     public function __construct()
     {
-        parent::__construct('stafftu.akademik.mapel.guru_mapel', new Guru(), 'Kategori MataPelajaran');
+        parent::__construct('stafftu.akademik.mapel.guru_mapel', new Guru(), 'Guru Pengajar Mata Pelajaran');
    }
 
  /**

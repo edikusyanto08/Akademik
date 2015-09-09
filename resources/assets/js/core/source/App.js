@@ -112,7 +112,9 @@
 
 	p._initInk = function () {
 		var o = this;
-
+		$.ajaxSetup({
+			headers: { 'X-CSRF-Token' : $('meta[name=_token]').attr('content') }
+		})
 		$('.ink-reaction').on('click', function (e) {
 			var bound = $(this).get(0).getBoundingClientRect();
 			var x = e.clientX - bound.left;

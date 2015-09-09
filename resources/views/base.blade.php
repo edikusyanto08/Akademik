@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Information,System,School">
 	<meta name="description" content="School Information System">
+	<meta name="_token" content="{!! csrf_token() !!}"/>
 	<!-- BEGIN STYLESHEETS -->
 	<link type="text/css" rel="stylesheet" href="{{ asset('css/app.css') }}" />
 	<script src="{{ asset('js/all.js') }}"></script>

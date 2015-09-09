@@ -8,7 +8,7 @@ class SiswaRombonganBelajar extends Model
 {
     protected $guarded = ['siswa_id'];
 
-    public function sisiwa()
+    public function siswa()
     {
     	return $this->belongsTo(Siswa::class);
     }

@@ -58,6 +58,7 @@ elixir(function(mix) {
          */
         'app.js',
         ]);
+    mix.scripts(['ajax_rombel.js'],'public/js/ajax_rombel.js')
     mix.scripts([
         'vendor/utils/html5shiv.js',
         'vendor/utils/respond.min.js',

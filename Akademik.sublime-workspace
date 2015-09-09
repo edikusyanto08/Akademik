@@ -4,6 +4,94 @@
 		"selected_items":
 		[
 			[
+				"siswa",
+				"siswarombel	(routes.php)"
+			],
+			[
+				"Romb",
+				"RombonganBelajar"
+			],
+			[
+				"guru",
+				"guru_mapel"
+			],
+			[
+				"Guru",
+				"GuruMataPelajaran	(GuruMataPelajaran.php)"
+			],
+			[
+				"kategori",
+				"kategori_mata_pelajaran"
+			],
+			[
+				"list",
+				"list"
+			],
+			[
+				"lis",
+				"lists"
+			],
+			[
+				"Mapel",
+				"MataPelajaran	(KategoriMataPelajaran.php)"
+			],
+			[
+				"GuruMata",
+				"GuruMataPelajaranRequest"
+			],
+			[
+				"model",
+				"ModelGuru"
+			],
+			[
+				"Pegawa",
+				"PegawaiTugas"
+			],
+			[
+				"Pegawai",
+				"PegawaiTugas	(routes.php)"
+			],
+			[
+				"kate",
+				"kategori_mata_pelajaran	(index.blade.php)"
+			],
+			[
+				"MataPela",
+				"MataPelajaran	(routes.php)"
+			],
+			[
+				"Sch",
+				"Schema::hasTable	Check for existence of table"
+			],
+			[
+				"Sche",
+				"Schema::hasTable	Check for existence of table"
+			],
+			[
+				"Sc",
+				"Schema::rename	Rename an existing database table"
+			],
+			[
+				"jur",
+				"jurusans	(2015_06_13_000000_create_jurusans_table.php)"
+			],
+			[
+				"Juru",
+				"JurusanRequest	(JurusanController.php)"
+			],
+			[
+				"Mata",
+				"MataPelajaran"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"Kat",
+				"KategoriMataPelajaran	(MataPelajaranKategoriController.php)"
+			],
+			[
 				"Route",
 				"Route::get	Basic Route with Closure"
 			],
@@ -20,82 +108,58 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/KelasController.php",
-			"settings":
-			{
-				"buffer_size": 1461,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Requests/MataPelajaranRequest.php",
-			"settings":
-			{
-				"buffer_size": 1442,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranKategoriController.php",
-			"settings":
-			{
-				"buffer_size": 1470,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Jurusan.php",
-			"settings":
-			{
-				"buffer_size": 229,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/EkskulController.php",
-			"settings":
-			{
-				"buffer_size": 1847,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Pengaturan/KebutuhanKhususController.php",
-			"settings":
-			{
-				"buffer_size": 1488,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Requests/MataPelajaranKategoriRequest.php",
-			"settings":
-			{
-				"buffer_size": 1237,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/Http/routes.php",
 			"settings":
 			{
-				"buffer_size": 5047,
+				"buffer_size": 6234,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Siswa/SiswaEskulController.php",
+			"file": "app/Http/Middleware/VerifyCsrfToken.php",
 			"settings":
 			{
-				"buffer_size": 1891,
+				"buffer_size": 326,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/Pegawai/StaffTu/Siswa/StudentController.php",
+			"file": "app/Http/Controllers/HelperController.php",
 			"settings":
 			{
-				"buffer_size": 4732,
+				"buffer_size": 629,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/GuruMataPelajaran.php",
+			"settings":
+			{
+				"buffer_size": 327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php",
+			"settings":
+			{
+				"buffer_size": 2067,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php",
+			"settings":
+			{
+				"buffer_size": 1398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/KategoriController.php",
+			"settings":
+			{
+				"buffer_size": 1467,
 				"line_ending": "Unix"
 			}
 		},
@@ -103,15 +167,15 @@
 			"file": "app/MenuFetcher.php",
 			"settings":
 			{
-				"buffer_size": 2650,
+				"buffer_size": 4456,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<?php\nRoute::model('ruangan',Akademik\\Ruangan::class);\nRoute::model('mapelkategori',Akademik\\KategoriMataPelajaran::class);\nRoute::model('matapelajaran',Akademik\\MataPelajaran::class);\nRoute::model('jurusan',Akademik\\jurusan::class);\nRoute::model('kelas',Akademik\\Kelas::class);\nRoute::model('tahunajaran',Akademik\\TahunAjaran::class);\nRoute::model('kebutuhankhusus',Akademik\\KebutuhanKhusus::class);\nRoute::model('pegawai',Akademik\\Pegawai::class);\nRoute::model('tugas',Akademik\\PegawaiTugas::class);\nRoute::model('guru',Akademik\\Guru::class);\nRoute::model('hobi',Akademik\\Hobi::class);\nRoute::model('ekskul',Akademik\\Ekskul::class);\nRoute::model('ijazah',Akademik\\Ijazah::class);\nRoute::model('akta',Akademik\\Akta::class);\nRoute::model('golongan',Akademik\\GolonganPegawai::class);\nRoute::model('pangkat',Akademik\\PangkatPegawai::class);\n\n\nRoute::get('/', function () {\n	return redirect()->route('sesi.login.form');\n});\n/**\n *  bagian login system\n */\nRoute::group(['prefix'=>'sesi','namespace'=>'sesi','as'=>'sesi.','middleware'=>'UserAccessControll:guest'],function ()\n{\n	Route::get('/',function ()\n	{\n		return redirect()->route('sesi.login.form');\n	});\n	Route::get('login',['as'=>'login.form','uses'=>'SesiController@form']);\n	Route::post('login',['as'=>'login.send','uses'=>'SesiController@login']);\n	Route::get('logout',['as'=>'logout','uses'=>'SesiController@logout']);\n});\nRoute::get(\"do\",['as'=>'pegawai.do',\"middleware\"=>\"UserAccessControll:pegawai\",'uses'=>'sesi\\SesiController@pegawaiRole']);\nRoute::post(\"do\",['as'=>'pegawai.do.go',\"middleware\"=>\"UserAccessControll:pegawai\",'uses'=>'sesi\\SesiController@pegawaiRoleSelect']);\n/**\n * bagian routing unutk pegawai\n */\n	Route::group(['namespace'=>'Pegawai'],function()\n	{\n		/**\n		 * bagian routing untuk Stuff tu\n		 */\n		Route::group(['prefix'=>'stafftu','namespace'=>'StaffTu','as'=>'stafftu.','middleware'=>'UserAccessControll:pegawai,stafftu'],function (){\n				Route::get('/',['as'=>'landing','uses'=>'Landing@page']);\n				Route::group(['namespace'=>'Akademik','prefix'=>'akademik','as'=>'akademik.'],function ()\n				{\n					Route::get('/',['as'=>'index','uses'=>function ()\n					{\n						return redirect()->route('stafftu.akademik.ruangan.index');\n					}]);\n					Route::resources([\n						'ruangan'=>'RuanganController',\n						'matapelajaran'=>'MataPelajaranController',\n						'mapelkategori'=>'MataPelajaranKategoriController',\n						'jurusan'=>'JurusanController',\n						'kelas'=>'KelasController',\n						'tahunajaran'=>'TahunAjaranController',\n						'ekskul'=>'EkskulController',\n\n						]);\n				});\n				Route::group(['namespace'=>'Kepegawaian','prefix'=>'kepegawaian'],function ()\n				{\n					Route::get('/',['as'=>'index','uses'=>function ()\n					{\n						return redirect()->route('stafftu.kepegawaian.pegawai.index');\n					}]);\n					Route::resources([\n						'pegawai'=>'PegawaiController',\n						'tugas'=>'TugasController',\n						'guru'=>'GuruController',\n						'diklat'=>'DiklatController',\n						'pendidikan'=>'PendidikanController',\n						'pekerjaan'=>'PekerjaanController',\n						'masakerja'=>'MasaKerjaController',\n						]);\n					\n				});\n				Route::group(['namespace'=>'Student','prefix'=>'siswa'],function ()\n				{\n					Route::get('/',['as'=>'index','uses'=>function ()\n					{\n						return redirect()->route('stafftu.siswa.siswa.index');\n					}]);\n					Route::resource('siswa','StudentController');\n				});\n\n				Route::group(['namespace'=>'Pengaturan','prefix'=>'pengaturan'],function(){\n					Route::get('/',['as'=>'index','uses'=>function(){\n						return redirect()->route('stafftu.pengaturan.hobi.index');\n\n					}]);\n					Route::resources([\n						'hobi'=>'HobiController',\n						'kebutuhankhusus'=>'KebutuhanKhususController',\n						'ijazah'=>'IjazahController',\n						'akta'=>'AktaController',\n						'golongan'=>'GolonganController',\n						'pangkat'=>'PangkatController',\n					]);\n				});\n			}\n		);\n		/**\n		 * routing untuk bagian guru\n		 */\n		Route::group(['prefix'=>'guru','namespace'=>'Guru','as'=>'guru.','middleware'=>'UserAccessControll:pegawai,guru'],function ()\n		{\n			Route::get('/',['as'=>'landing']);\n		});\n		/**\n		 * routing untuk bagian walikelas\n		 */\n		Route::group(['prefix'=>'walikelas','namespace'=>'WaliKelas','as'=>'walikelas.','middleware'=>'UserAccessControll:pegawai,walikelas'],function ()\n		{\n			Route::get('/',['as'=>'landing']);\n		});\n		/**\n		 * routing untuk bagian kepala sekolah\n		 */\n		Route::group(['prefix'=>'kepalasekolah','namespace'=>'KepalaSekolah','as'=>'kepalasekolah.','middleware'=>'UserAccessControll:pegawai,kepalasekolah'],function ()\n		{\n			Route::get('/',['as'=>'landing']);\n		});\n		/**\n		 * routing untuk bagian administratif\n		 */\n		Route::group(['prefix'=>'administratif','namespace'=>'Administratif','as'=>'administratif.','middleware'=>'UserAccessControll:pegawai,administratif'],function ()\n		{\n			Route::get('/',['as'=>'landing']);\n		});\n	});\n/**\n * 	routing untuk siswa\n */\nRoute::group(['namespace'=>'Siswa'],function ()\n{\n	\n});",
+			"file": "resources/views/stafftu/akademik/mapel/guru_mapel/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 4957,
+				"buffer_size": 1709,
 				"line_ending": "Unix"
 			}
 		}
@@ -123,10 +187,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 306.0,
-		"last_filter": "insta",
+		"height": 354.0,
+		"last_filter": "inde",
 		"selected_items":
 		[
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -156,7 +224,7 @@
 				"Preferences: Settings - User"
 			]
 		],
-		"width": 503.0
+		"width": 871.0
 	},
 	"console":
 	{
@@ -178,37 +246,88 @@
 	"expanded_folders":
 	[
 		"/home/yudhana/Work/Akademik",
-		"/home/yudhana/Work/Akademik/app/Http",
+		"/home/yudhana/Work/Akademik/app",
+		"/home/yudhana/Work/Akademik/app/Exceptions",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Siswa",
-		"/home/yudhana/Work/Akademik/app/Http/Requests",
-		"/home/yudhana/Work/Akademik/database",
-		"/home/yudhana/Work/Akademik/database/migrations"
+		"/home/yudhana/Work/Akademik/resources",
+		"/home/yudhana/Work/Akademik/resources/views",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel"
 	],
 	"file_history":
 	[
+		"/home/yudhana/Work/Akademik/app/RombonganBelajar.php",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_07_23_033645_create_rombongan_belajars_table.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/HelperController.php",
+		"/home/yudhana/Work/Akademik/app/Guru.php",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_08_16_171712_create_semesters_table.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/data/index.blade.php",
+		"/home/yudhana/Work/Akademik/app/MataPelajaran.php",
+		"/home/yudhana/Work/Akademik/storage/framework/views/79c5087c4393ee44f8df6c32005726e0",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/data/show.blade.php",
+		"/home/yudhana/Work/Akademik/app/GuruMataPelajaran.php",
+		"/home/yudhana/Work/Akademik/route.list",
+		"/home/yudhana/Work/Akademik/app/Http/routes.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/JurusanController.php",
+		"/home/yudhana/Work/Akademik/composer.json",
+		"/home/yudhana/Work/Akademik/config/app.php",
+		"/home/yudhana/Work/Akademik/app/Http/Requests/JurusanRequest.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/KelasController.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/data/form.blade.php",
+		"/home/yudhana/Work/Akademik/app/KategoriMataPelajaran.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/EkskulController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Kepegawaian/MasaKerjaController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Kepegawaian/GuruController.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/kepegawaian/guru/index.blade.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapel/guru/form.blade.php",
+		"/home/yudhana/Work/Akademik/app/Http/Requests/GuruMataPelajaranRequest.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/kepegawaian/guru/show.blade.php",
+		"/home/yudhana/Work/Akademik/app/PegawaiTugas.php",
+		"/home/yudhana/Work/Akademik/app/GolonganPegawai.php",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_08_15_200902_PerbaruanJurusan.php",
+		"/home/yudhana/Downloads/l5_akademik.sql",
+		"/home/yudhana/Work/Akademik/resources/views/incl/menu.blade.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/KategoriController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/DataController.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/jurusan/form.blade.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Controller.php",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_06_13_000000_create_jurusans_table.php",
+		"/home/yudhana/Work/Akademik/storage/logs/laravel.log",
+		"/home/yudhana/Work/Akademik/storage/framework/views/c9e04c4415e8dfc0b676c7de1f21f078",
+		"/home/yudhana/Work/Akademik/database/migrations/2015_06_13_154804_create_mata_pelajarans_table.php",
+		"/home/yudhana/Work/Akademik/app/Http/Requests/MataPelajaranRequest.php",
+		"/home/yudhana/Work/Akademik/app/MenuFetcher.php",
+		"/home/yudhana/Work/Akademik/app/SiswaPendidikan.php",
+		"/home/yudhana/Work/Akademik/app/Jurusan.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/kepegawaian/diklat/form.blade.php",
+		"/home/yudhana/Work/Akademik/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/Data.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Siswa/StudentController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Siswa/SiswaEskulController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranKategoriController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Pengaturan/KebutuhanKhususController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Requests/MataPelajaranKategoriRequest.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/RuanganController.php",
+		"/home/yudhana/Work/Akademik/app/Http/Requests/RuanganRequest.php",
+		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranController.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/matapelajaran/create.blade.php",
+		"/home/yudhana/Work/Akademik/public/vendor/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/matapelajaran/form.blade.php",
+		"/home/yudhana/Work/Akademik/resources/views/stafftu/akademik/mapelkategori/form.blade.php",
 		"/home/yudhana/Work/Akademik/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
 		"/home/yudhana/Work/Akademik/vendor/laravel/framework/src/Illuminate/Contracts/Routing/Registrar.php",
 		"/home/yudhana/Work/Akademik/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
 		"/home/yudhana/Work/Akademik/vendor/symfony/routing/Route.php",
-		"/home/yudhana/Work/Akademik/app/Http/Requests/MataPelajaranRequest.php",
 		"/home/yudhana/Work/Akademik/app/Http/Requests/KelasRequest.php",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/EkskulController.php",
 		"/home/yudhana/Work/Akademik/app/Http/Requests/EkskulRequest.php",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranKategoriController.php",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/RuanganController.php",
-		"/home/yudhana/Work/Akademik/app/MenuFetcher.php",
-		"/home/yudhana/Work/Akademik/app/Http/routes.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/TahunAjaranController.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/ProgramController.php",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranController.php",
-		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/Akademik/KelasController.php",
 		"/home/yudhana/Work/Akademik/app/Http/Requests/SchoolRequest.php",
 		"/home/yudhana/Work/Akademik/app/SiswaPerkembangan.php",
 		"/home/yudhana/Work/Akademik/app/SiswaPaskaPendidikan.php",
-		"/home/yudhana/Work/Akademik/app/SiswaPendidikan.php",
 		"/home/yudhana/Work/Akademik/app/SiswaKesehatan.php",
 		"/home/yudhana/Work/Akademik/app/SiswaWali.php",
 		"/home/yudhana/Work/Akademik/app/SiswaIbu.php",
@@ -220,7 +339,6 @@
 		"/home/yudhana/Work/Akademik/database/migrations/2015_08_09_151150_create_siswa_kesehatans_table.php",
 		"/home/yudhana/Work/Akademik/database/migrations/2015_07_23_033525_create_hobis_table.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/MasterData/RuanganController.php",
-		"/home/yudhana/Work/Akademik/app/Http/Requests/RuanganRequest.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/MasterData/KelasController.php",
 		"/home/yudhana/Work/Akademik/app/Http/Controllers/Pegawai/StaffTu/MasterData/MataPelajaranKategoriController.php",
 		"/home/yudhana/Work/Akademik/app/Http/Requests/DiscliplineCatagoryRequest.php",
@@ -243,6 +361,7 @@
 		"height": 158.0,
 		"where_history":
 		[
+			"/home/yudhana/Work/Akademik/",
 			"/home/yudhana/Work/Akademik/app"
 		]
 	},
@@ -251,6 +370,58 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"jurusan",
+			"tahun",
+			"MataPelajaranKategoriRequest",
+			"kategori_mata_pelajaran",
+			"kategori",
+			"huruf",
+			"pegawai",
+			"guru",
+			"kelas",
+			"pegawai_id",
+			"huruf",
+			"label",
+			"text",
+			"MataPelajaranKategoriRequest",
+			"KategoriMataPelajaran",
+			"bebas",
+			"akademmik",
+			"disclipline",
+			"\"language\"",
+			"language",
+			"jurusans",
+			"programs",
+			"program",
+			"program_id",
+			"Harus Di Isi",
+			"program_id",
+			"Program",
+			"program",
+			"route",
+			"list",
+			"group",
+			"\"",
+			">\";\n",
+			".",
+			";.",
+			"lists",
+			"route",
+			"menu",
+			"}}",
+			"{{",
+			"=\"{{ ",
+			"=\"{{",
+			"{",
+			"{{",
+			"xs-4",
+			"col-xs-4",
+			"3",
+			"Programs",
+			"programs",
+			"::class",
+			",$",
+			"KategoriMapel",
 			".'",
 			"KebutuhanKhususController",
 			"DiscliplineCatagoryController",
@@ -313,6 +484,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"'.",
 			"MataPelajaranKategoriRequest",
 			"akademik",
 			"Akademik"
@@ -326,24 +498,24 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/KelasController.php",
+					"file": "app/Http/routes.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1461,
+						"buffer_size": 6234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								166,
-								166
+								2430,
+								2430
 							]
 						],
 						"settings":
@@ -356,75 +528,248 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1060.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Middleware/VerifyCsrfToken.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/Http/Requests/MataPelajaranRequest.php",
+					"buffer": 2,
+					"file": "app/Http/Controllers/HelperController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1442,
+						"buffer_size": 629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								620,
+								620
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/GuruMataPelajaran.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
 						"regions":
 						{
 						},
@@ -440,88 +785,86 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranKategoriController.php",
+					"buffer": 4,
+					"file": "resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1470,
+						"buffer_size": 2067,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								300,
-								300
+								1338,
+								1338
 							]
 						],
 						"settings":
@@ -529,21 +872,16 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -554,21 +892,26 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -579,6 +922,98 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								467
+							],
+							[
+								558,
+								558
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -590,114 +1025,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 152.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/Jurusan.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/EkskulController.php",
+					"buffer": 6,
+					"file": "app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/KategoriController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1847,
+						"buffer_size": 1467,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								68,
-								68
+								470,
+								470
 							]
 						],
 						"settings":
@@ -705,56 +1053,56 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -762,96 +1110,7 @@
 								"bh_tag_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Pengaturan/KebutuhanKhususController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1488,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								253,
-								253
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -862,375 +1121,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/Http/Requests/MataPelajaranKategoriRequest.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								153,
-								153
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
 					"buffer": 7,
-					"file": "app/Http/routes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5047,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3147,
-								3147
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1366.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Siswa/SiswaEskulController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1891,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								64,
-								64
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/Http/Controllers/Pegawai/StaffTu/Siswa/StudentController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4732,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								64,
-								64
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 570.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
 					"file": "app/MenuFetcher.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2650,
+						"buffer_size": 4456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2532,
-								2532
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1243,128 +1147,41 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4957,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2564,
-								2564
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1375,21 +1192,108 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "resources/views/stafftu/akademik/mapel/guru_mapel/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
 							],
-							"default_dir": "/home/yudhana/Work/Akademik",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 737.0,
+						"translation.y": 247.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1434,7 +1338,7 @@
 	"project": "Akademik.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1444,12 +1348,156 @@
 		"selected_items":
 		[
 			[
+				"create_rom",
+				"database/migrations/2015_07_23_033645_create_rombongan_belajars_table.php"
+			],
+			[
+				"rout",
+				"app/Http/routes.php"
+			],
+			[
+				"app/guru.php",
+				"app/Guru.php"
+			],
+			[
+				"app/http/routes.php",
+				"app/Http/routes.php"
+			],
+			[
+				"create_semes",
+				"database/migrations/2015_08_16_171712_create_semesters_table.php"
+			],
+			[
+				"mapel/s",
+				"resources/views/stafftu/akademik/mapel/guru_mapel/show.blade.php"
+			],
+			[
 				"menu",
 				"app/MenuFetcher.php"
 			],
 			[
+				"gurucontroller",
+				"app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php"
+			],
+			[
 				"route",
 				"app/Http/routes.php"
+			],
+			[
+				"mapel/guru/inde",
+				"resources/views/stafftu/akademik/mapel/guru/index.blade.php"
+			],
+			[
+				"gurumape",
+				"app/GuruMataPelajaran.php"
+			],
+			[
+				"mapel/guru/",
+				"resources/views/stafftu/akademik/mapel/guru/form.blade.php"
+			],
+			[
+				"mapel/guu",
+				"app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaran/GuruController.php"
+			],
+			[
+				"guru/shw",
+				"resources/views/stafftu/kepegawaian/guru/show.blade.php"
+			],
+			[
+				"guru/inde",
+				"resources/views/stafftu/kepegawaian/guru/index.blade.php"
+			],
+			[
+				"guru",
+				"app/Http/Controllers/Pegawai/StaffTu/Kepegawaian/GuruController.php"
+			],
+			[
+				"app/http/controllers/pegawai/stafftu/kepegawaian/masakerjacontroller.php",
+				"app/Http/Controllers/Pegawai/StaffTu/Kepegawaian/MasaKerjaController.php"
+			],
+			[
+				"app/golonganpegawai.php",
+				"app/GolonganPegawai.php"
+			],
+			[
+				"data/",
+				"resources/views/stafftu/akademik/mapel/data/show.blade.php"
+			],
+			[
+				"matap",
+				"app/MataPelajaran.php"
+			],
+			[
+				"mapel/data/ind",
+				"resources/views/stafftu/akademik/mapel/data/index.blade.php"
+			],
+			[
+				"mapel/data/form",
+				"resources/views/stafftu/akademik/mapel/data/form.blade.php"
+			],
+			[
+				"kelascont",
+				"app/Http/Controllers/Pegawai/StaffTu/Akademik/KelasController.php"
+			],
+			[
+				"jurusan",
+				"app/Http/Requests/JurusanRequest.php"
+			],
+			[
+				"perbaruan",
+				"database/migrations/2015_08_15_200902_PerbaruanJurusan.php"
+			],
+			[
+				"create_jurusa",
+				"database/migrations/2015_06_13_000000_create_jurusans_table.php"
+			],
+			[
+				"controller",
+				"app/Http/Controllers/Controller.php"
+			],
+			[
+				"jurusan/form",
+				"resources/views/stafftu/akademik/jurusan/form.blade.php"
+			],
+			[
+				"data/form",
+				"resources/views/stafftu/akademik/mapel/data/form.blade.php"
+			],
+			[
+				"dat/form",
+				"resources/views/stafftu/kepegawaian/diklat/form.blade.php"
+			],
+			[
+				"md-incon",
+				"public/vendor/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg"
+			],
+			[
+				"mateplcont",
+				"app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranController.php"
+			],
+			[
+				"matapelajaranform",
+				"resources/views/stafftu/akademik/matapelajaran/form.blade.php"
+			],
+			[
+				"create_",
+				"database/migrations/2015_06_13_000000_create_programs_table.php"
+			],
+			[
+				"storage/framework/views/c9e04c4415e8dfc0b676c7de1f21f07",
+				"storage/framework/views/c9e04c4415e8dfc0b676c7de1f21f078"
+			],
+			[
+				"matapeacreate",
+				"resources/views/stafftu/akademik/matapelajaran/create.blade.php"
+			],
+			[
+				"matapelacontoll",
+				"app/Http/Controllers/Pegawai/StaffTu/Akademik/MataPelajaranController.php"
+			],
+			[
+				"rangancont",
+				"app/Http/Controllers/Pegawai/StaffTu/Akademik/RuanganController.php"
 			],
 			[
 				"http/controllers/pegawai/stafftu/akademik/ekskulcontroller",
@@ -1552,8 +1600,8 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
-	"show_open_files": false,
+	"show_minimap": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 244.0,

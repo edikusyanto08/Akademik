@@ -16,7 +16,6 @@ class CreateRombonganBelajarsTable extends Migration
             $table->increments('id');
             $table->integer('jurusan_id')->unsigned()->index();
             $table->foreign('jurusan_id')->references('id')->on('jurusans')->onUpdate('cascade')->onDelete('restrict');
-            $table->enum('semester',['ganjil','genap']);
             $table->integer('tahun_ajaran_id')->unsigned()->index();
             $table->foreign('tahun_ajaran_id')->references('id')->on('tahun_ajarans')->onUpdate('cascade')->onDelete('restrict');
             $table->integer('kelas_id')->unsigned()->index();

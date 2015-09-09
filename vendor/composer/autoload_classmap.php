@@ -32,7 +32,6 @@ return array(
     'CreatePendidikansTable' => $baseDir . '/database/migrations/2015_06_13_000000_create_pendidikans_table.php',
     'CreateRombonganBelajarsTable' => $baseDir . '/database/migrations/2015_07_23_033645_create_rombongan_belajars_table.php',
     'CreateRuangansTable' => $baseDir . '/database/migrations/2015_06_13_000000_create_ruangans_table.php',
-    'CreateSemestersTable' => $baseDir . '/database/migrations/2015_08_16_171712_create_semesters_table.php',
     'CreateSiswaAlamatsTable' => $baseDir . '/database/migrations/2015_06_13_154542_create_siswa_alamats_table.php',
     'CreateSiswaAyahsTable' => $baseDir . '/database/migrations/2015_06_13_154509_create_siswa_ayahs_table.php',
     'CreateSiswaEskulsTable' => $baseDir . '/database/migrations/2015_07_23_033632_create_siswa_eskuls_table.php',
@@ -561,4 +560,6 @@ return array(
     'SiswaKebutuhanKhusus' => $baseDir . '/database/migrations/2015_06_13_161737_siswa_kebutuhan_khusus.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'UpdateRB' => $baseDir . '/database/migrations/2015_09_08_013712_UpdateRB.php',
+    'UpdateSRB' => $baseDir . '/database/migrations/2015_09_08_013111_UpdateSRB.php',
 );
