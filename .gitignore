@@ -1,3 +1,5 @@
 vendor/
 node_modules/
 .env
+Akademik.sublime-project
+Akademik.sublime-workspace
